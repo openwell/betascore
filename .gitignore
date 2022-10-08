@@ -1,0 +1,44 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+timages.js
+timage.txt
+wdev.js
+wimage.txt
+# dependencies
+.env
+/node_modules
+/.pnp
+.pnp.js
+src/tailwind.output.css
+# testing
+/coverage
+hello.html
+hello.css
+notes.js
+note2.js
+go.html
+DemoQuestions.js
+ScoreTable.js
+# production
+/build
+template.html
+template2.html
+template3.html
+temp.html
+temp2.html
+temp3.html
+tempp.html
+tempp2.html
+tempp3.html
+
+promo.html
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

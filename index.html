@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Beta Score</title>
+  </head>
+  <body>
+    <section class="bg-primary-900">
+      <div class="container mx-auto relative">
+        <div class="mx-auto px-4 sm:px-6">
+          <div
+            class="flex items-center justify-between py-3 md:justify-start md:space-x-10"
+          >
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+              <a href="#">
+                <span class="sr-only">Workflow</span>
+                <img class="h-8 w-auto" src="./assets/svgs/logo.svg" alt="" />
+              </a>
+            </div>
+            <div class="-my-2 -mr-2 md:hidden">
+              <button
+                onclick="toggleHandler()"
+                type="button"
+                class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-900"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open menu</span>
+                <!-- Heroicon name: outline/bars-3 -->
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div
+              class="hidden items-center justify-end md:flex md:flex-1 lg:w-0"
+            >
+              <a href="#" class="p-2 text-xs sm:text-sm text-white">About us</a>
+              <a
+                href="https://forms.gle/SR1ZABfZquYq63Ck9"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-5 py-2 text-xs sm:text-sm text-white bg-[#12162D] self-center"
+                >Join Waitlist</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="menu"
+          class="absolute inset-x-0 top-0 origin-top-right transform p-2 transition hidden md:hidden"
+        >
+          <div
+            class="divide-y-2 divide-gray-50 rounded-lg bg-primary-900 shadow-lg ring-1 ring-black ring-opacity-5"
+          >
+            <div class="px-5 pt-5 pb-6">
+              <div class="flex items-center justify-between">
+                <div>
+                  <img
+                    class="h-8 w-44"
+                    src="./assets/svgs/logo.svg"
+                    alt="Workflow"
+                  />
+                </div>
+                <div class="-mr-2">
+                  <button
+                    onclick="toggleHandler()"
+                    type="button"
+                    class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-900"
+                  >
+                    <span class="sr-only">Close menu</span>
+                    <!-- Heroicon name: outline/x-mark -->
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="mt-6">
+                <div class="grid gap-y-3">
+                  <a href="#" class="p-2 text-sm text-white">About us</a>
+                  <a href="#" class="p-2 text-sm text-white">Join Waitlist</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-[80px] hero-section">
+        <div class="w-full flex flex-col justify-center items-center pb-14">
+          <h1 class="text-white text-8xl font-extrabold">
+            Credit History with
+          </h1>
+          <!--  text-transparent text-8xl bg-clip-text bg-gradient-to-tl from-[#7F8DDF] to-[#FBA1A1]-->
+          <h1 class="font-extrabold text-8xl text-gradient">No Borders</h1>
+          <p class="text-white p-5">
+            Move your credit history from one country to another
+          </p>
+
+          <button class="mt-8 mb-10 bg-[#1957F0] py-4 px-6 text-white">
+            Join our waitlist
+          </button>
+          <img src="./assets/images/three_phones.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#EFEFFC] pb-20">
+      <div class="flex flex-col justify-center items-center pt-[100px]">
+        <div class="bg-white p-4 rounded-full text-[#262B3F]">
+          OUR MISSION IS SIMPLE
+        </div>
+        <h1 class="text-[#262B3F] text-6xl pt-5 font-extrabold">
+          Connecting Immigrants To
+        </h1>
+        <h1 class="text-6xl text-gradient font-extrabold">Credit Facilities</h1>
+      </div>
+      <div class="bg-white p-12 container mx-auto mt-28 relative">
+        <div class="bg-[#1957F0] max-w-fit p-2 absolute -top-10">
+          <h4 class="text-white">LAUNCHING SOON</h4>
+        </div>
+        <div class="bg-[#EFEFFC] m-5 w-full py-10 flex justify-center">
+          <img src="./assets/svgs/score_tab.svg" alt="" />
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <h1 class="text-[#262B3F] text-7xl pt-5 font-extrabold">Merged</h1>
+          <h1 class="text-7xl text-gradient font-extrabold">Credit Score</h1>
+          <div class="flex justify-center items-center mt-5">
+            <p>Unify your</p>
+            <div class="bg-[#262B3F] p-2 rounded-full text-white mx-2">
+              Credit histories
+            </div>
+            <p>into a betascore</p>
+          </div>
+        </div>
+        <div class="absolute right-6 bottom-6">
+          <img class="w-14" src="./assets/svgs/world_map.svg" alt="" />
+        </div>
+      </div>
+      <div class="container mx-auto flex justify-between mt-28 relative gap-10">
+        <div class="bg-white p-5 flex-1 relative">
+          <h1 class="text-[#262B3F] text-6xl">Zero</h1>
+          <h1 class="text-gradient text-6xl">Costs</h1>
+          <p>No hidden fees charged for</p>
+          <p>your BetaScore</p>
+          <div class="mt-5 flex justify-center">
+            <img
+              class="w-80 h-auto rounded-full"
+              src="./assets/gifs/animation_500_l8xjxko2.gif"
+              alt=""
+            />
+          </div>
+          <div class="absolute right-6 bottom-6">
+            <img class="w-14" src="./assets/svgs/world_map.svg" alt="" />
+          </div>
+        </div>
+        <div class="bg-white p-5 flex-1 relative">
+          <div class="flex justify-center">
+            <img
+              class="w-80 h-auto"
+              src="./assets/gifs/64259-how-much-do-you-weigh-in-gb.gif"
+              alt=""
+            />
+          </div>
+          <h1 class="text-[#262B3F] text-6xl">
+            Tips on <br />
+            Building
+          </h1>
+          <h1 class="text-gradient text-6xl mb-5">Credit Score</h1>
+          <p>Get free tips on how to manage your</p>
+          <p>finances abd build your credit score</p>
+
+          <div class="absolute right-6 bottom-6">
+            <img class="w-14" src="./assets/svgs/world_map.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- 1st -->
+      <div
+        class="container mx-auto flex justify-between mt-28 relative bg-white p-8"
+      >
+        <div class="bg-[#1957F0] max-w-fit p-2 absolute -top-10">
+          <h4 class="text-white">LAUNCHING SOON</h4>
+        </div>
+        <div class="flex-1">
+          <img src="./assets/gifs/animation_500_l8xjo4mn.gif" alt="" />
+        </div>
+        <div class="flex-1">
+          <h2 class="text-[#262B3F] text-7xl font-extrabold pt-20">
+            Student Loan
+          </h2>
+          <h2 class="text-7xl text-gradient font-extrabold">for Immigrants</h2>
+          <div class="max-w-sm w-full my-5">
+            <p>
+              Shop from millions of vehicles and pre-qualify for financing with
+              no impact on your credit score, all from the comfort of your own
+              home.
+            </p>
+          </div>
+          <button
+            class="bg-white text-[#1957F0] border-[#E9E9E9] p-3 border-[1px]"
+          >
+            Join our waitlist
+          </button>
+        </div>
+        <div class="absolute right-6 bottom-6">
+          <img class="w-14" src="./assets/svgs/world_map.svg" alt="" />
+        </div>
+      </div>
+      <!-- 2nd -->
+      <div
+        class="container mx-auto flex justify-between mt-28 relative bg-white p-8"
+      >
+        <div class="bg-[#1957F0] max-w-fit p-2 absolute -top-10">
+          <h4 class="text-white">LAUNCHING SOON</h4>
+        </div>
+        <div class="flex-1">
+          <img src="./assets/gifs/animation_500_l8xkfofz.gif" alt="" />
+        </div>
+        <div class="flex-1">
+          <h2 class="text-[#262B3F] text-7xl font-extrabold pt-20">Rent</h2>
+          <h2 class="text-7xl text-gradient font-extrabold">Guarantee</h2>
+          <div class="max-w-sm w-full my-5">
+            <p>
+              Shop from millions of vehicles and pre-qualify for financing with
+              no impact on your credit score, all from the comfort of your own
+              home.
+            </p>
+          </div>
+          <button
+            class="bg-white text-[#1957F0] border-[#E9E9E9] p-3 border-[1px]"
+          >
+            Join our waitlist
+          </button>
+        </div>
+        <div class="absolute right-6 bottom-6">
+          <img class="w-14" src="./assets/svgs/world_map.svg" alt="" />
+        </div>
+      </div>
+      <!-- 3th -->
+      <div
+        class="container mx-auto flex justify-between mt-28 relative bg-white p-8"
+      >
+        <div class="bg-[#1957F0] max-w-fit p-2 absolute -top-10">
+          <h4 class="text-white">LAUNCHING SOON</h4>
+        </div>
+        <div class="flex-1">
+          <img src="./assets/gifs/animation_500_l8xje41z.gif" alt="" />
+        </div>
+        <div class="flex-1">
+          <h2 class="text-[#262B3F] text-7xl font-extrabold pt-20">
+            Access to
+          </h2>
+          <h2 class="text-7xl text-gradient font-extrabold">Mortgages</h2>
+          <div class="max-w-sm w-full my-5">
+            <p>
+              Shop from millions of vehicles and pre-qualify for financing with
+              no impact on your credit score, all from the comfort of your own
+              home.
+            </p>
+          </div>
+          <button
+            class="bg-white text-[#1957F0] border-[#E9E9E9] p-3 border-[1px]"
+          >
+            Join our waitlist
+          </button>
+        </div>
+        <div class="absolute right-6 bottom-6">
+          <img class="w-14" src="./assets/svgs/world_map.svg" alt="" />
+        </div>
+      </div>
+      <!-- 4th -->
+      <div
+        class="container mx-auto flex justify-between mt-28 relative gap-10 bg-white p-8"
+      >
+        <div class="bg-[#1957F0] max-w-fit p-2 absolute -top-10">
+          <h4 class="text-white">LAUNCHING SOON</h4>
+        </div>
+        <div class="flex-1">
+          <img src="./assets/gifs/animation_500_l8xj9ed3.gif" alt="" />
+        </div>
+        <div class="flex-1">
+          <h2 class="text-[#262B3F] text-7xl font-extrabold pt-20">
+            Quality for
+          </h2>
+          <h2 class="text-7xl text-gradient font-extrabold">Car Loan</h2>
+          <div class="max-w-sm w-full my-5">
+            <p>
+              Shop from millions of vehicles and pre-qualify for financing with
+              no impact on your credit score, all from the comfort of your own
+              home.
+            </p>
+          </div>
+          <button
+            class="bg-white text-[#1957F0] border-[#E9E9E9] p-3 border-[1px]"
+          >
+            Join our waitlist
+          </button>
+        </div>
+        <div class="absolute right-6 bottom-6">
+          <img class="w-14" src="./assets/svgs/world_map.svg" alt="" />
+        </div>
+      </div>
+
+      <div
+        class="container mx-auto flex flex-col items-center mt-28 bg-[#040720] p-8 mb-10 pb-20"
+      >
+        <h2 class="text-7xl font-extrabold pt-20 text-white">We will be</h2>
+        <h2 class="text-7xl text-gradient font-extrabold">launching soon</h2>
+        <p class="text-white mt-5">
+          Join our waitlist to know when we launch the product to the public
+        </p>
+        <button class="bg-[#1957F0] text-white p-3 mt-10">
+          Join our waitlist
+        </button>
+      </div>
+    </section>
+
+    <script>
+      const toggleHandler = () => {
+        const doc = document.getElementById('menu');
+        doc.classList.toggle('!block');
+      };
+    </script>
+  </body>
+</html>
