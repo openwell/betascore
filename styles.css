@@ -1092,14 +1092,14 @@ select {
   background-color: rgb(18 22 45 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#1957F0\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(25 87 240 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#EFEFFC\] {
   --tw-bg-opacity: 1;
   background-color: rgb(239 239 252 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1957F0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 87 240 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#262B3F\] {
@@ -1110,6 +1110,11 @@ select {
 .bg-\[\#040720\] {
   --tw-bg-opacity: 1;
   background-color: rgb(4 7 32 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#050923\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 9 35 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-tl {
@@ -1214,6 +1219,10 @@ select {
   padding-top: 5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1237,6 +1246,11 @@ select {
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-extrabold {
@@ -1265,6 +1279,11 @@ select {
 .text-\[\#1957F0\] {
   --tw-text-opacity: 1;
   color: rgb(25 87 240 / var(--tw-text-opacity));
+}
+
+.text-\[\#050923\] {
+  --tw-text-opacity: 1;
+  color: rgb(5 9 35 / var(--tw-text-opacity));
 }
 
 .underline {
