@@ -17,11 +17,11 @@ body {
 }
 
 .hero-section {
-  background: url(/assets/svgs/hero_pattern.svg);
+  background-image: url('./assets/svgs/hero_pattern.svg');
 }
 
 .footer-section {
-  background: url(/assets/svgs/footer_pattern.svg);
+  background: url('./assets/svgs/footer_pattern.svg');
 }
 
 .text-gradient {
@@ -1112,11 +1112,6 @@ select {
   background-color: rgb(4 7 32 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#050923\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(5 9 35 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-tl {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
 }
@@ -1140,12 +1135,12 @@ select {
   padding: 0.5rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .p-4 {
   padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .p-12 {
@@ -1228,6 +1223,11 @@ select {
   line-height: 1rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1248,11 +1248,6 @@ select {
   line-height: 1;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .font-extrabold {
   font-weight: 800;
 }
@@ -1267,6 +1262,11 @@ select {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#050923\] {
+  --tw-text-opacity: 1;
+  color: rgb(5 9 35 / var(--tw-text-opacity));
+}
+
 .text-transparent {
   color: transparent;
 }
@@ -1279,11 +1279,6 @@ select {
 .text-\[\#1957F0\] {
   --tw-text-opacity: 1;
   color: rgb(25 87 240 / var(--tw-text-opacity));
-}
-
-.text-\[\#050923\] {
-  --tw-text-opacity: 1;
-  color: rgb(5 9 35 / var(--tw-text-opacity));
 }
 
 .underline {
