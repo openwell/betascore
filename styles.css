@@ -32,6 +32,40 @@ body {
   will-change: transform;
 }
 
+.guides {
+  position: absolute;
+  top: 0;
+  padding-top: 90px;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  z-index: 0;
+}
+
+.guides_container {
+  display: grid;
+  grid: 1fr / repeat(6, 1fr);
+  position: relative;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.guides_guide {
+  width: 1px;
+  background-color: #cad8f3;
+  height: 100%;
+}
+
+.guides_guide:last-of-type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 */
@@ -1212,6 +1246,10 @@ select {
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .text-center {
