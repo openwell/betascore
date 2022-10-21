@@ -1,14 +1,70 @@
 @font-face {
-  font-family: 'SF-Regular';
-  src: url('./assets/fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF')
+  font-family: 'SF';
+  src: url('./assets/fonts/sf-pro-display-cufonfonts/SF-Pro-Display-Ultralight.otf')
+    format('truetype');
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF';
+  src: url('./assets/fonts/sf-pro-display-cufonfonts/SF-Pro-Display-Thin.otf')
+    format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF';
+  src: url('./assets/fonts/sf-pro-display-cufonfonts/SF-Pro-Display-Light.otf')
+    format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF';
+  src: url('./assets/fonts/sf-pro-display-cufonfonts/SF-Pro-Display-Regular.otf')
     format('truetype');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
+@font-face {
+  font-family: 'SF';
+  src: url('./assets/fonts/sf-pro-display-cufonfonts/SF-Pro-Display-Medium.otf')
+    format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF';
+  src: url('./assets/fonts/sf-pro-display-cufonfonts/SF-Pro-Display-Semibold.otf')
+    format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF';
+  src: url('./assets/fonts/sf-pro-display-cufonfonts/SF-Pro-Display-Bold.otf')
+    format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF';
+  src: url('./assets/fonts/sf-pro-display-cufonfonts/SF-Pro-Display-Heavy.otf')
+    format('truetype');
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
 
 body {
-  font-family: 'SF-Regular', sans-serif;
+  font-family: 'SF', sans-serif;
   scroll-behavior: smooth;
 }
 .hero-section {
@@ -41,6 +97,11 @@ body {
   height: 100%;
   margin: 0 auto;
   width: 100%;
+}
+@media (max-width: 375px) {
+  .guides_container {
+    max-width: 375px;
+  }
 }
 
 .guides_guide {

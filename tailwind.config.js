@@ -10,7 +10,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['SF-Regular', ...defaultTheme.fontFamily.sans],
+        sans: ['SF', ...defaultTheme.fontFamily.sans],
       },
     },
   },
