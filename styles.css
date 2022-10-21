@@ -974,8 +974,8 @@ select {
   bottom: 1.5rem;
 }
 
-.left-1\/4 {
-  left: 25%;
+.left-\[30\%\] {
+  left: 30%;
 }
 
 .left-1 {
@@ -988,10 +988,6 @@ select {
 
 .-top-10 {
   top: -2.5rem;
-}
-
-.left-\[30\%\] {
-  left: 30%;
 }
 
 .z-10 {
@@ -1059,16 +1055,16 @@ select {
   margin-bottom: 1.25rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
 }
 
 .block {
@@ -1477,6 +1473,10 @@ select {
 
 .pt-0 {
   padding-top: 0px;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .text-left {
