@@ -89,6 +89,11 @@ body {
   height: 100%;
   z-index: 0;
 }
+@media (max-width: 375px) {
+  .guides {
+    padding-top: 30px;
+  }
+}
 .guides_container {
   display: grid;
   grid: 1fr / repeat(6, 1fr);
