@@ -1,124 +1,73 @@
-@font-face {
-  font-family: 'SF';
-  src: url('./assets/fonts/sf-pro-display-cufonfonts/SF-Pro-Display-Ultralight.otf')
-    format('truetype');
-  font-weight: 100;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SF';
-  src: url('./assets/fonts/sf-pro-display-cufonfonts/SF-Pro-Display-Thin.otf')
-    format('truetype');
-  font-weight: 200;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SF';
-  src: url('./assets/fonts/sf-pro-display-cufonfonts/SF-Pro-Display-Light.otf')
-    format('truetype');
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SF';
-  src: url('./assets/fonts/sf-pro-display-cufonfonts/SF-Pro-Display-Regular.otf')
-    format('truetype');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SF';
-  src: url('./assets/fonts/sf-pro-display-cufonfonts/SF-Pro-Display-Medium.otf')
-    format('truetype');
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SF';
-  src: url('./assets/fonts/sf-pro-display-cufonfonts/SF-Pro-Display-Semibold.otf')
-    format('truetype');
-  font-weight: 600;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SF';
-  src: url('./assets/fonts/sf-pro-display-cufonfonts/SF-Pro-Display-Bold.otf')
-    format('truetype');
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SF';
-  src: url('./assets/fonts/sf-pro-display-cufonfonts/SF-Pro-Display-Heavy.otf')
-    format('truetype');
-  font-weight: 800;
-  font-display: swap;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
 body {
-  font-family: 'SF', sans-serif;
+  font-family: 'Rubik', sans-serif;
   scroll-behavior: smooth;
 }
 .hero-section {
-  background-image: url('./assets/svgs/hero_pattern.svg');
+  background: url('./assets/images/hero_v2.png') no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 100vh;
 }
-.footer-section {
-  background: url('./assets/svgs/footer_pattern.svg');
+@media (max-width: 425px) {
+  .hero-section {
+    background: url('./assets/images/hero_v2_portrait.png') no-repeat;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+  }
 }
+
 .text-gradient {
   background-image: linear-gradient(135deg, #fba1a1 0%, #7f8ddf 100%);
   background-clip: text;
   color: transparent;
   will-change: transform;
 }
-.guides {
-  position: absolute;
-  top: 0;
-  padding-top: 90px;
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
   left: 0;
-  width: 100%;
-  min-height: 100vh;
-  height: 100%;
-  z-index: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
-@media (max-width: 375px) {
-  .guides {
-    padding-top: 30px;
-  }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
 }
-.guides_container {
-  display: grid;
-  grid: 1fr / repeat(6, 1fr);
-  position: relative;
-  max-width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-  width: 100%;
-}
-@media (max-width: 375px) {
-  .guides_container {
-    max-width: 375px;
+@media (max-width: 425px) {
+  .modal-content {
+    width: 100%;
+    margin: 0% auto;
   }
 }
 
-.guides_guide {
-  width: 1px;
-  background-color: #cad8f3;
-  height: 100%;
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
-.guides_guide:last-of-type {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @tailwind base;
