@@ -1276,8 +1276,8 @@ select{
   line-height: 1rem;
 }
 
-.text-\[40px\]{
-  font-size: 40px;
+.text-\[35px\]{
+  font-size: 35px;
 }
 
 .text-sm{
@@ -1313,10 +1313,6 @@ select{
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
-}
-
-.text-\[35px\]{
-  font-size: 35px;
 }
 
 .font-medium{
