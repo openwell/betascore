@@ -11,9 +11,9 @@
   <body>
     <main class="hero-section">
       <!-- Hero section -->
-      <div class="container mx-auto relative">
+      <nav class="container mx-auto">
         <div
-          class="flex items-center justify-between px-4 lg:px-0 py-7 md:justify-start md:space-x-10"
+          class="flex items-center justify-between px-4 py-7 md:justify-start md:space-x-10"
         >
           <!-- Logo -->
           <div class="flex justify-start lg:w-0 lg:flex-1">
@@ -35,9 +35,9 @@
             </button>
           </div>
         </div>
-      </div>
+      </nav>
 
-      <div class="container mx-auto px-5 lg:px-0 sm:pb-14 pt-20 sm:pt-48">
+      <div class="container mx-auto px-5 pt-10 sm:pb-14 sm:pt-48">
         <h1
           class="text-[35px] leading-8 lg:text-6xl font-medium sm:font-semibold text-[#00154A]"
         >
@@ -62,10 +62,18 @@
         </p>
         <button
           id="myBtn"
-          class="mt-8 mb-10 bg-[#00154A] font-light text-sm p-3 text-white rounded-md"
+          class="mt-8 mb-10 bg-[#00154A] font-light text-sm p-3 text-white rounded-md z-10"
         >
           Join our waitlist
         </button>
+      </div>
+      <div class="hero_svg">
+        <img
+          class="w-[320px] sm:block sm:w-[350px] lg:w-[450px] xl:w-full"
+          src="./assets/svgs/iPhone 12 Pro (Wooden Hands)_large.svg"
+          alt=""
+          srcset=""
+        />
       </div>
     </main>
 
@@ -114,65 +122,75 @@
       </div>
     </section>
     <!-- Section Two -->
-    <section
-      class="container m-auto flex flex-col-reverse lg:flex-row justify-between bg-[#00154A] text-white"
-    >
-      <div class="flex-1 py-7 sm:py-14 px-4 sm:pl-14">
-        <h4 class="text-4xl font-semibold text-center sm:text-left">
-          Secure Your Financial <br />
-          Future with Credit
-        </h4>
-        <div class="max-w-md lg:max-w-xl">
-          <p
-            class="sm:font-light text-base sm:text-sm py-8 text-[#CAD2E2] text-center sm:text-left"
-          >
-            Beta Score is an innovative platform that empowers immigrants,
-            international students and skilled workers by giving them access to
-            their credit history.
-          </p>
-          <ul class="list-disc pl-4 text-[#CAD2E2]">
-            <li class="mb-4">
-              <p class="font-semibold text-lg">
-                Student Loan for International Students
-              </p>
-              <p class="text-sm font-light">
-                Don’t let your immigration status or lack of credit history
-                prevent you from getting the education you want.
-              </p>
-            </li>
-            <li class="mb-4">
-              <p class="font-semibold text-lg">Rent Guarantee</p>
-              <p class="text-sm font-light">
-                Beta Score aims to provide access to rent guarantee insurance
-                for immigrants.
-              </p>
-            </li>
-            <li class="mb-4">
-              <p class="font-semibold text-lg">Access to Mortgage</p>
-              <p class="text-sm font-light">
-                As a first-time home buyer, you'll need a good credit report to
-                get a mortgage. Beta Score helps immigrants build credit.
-              </p>
-            </li>
-            <li class="mb-4">
-              <p class="font-semibold text-lg">Qualify for A Car Loan</p>
-              <p class="text-sm font-light">
-                Beta Score helps immigrants build credit so they can qualify for
-                car loans and achieve the milestone of buying a car.
-              </p>
-            </li>
-          </ul>
-        </div>
+    <section class="bg-[#00154A]">
+      <div
+        class="container m-auto flex flex-col-reverse lg:flex-row justify-between text-white"
+      >
+        <div class="flex-1 py-7 sm:py-14 px-4 sm:pl-14">
+          <h4 class="text-4xl font-semibold text-center sm:text-left">
+            Secure Your Financial <br />
+            Future with Credit
+          </h4>
+          <div class="max-w-md lg:max-w-xl">
+            <p
+              class="sm:font-light text-base sm:text-sm py-8 text-[#CAD2E2] text-center sm:text-left"
+            >
+              Beta Score is an innovative platform that empowers immigrants,
+              international students and skilled workers by giving them access
+              to their credit history.
+            </p>
+            <ul class="pl-8 text-[#CAD2E2]">
+              <div class="relative">
+                <li class="mb-4">
+                  <p class="font-semibold text-lg">
+                    Student Loan for International Students
+                  </p>
+                  <p class="text-sm font-light">
+                    Don’t let your immigration status or lack of credit history
+                    prevent you from getting the education you want.
+                  </p>
+                </li>
+              </div>
+              <div class="relative">
+                <li class="mb-4">
+                  <p class="font-semibold text-lg">Rent Guarantee</p>
+                  <p class="text-sm font-light">
+                    Beta Score aims to provide access to rent guarantee
+                    insurance for immigrants.
+                  </p>
+                </li>
+              </div>
+              <div class="relative">
+                <li class="mb-4">
+                  <p class="font-semibold text-lg">Access to Mortgage</p>
+                  <p class="text-sm font-light">
+                    As a first-time home buyer, you'll need a good credit report
+                    to get a mortgage. Beta Score helps immigrants build credit.
+                  </p>
+                </li>
+              </div>
+              <div class="relative">
+                <li class="mb-4">
+                  <p class="font-semibold text-lg">Qualify for A Car Loan</p>
+                  <p class="text-sm font-light">
+                    Beta Score helps immigrants build credit so they can qualify
+                    for car loans and achieve the milestone of buying a car.
+                  </p>
+                </li>
+              </div>
+            </ul>
+          </div>
 
-        <button
-          id="myBtn"
-          class="text-[#00154A] bg-white p-3 mt-10 mb-5 sm:mb-0 text-sm rounded-md"
-        >
-          Join our waitlist
-        </button>
-      </div>
-      <div class="flex-1">
-        <img src="./assets/images/two_phone.png" alt="" />
+          <button
+            id="myBtn"
+            class="text-[#00154A] bg-white p-3 mt-10 mb-5 sm:mb-0 text-sm rounded-md"
+          >
+            Join our waitlist
+          </button>
+        </div>
+        <div class="flex-1">
+          <img src="./assets/images/two_phone.png" alt="" />
+        </div>
       </div>
     </section>
 
@@ -198,33 +216,45 @@
       </div>
     </section>
 
-    <footer
-      class="container mx-auto flex flex-col items-center my-20 bg-[#00154A] p-8 py-24 relative"
-    >
-      <h2 class="text-4xl sm:text-7xl font-medium sm:font-semibold text-white">
-        We will be
-      </h2>
-      <h2
-        class="text-4xl sm:text-7xl text-gradient font-medium sm:font-semibold pb-3"
+    <footer class="bg-[#00154A]">
+      <div
+        class="container mx-auto flex flex-col items-center my-20 p-8 py-24 relative"
       >
-        launching soon
-      </h2>
-      <p class="text-white mt-5 text-center">
-        Join our waitlist to know when we launch the product to the public
-      </p>
+        <h2
+          class="text-4xl sm:text-7xl font-medium sm:font-semibold text-white"
+        >
+          We will be
+        </h2>
+        <h2
+          class="text-4xl sm:text-7xl text-gradient font-medium sm:font-semibold pb-3"
+        >
+          launching soon
+        </h2>
+        <p class="text-white mt-5 text-center">
+          Join our waitlist to know when we launch the product to the public
+        </p>
 
-      <button
-        id="myBtn"
-        class="bg-white text-[#040720] p-3 mt-10 text-sm sm:text-base rounded-md"
-      >
-        Join our waitlist
-      </button>
+        <button
+          id="myBtn"
+          class="bg-white text-[#040720] p-3 mt-10 text-sm sm:text-base rounded-md"
+        >
+          Join our waitlist
+        </button>
+      </div>
     </footer>
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
+        <div class="relative">
+          <p
+            id="thanks"
+            class="text-center absolute text-white left-0 right-0 mr-auto ml-auto bg-green-600 p-1 w-[300px] hidden"
+          >
+            Thanks for completing our survey
+          </p>
+        </div>
         <span class="close" id="close_modal">&times;</span>
         <div class="m-auto max-w-lg p-10">
           <div class="flex flex-col justify-center items-center mb-6">
@@ -250,6 +280,7 @@
             <div class="flex flex-col mb-4">
               <label for="" class="font-medium">Full name</label>
               <input
+                id="full_name"
                 class="form-input rounded-md text-sm"
                 type="text"
                 required
@@ -260,6 +291,7 @@
             <div class="flex flex-col mb-4">
               <label for="" class="font-medium">Email address</label>
               <input
+                id="email"
                 class="rounded-md text-sm"
                 type="email"
                 required
@@ -270,8 +302,8 @@
             <div class="flex flex-col mb-4">
               <label for="" class="font-medium">Country of Residence</label>
               <select
-                name="country_of_residence"
                 id="country_of_residence"
+                name="country_of_residence"
                 required
                 class="rounded-md text-sm"
               >
@@ -383,9 +415,10 @@
               </div>
               <div class="my-4">
                 <input
+                  id="other_interest"
                   name="other_interest"
                   type="text"
-                  class="w-full text-sm rounded-md"
+                  class="w-full text-sm rounded-md hidden"
                 />
               </div>
             </div>
@@ -397,71 +430,7 @@
       </div>
     </div>
     <script src="./countries.js"></script>
-    <script>
-      // Get the modal
-      var modal = document.getElementById('myModal');
-
-      // Get the button that opens the modal
-      var btn = document.querySelectorAll('#myBtn');
-
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName('close')[0];
-
-      // When the user clicks on the button, open the modal
-      btn.forEach((e) => {
-        e.onclick = function () {
-          modal.style.display = 'block';
-        };
-      });
-
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
-        modal.style.display = 'none';
-      };
-
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = 'none';
-        }
-      };
-
-      // Add countries
-      const selectDrop = document.querySelector('#country_of_residence');
-      const selectDropTwo = document.querySelector('#country_of_origin');
-
-      let output = '';
-      countryList.forEach((country) => {
-        output += `<option value="${country}"> ${country}</option>`;
-      });
-      selectDrop.insertAdjacentHTML('beforeend', output);
-      selectDropTwo.insertAdjacentHTML('beforeend', output);
-
-      const submitForm = async (event) => {
-        event.preventDefault();
-        const form = document.querySelector('#form');
-        const data = new URLSearchParams(new FormData(form).entries());
-
-        try {
-          const rawResponse = await fetch(
-            'https://hooks.airtable.com/workflows/v1/genericWebhook/appFvW9oaoCZMKyeY/wfl7UaXeRg4ZG3Gzo/wtrSFRwo5SPwxoV8X',
-            {
-              method: 'POST',
-              mode: 'no-cors',
-              headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/x-www-form-urlencoded',
-              },
-              body: data,
-            }
-          );
-          const content = await rawResponse.text();
-          document.querySelector('#close_modal').click();
-          console.log('content', content);
-        } catch (error) {
-          console.log('error', error);
-        }
-      };
-    </script>
+    <script type="module" src="./init-firebase.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

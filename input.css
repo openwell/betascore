@@ -5,18 +5,25 @@ body {
   scroll-behavior: smooth;
 }
 .hero-section {
-  background: url('./assets/images/hero_v2.png') no-repeat;
+  background: url('./assets/images/hero_gradiant.png') no-repeat;
   background-position: bottom;
   background-size: cover;
   height: 100vh;
+  z-index: -3;
 }
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
   .hero-section {
     background: url('./assets/images/hero_v2_portrait.png') no-repeat;
     width: 100vw;
     background-size: cover;
     background-position: center;
   }
+} */
+.hero_svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
 }
 
 .text-gradient {
@@ -68,6 +75,17 @@ body {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li:before {
+  content: '✓';
+  position: absolute;
+  left: -30px;
+  top: 2px;
 }
 
 @tailwind base;
