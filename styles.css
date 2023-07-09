@@ -1,135 +1,10 @@
-/**
- * @license
- *
- * Font Family: Clash Display
- * Designed by: Indian Type Foundry
- * URL: https://www.fontshare.com/fonts/clash-display
- * © 2023 Indian Type Foundry
- *
- * Font Styles:
- * Clash Display Variable(Variable font)
- * Clash Display Extralight
- * Clash Display Light
- * Clash Display Regular
- * Clash Display Medium
- * Clash Display Semibold
- * Clash Display Bold
- *
-*/
-
-/**
-* This is a variable font
-* You can controll variable axes as shown below:
-* font-variation-settings: 'wght' 700.0;
-*
-* available axes:
-
-* 'wght' (range from 200.0 to 700.0)
-
-*/
-
-@font-face {
-  font-family: 'ClashDisplay-Variable';
-
-  src: url('../assets/fonts/ClashDisplay-Variable.woff2') format('woff2'),
-       url('../assets/fonts/ClashDisplay-Variable.woff') format('woff'),
-       url('../assets/fonts/ClashDisplay-Variable.ttf') format('truetype');
-
-  font-weight: 200 700;
-
-  font-display: swap;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay-Extralight';
-
-  src: url('../assets/fonts/ClashDisplay-Extralight.woff2') format('woff2'),
-       url('../assets/fonts/ClashDisplay-Extralight.woff') format('woff'),
-       url('../assets/fonts/ClashDisplay-Extralight.ttf') format('truetype');
-
-  font-weight: 200;
-
-  font-display: swap;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay-Light';
-
-  src: url('../assets/fonts/ClashDisplay-Light.woff2') format('woff2'),
-       url('../assets/fonts/ClashDisplay-Light.woff') format('woff'),
-       url('../assets/fonts/ClashDisplay-Light.ttf') format('truetype');
-
-  font-weight: 300;
-
-  font-display: swap;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay-Regular';
-
-  src: url('../assets/fonts/ClashDisplay-Regular.woff2') format('woff2'),
-       url('../assets/fonts/ClashDisplay-Regular.woff') format('woff'),
-       url('../assets/fonts/ClashDisplay-Regular.ttf') format('truetype');
-
-  font-weight: 400;
-
-  font-display: swap;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay-Medium';
-
-  src: url('../assets/fonts/ClashDisplay-Medium.woff2') format('woff2'),
-       url('../assets/fonts/ClashDisplay-Medium.woff') format('woff'),
-       url('../assets/fonts/ClashDisplay-Medium.ttf') format('truetype');
-
-  font-weight: 500;
-
-  font-display: swap;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay-Semibold';
-
-  src: url('../assets/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
-       url('../assets/fonts/ClashDisplay-Semibold.woff') format('woff'),
-       url('../assets/fonts/ClashDisplay-Semibold.ttf') format('truetype');
-
-  font-weight: 600;
-
-  font-display: swap;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ClashDisplay-Bold';
-
-  src: url('../assets/fonts/ClashDisplay-Bold.woff2') format('woff2'),
-       url('../assets/fonts/ClashDisplay-Bold.woff') format('woff'),
-       url('../assets/fonts/ClashDisplay-Bold.ttf') format('truetype');
-
-  font-weight: 700;
-
-  font-display: swap;
-
-  font-style: normal;
-}
+/* @import url('./css/clash-display.css');
+@import url('./css/aeonik.css'); */
 
 @font-face {
   font-family: 'Aeonik-Air';
 
-  src: url('../assets/fonts-Aeonik/Aeonik-Air.ttf') format('truetype');
+  src: url('./assets/fonts-Aeonik/Aeonik-Air.ttf') format('truetype');
 
   font-weight: 100;
 
@@ -141,7 +16,7 @@
 @font-face {
   font-family: 'Aeonik-Thin';
 
-  src: url('../assets/fonts-Aeonik/Aeonik-Thin.ttf') format('truetype');
+  src: url('./assets/fonts-Aeonik/Aeonik-Thin.ttf') format('truetype');
 
   font-weight: 200;
 
@@ -153,7 +28,7 @@
 @font-face {
   font-family: 'Aeonik-Light';
 
-  src: url('../assets/fonts-Aeonik/Aeonik-Light.ttf') format('truetype');
+  src: url('./assets/fonts-Aeonik/Aeonik-Light.ttf') format('truetype');
 
   font-weight: 300;
 
@@ -165,7 +40,7 @@
 @font-face {
   font-family: 'Aeonik-Regular';
 
-  src: url('../assets/fonts-Aeonik/Aeonik-Regular.ttf') format('truetype');
+  src: url('./assets/fonts-Aeonik/Aeonik-Regular.ttf') format('truetype');
 
   font-weight: 400;
 
@@ -177,7 +52,7 @@
 @font-face {
   font-family: 'Aeonik-Medium';
 
-  src: url('../assets/fonts-Aeonik/Aeonik-Medium.ttf') format('truetype');
+  src: url('./assets/fonts-Aeonik/Aeonik-Medium.ttf') format('truetype');
 
   font-weight: 500;
 
@@ -189,7 +64,7 @@
 @font-face {
   font-family: 'Aeonik-Bold';
 
-  src: url('../assets/fonts-Aeonik/Aeonik-Bold.ttf') format('truetype');
+  src: url('./assets/fonts-Aeonik/Aeonik-Bold.ttf') format('truetype');
 
   font-weight: 600;
 
@@ -201,7 +76,107 @@
 @font-face {
   font-family: 'Aeonik-Black';
 
-  src: url('../assets/fonts-Aeonik/Aeonik-Black.ttf') format('truetype');
+  src: url('./assets/fonts-Aeonik/Aeonik-Black.ttf') format('truetype');
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  font-style: normal;
+}
+
+/*  */
+
+@font-face {
+  font-family: 'ClashDisplay-Variable';
+
+  src: url('./assets/fonts/ClashDisplay-Variable.woff2') format('woff2'),
+    url('./assets/fonts/ClashDisplay-Variable.woff') format('woff'),
+    url('./assets/fonts/ClashDisplay-Variable.ttf') format('truetype');
+
+  font-weight: 200 700;
+
+  font-display: swap;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Extralight';
+
+  src: url('./assets/fonts/ClashDisplay-Extralight.woff2') format('woff2'),
+    url('./assets/fonts/ClashDisplay-Extralight.woff') format('woff'),
+    url('./assets/fonts/ClashDisplay-Extralight.ttf') format('truetype');
+
+  font-weight: 200;
+
+  font-display: swap;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Light';
+
+  src: url('./assets/fonts/ClashDisplay-Light.woff2') format('woff2'),
+    url('./assets/fonts/ClashDisplay-Light.woff') format('woff'),
+    url('./assets/fonts/ClashDisplay-Light.ttf') format('truetype');
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+
+  src: url('./assets/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+    url('./assets/fonts/ClashDisplay-Regular.woff') format('woff'),
+    url('./assets/fonts/ClashDisplay-Regular.ttf') format('truetype');
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Medium';
+
+  src: url('./assets/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+    url('./assets/fonts/ClashDisplay-Medium.woff') format('woff'),
+    url('./assets/fonts/ClashDisplay-Medium.ttf') format('truetype');
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Semibold';
+
+  src: url('./assets/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+    url('./assets/fonts/ClashDisplay-Semibold.woff') format('woff'),
+    url('./assets/fonts/ClashDisplay-Semibold.ttf') format('truetype');
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Bold';
+
+  src: url('./assets/fonts/ClashDisplay-Bold.woff2') format('woff2'),
+    url('./assets/fonts/ClashDisplay-Bold.woff') format('woff'),
+    url('./assets/fonts/ClashDisplay-Bold.ttf') format('truetype');
 
   font-weight: 700;
 
@@ -313,7 +288,7 @@ h6 {
   font-family: 'Aeonik-Bold', sans-serif;
 }
 
-footer h3{
+footer h3 {
   font-family: 'Aeonik-Medium', sans-serif;
 }
 
@@ -349,8 +324,7 @@ footer h3{
   font-family: 'Aeonik-Black', sans-serif;
 }
 
-/*! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
-*/
+/* ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
