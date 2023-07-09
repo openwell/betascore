@@ -84,34 +84,34 @@ ul li:before {
 h1,
 h3,
 h6 {
-  font-family: 'Aeonik-Bold';
+  font-family: 'Aeonik-Bold', sans-serif;
 }
 footer h3{
-  font-family: 'Aeonik-Medium';
+  font-family: 'Aeonik-Medium', sans-serif;
 }
 .clashDisplay {
-  font-family: 'ClashDisplay-Bold';
+  font-family: 'ClashDisplay-Bold', sans-serif;
 }
 .aeonik100 {
-  font-family: 'Aeonik-Air';
+  font-family: 'Aeonik-Air', sans-serif;
 }
 .aeonik200 {
-  font-family: 'Aeonik-Thin';
+  font-family: 'Aeonik-Thin', sans-serif;
 }
 .aeonik300 {
-  font-family: 'Aeonik-Light';
+  font-family: 'Aeonik-Light', sans-serif;
 }
 .aeonik400 {
-  font-family: 'Aeonik-Regular';
+  font-family: 'Aeonik-Regular', sans-serif;
 }
 .aeonik500 {
-  font-family: 'Aeonik-Medium';
+  font-family: 'Aeonik-Medium', sans-serif;
 }
 .aeonik600 {
-  font-family: 'Aeonik-Bold';
+  font-family: 'Aeonik-Bold', sans-serif;
 }
 .aeonik700 {
-  font-family: 'Aeonik-Black';
+  font-family: 'Aeonik-Black', sans-serif;
 }
 
 @tailwind base;
