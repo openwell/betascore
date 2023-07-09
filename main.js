@@ -1,5 +1,3 @@
-import { saveData } from './init-firebase.js';
-
 // Get the modal
 let modal = document.getElementById('myModal');
 
@@ -48,6 +46,9 @@ document.querySelector('#others').addEventListener('click', (e) => {
 const submitForm = async (event) => {
   event.preventDefault();
 
+  const submitButton = document.querySelector('#submitButton');
+  submitButton.innerText = '...Submitting';
+
   const fullName = document.querySelector('#full_name');
   const email = document.querySelector('#email');
   const countryOfResidence = document.querySelector('#country_of_residence');
@@ -61,26 +62,35 @@ const submitForm = async (event) => {
   const carLoanInterest = document.querySelector('#car_loan_interest');
   const otherInterest = document.querySelector('#other_interest');
 
+  const raw = {
+    fullName: fullName.value,
+    email: email.value,
+    countryOfResidence: countryOfResidence.value,
+    countryOfOrigin: countryOfOrigin.value,
+    interests: {
+      creditCardInterest: creditCardInterest.checked,
+      mortgageInterest: mortgageInterest.checked,
+      rentGuarantorInterest: rentGuarantorInterest.checked,
+      studentLoanInterest: studentLoanInterest.checked,
+      carLoanInterest: carLoanInterest.checked,
+      otherInterest: otherInterest.value,
+    },
+  };
+
   try {
-    await saveData({
-      fullName: fullName.value,
-      email: email.value,
-      countryOfResidence: countryOfResidence.value,
-      countryOfOrigin: countryOfOrigin.value,
-      interests: {
-        creditCardInterest: creditCardInterest.checked,
-        mortgageInterest: mortgageInterest.checked,
-        rentGuarantorInterest: rentGuarantorInterest.checked,
-        studentLoanInterest: studentLoanInterest.checked,
-        carLoanInterest: carLoanInterest.checked,
-        otherInterest: otherInterest.value,
-      },
-    });
+    await axios.post(
+      'https://us-central1-betascore-waitlist.cloudfunctions.net/saveWaitList',
+      raw,
+      {
+        headers: { 'Content-Type': ['application/json'] },
+      }
+    );
   } catch (error) {
-    console.log('error', error);
+    console.log('error', error.message);
   } finally {
     form.reset();
     document.querySelector('#thanks').classList.toggle('hidden');
+    submitButton.innerText = 'Join waitlist';
     setTimeout(() => {
       document.querySelector('#thanks').classList.toggle('hidden');
       document.querySelector('#close_modal').click();

@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@import url('./css/clash-display.css');
+@import url('./css/aeonik.css');
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Aeonik-Regular', sans-serif;
   scroll-behavior: smooth;
 }
 .hero-section {
@@ -11,14 +12,7 @@ body {
   height: 100vh;
   z-index: -3;
 }
-/* @media (max-width: 425px) {
-  .hero-section {
-    background: url('./assets/images/hero_v2_portrait.png') no-repeat;
-    width: 100vw;
-    background-size: cover;
-    background-position: center;
-  }
-} */
+
 .hero_svg {
   position: absolute;
   bottom: 0;
@@ -86,6 +80,38 @@ ul li:before {
   position: absolute;
   left: -30px;
   top: 2px;
+}
+h1,
+h3,
+h6 {
+  font-family: 'Aeonik-Bold';
+}
+footer h3{
+  font-family: 'Aeonik-Medium';
+}
+.clashDisplay {
+  font-family: 'ClashDisplay-Bold';
+}
+.aeonik100 {
+  font-family: 'Aeonik-Air';
+}
+.aeonik200 {
+  font-family: 'Aeonik-Thin';
+}
+.aeonik300 {
+  font-family: 'Aeonik-Light';
+}
+.aeonik400 {
+  font-family: 'Aeonik-Regular';
+}
+.aeonik500 {
+  font-family: 'Aeonik-Medium';
+}
+.aeonik600 {
+  font-family: 'Aeonik-Bold';
+}
+.aeonik700 {
+  font-family: 'Aeonik-Black';
 }
 
 @tailwind base;

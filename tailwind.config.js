@@ -10,7 +10,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['SF', ...defaultTheme.fontFamily.sans],
+        sans: ['Aeonik-Regular', ...defaultTheme.fontFamily.sans],
       },
     },
   },
