@@ -131,7 +131,7 @@ export default function Home() {
           </h3>
           <p className="text-b-tertiary text-lg">
             Unlock the power of your transaction data and gain valuable insights
-            into your business with our platform. We'll help you make
+            into your business with our platform. We&apos;`ll help you make
             data-driven decisions for sustainable growth.
           </p>
           <div className="flex mt-10 gap-6">
