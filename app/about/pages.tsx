@@ -21,14 +21,14 @@ export default function Home() {
           </p>
           <div className="flex justify-center my-10">
             <Image
-              src="/svgs/apple-store.svg"
+              src="/images/apple-store.png"
               alt=""
               className="w-[180px] h-[56px] mr-4"
               width={165}
               height={56}
             />
             <Image
-              src="/svgs/play-store.svg"
+              src="/images/playstore.png"
               alt=""
               className="w-[180px] h-[56px]"
               width={165}
@@ -37,7 +37,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="/svgs/map-large.svg"
+              src="/images/map-of-the-world.png"
               alt=""
               width={1261}
               height={410}
@@ -102,7 +102,7 @@ export default function Home() {
         <div className="bg-b-primary-700 rounded-[80px] px-10 pt-6 pb-24 text-white">
           <div className="flex justify-center">
             <Image
-              src="/svgs/illustration-9.svg"
+              src="/images/bulb-schetch.png"
               alt=""
               className="h-[403px]"
               width={348}
@@ -122,7 +122,7 @@ export default function Home() {
         <div className="rounded-[80px] px-10 pt-6 pb-24 bg-[#DFE7E8]">
           <div className="flex justify-center">
             <Image
-              src="/svgs/illustration-11.svg"
+              src="/images/city-street.png"
               alt=""
               className="h-[403px]"
               width={442}
@@ -163,7 +163,7 @@ export default function Home() {
         </div>
         <div className="flex justify-end">
           <Image
-            src="/svgs/illustration-7.svg"
+            src="/images/illustration-one.png"
             alt=""
             className="w-[448px] self-end"
             width={448}
@@ -197,14 +197,14 @@ export default function Home() {
             </p>
             <div className="flex mt-10 gap-6">
               <Image
-                src="/svgs/apple-store.svg"
+                src="/images/apple-store.png"
                 alt=""
                 className="w-[180px] h-[56px] mr-4"
                 width={166}
                 height={56}
               />
               <Image
-                src="/svgs/play-store.svg"
+                src="/images/playstore.png"
                 alt=""
                 className="w-[180px] h-[56px]"
                 width={166}
@@ -235,7 +235,7 @@ export default function Home() {
           </p>
           <div className="flex justify-center">
             <Image
-              src="/svgs/illustration-10.svg"
+              src="/images/earth-with-cities.png"
               alt=""
               className="h-[403px]"
               width={358}
@@ -254,7 +254,7 @@ export default function Home() {
           </p>
           <div className="flex justify-center">
             <Image
-              src="/svgs/illustration-8.svg"
+              src="/images/home-bags.png"
               alt=""
               className="h-[403px]"
               width={603}

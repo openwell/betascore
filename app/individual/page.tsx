@@ -3,7 +3,7 @@ import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar';
 import Faq from '@/src/components/Faq';
 
-export default function Home() {
+export default function Individual() {
   return (
     <main className="bg-b-salty-ice">
       <header>

@@ -5,6 +5,7 @@ const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
@@ -16,7 +17,9 @@ const config: Config = {
       },
       colors: {
         'b-primary-600': '#050923',
+        'b-primary-700': '#0031B1',
         'b-primary-900': '#00154A',
+        'b-dark-400': '#415377',
         'b-dark-600': '#1B2232',
         'b-dark-800': '#090B10',
         'b-salty-ice': '#CDE3F3',
