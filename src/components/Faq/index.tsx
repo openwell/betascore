@@ -8,13 +8,13 @@ export default function FAQ() {
     {
       question: 'What is a credit check, and why is it important?',
       answer:
-        'A credit check is a process where BetaScore collects and analyses your credit information from various sources to create a comprehensive credit report. This report is vital as it provides a snapshot of your credit history, including credit accounts, payment history, outstanding debts, and any public records related to your financial behaviour. Lenders, landlords, and employers often use this report to determine if you are creditworthy and decide if to offer you credit, rent an apartment, or provide job opportunities.',
+        'A credit check is a process where Credit Bureaus or Registries collects and analyses your credit information from various sources to create a comprehensive credit report. This report is vital as it provides a snapshot of your credit history, including credit accounts, payment history, outstanding debts, and any public records related to your financial behaviour. Lenders, landlords, and employers often use this report to determine if you are creditworthy and decide if to offer you credit, rent an apartment, or provide job opportunities.',
     },
     {
       question:
         'How does BetaScore gather information to create my credit report?',
       answer:
-        'BetaScore obtains credit information from different sources, such as banks, credit card companies, and public records. These sources share data about your credit activities, including loan payments, credit card usage, and any legal judgments or bankruptcies. This information is then aggregated and organised into a comprehensive credit report.',
+        'BetaScore obtains credit information from credit registries in your country of residence. They source the data from different sources, such as banks, credit card companies, and public records. These sources share data about your credit activities, including loan payments, credit card usage, and any legal judgments or bankruptcies. This information is then aggregated and organised into a comprehensive credit report.',
     },
     {
       question: 'What information does my credit report contain?',
