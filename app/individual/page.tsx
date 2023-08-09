@@ -1,43 +1,24 @@
 import Image from 'next/image';
 import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar';
-import Faq from '@/src/components/Faq';
 
 export default function Individual() {
   return (
-    <main className="bg-b-salty-ice">
+    <main className="">
       <header>
         <NavBar />
         {/* <!-- Main --> */}
         <main className="text-center max-w-[1040px] mx-auto my-36">
           <h1 className="text-[96px] leading-none font-bold font-clashDisplay">
-            <span className="text-b-primary-700">Cross-Border </span> Credit
-            Transfer
+            <span className="text-b-primary-700">All-in-one </span> app that
+            fosters financial inclusion
           </h1>
-          <p className="text-b-dark-800 text-xl">
-            You can now travel and move across borders with 1 less thing to
-            worry about. Wherever you go, your credit score goes with you and
-            countless credit opportunities await you.
-          </p>
-          <div className="flex justify-center my-10">
-            <Image
-              src="/svgs/apple-store.svg"
-              alt=""
-              className="w-[180px] h-[56px] mr-4"
-              width={165}
-              height={56}
-            />
-            <Image
-              src="/svgs/play-store.svg"
-              alt=""
-              className="w-[180px] h-[56px]"
-              width={165}
-              height={56}
-            />
-          </div>
+          <button className="text-base py-4 text-white bg-black rounded-full px-4 my-10">
+            Request early access
+          </button>
           <div>
             <Image
-              src="/svgs/map-large.svg"
+              src="/images/hero-charts.png"
               alt=""
               width={1261}
               height={410}
@@ -45,150 +26,137 @@ export default function Individual() {
           </div>
         </main>
       </header>
-      <section className="my-[100px] max-w-[1240px] mx-auto">
-        <div className="max-w-[930px] w-full">
-          <h1 className="text-[96px] leading-none font-semibold font-clashDisplay">
-            You are only as trustworthy as your
-            <span className="text-b-primary-700"> Betascore</span>
+
+      <section className="bg-b-primary-700 px-16 pt-[60px] max-w-[1240px] mx-auto rounded-[80px] ">
+        <div className="flex flex-col items-center justify-center max-w-2xl mx-auto text-center">
+          <h1 className="text-white font-semibold text-[56px]">
+            Merge credit report from more than one country
           </h1>
-          <div className="max-w-[683px]">
-            <p className="mt-8 text-lg text-b-grey-200">
-              This is why thousand’s of businesses are using Beta Score to carry
-              out credit checks and are able to determine the credit-worthiness
-              with a 99.9% accuracy.
+          <p className="text-lg text-b-outline mb-6">
+            Lorem ipsum dolor sit amet consectetur. Ac morbi egestas diam sed ac
+            suspendisse vel. Dignissim tristique arcu nunc accumsan amet viverra
+            laoreet urna arcu. Et massa sem arcu tellus suspendisse duis blandit
+            eleifend sed.
+          </p>
+          <div className="">
+            <Image
+              src="/svgs/world-map-grey.svg"
+              alt=""
+              width={400}
+              height={200}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="grid grid-cols-2 m-[100px] max-w-[1240px] mx-auto gap-3">
+        <div className="bg-[#6E59EA] rounded-[80px] px-10 pt-20 pb-6 text-white">
+          <h3 className="text-[56px] leading-none mb-2 font-semibold">
+            View your credit report
+          </h3>
+          <p className="text-lg mb-4 text-b-outline font-light">
+            For the first time in history, your credit history and scores are
+            now transferable across borders, thereby allowing you to enjoy the
+            support and lifestyle you always had even when you migrate.
+          </p>
+          <div className="flex justify-center">
+            <Image
+              src="/svgs/illustration-1.svg"
+              alt=""
+              className="h-[403px]"
+              width={358}
+              height={382}
+            />
+          </div>
+        </div>
+        <div className="bg-black text-white rounded-[80px] px-10 pt-20">
+          <h3 className="text-[56px] leading-none font-semibold">
+            Your financial wellness
+          </h3>
+          <p className="text-lg mb-4 text-b-outline font-light">
+            Irrespective of your needs- a house, car or to obtain a credit card,
+            BetaScore makes a difference. Take control of your financial future
+            today and supercharge your credit opportunities.
+          </p>
+          <div className="flex justify-center">
+            <Image
+              src="/svgs/illustration-2.svg"
+              alt=""
+              className="h-[403px]"
+              width={603}
+              height={400}
+            />
+          </div>
+        </div>
+      </section>
+      <section className="max-w-[1240px] mx-auto mt-60">
+        <h3 className="text-8xl mb-20 font-semibold text-b-primary-900 font-clashDisplay">
+          Access to credit and financial services
+        </h3>
+        <div className=" grid grid-cols-2">
+          <div className="rounded-3xl border border-grey-200 p-10 max-w-[576px] mb-5">
+            <Image
+              src="/svgs/graduation-cap.svg"
+              alt=""
+              width={100}
+              height={100}
+            />
+            <h4 className='font-semibold text-b-primary-900 text-[56px]'>Student loan</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Ac morbi egestas diam sed
+              ac suspendisse vel. Dignissim tristique arcu nunc accumsan amet
+              viverra laoreet
+            </p>
+          </div>
+          <div className="rounded-3xl border border-grey-200 p-10 max-w-[576px] mb-5">
+            <Image
+              src="/svgs/house-percent.svg"
+              alt=""
+              width={100}
+              height={100}
+            />
+            <h4 className='font-semibold text-b-primary-900 text-[56px]'>Mortgage</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Ac morbi egestas diam sed
+              ac suspendisse vel. Dignissim tristique arcu nunc accumsan amet
+              viverra laoreet
+            </p>
+          </div>
+          <div className="rounded-3xl border border-grey-200 p-10 max-w-[576px] mb-5">
+            <Image
+              src="/svgs/bag-money.svg"
+              alt=""
+              width={100}
+              height={100}
+            />
+            <h4 className='font-semibold text-b-primary-900 text-[56px]'>Loans</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Ac morbi egestas diam sed
+              ac suspendisse vel. Dignissim tristique arcu nunc accumsan amet
+              viverra laoreet
+            </p>
+          </div>
+          <div className="rounded-3xl border border-grey-200 p-10 max-w-[576px] mb-5">
+            <Image
+              src="/svgs/house.svg"
+              alt=""
+              width={100}
+              height={100}
+            />
+            <h4 className='font-semibold text-b-primary-900 text-[56px]'>Beta rent</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Ac morbi egestas diam sed
+              ac suspendisse vel. Dignissim tristique arcu nunc accumsan amet
+              viverra laoreet
             </p>
           </div>
         </div>
       </section>
-      <section className="bg-black px-16 pt-[60px] max-w-[1240px] mx-auto rounded-[80px]">
-        <h1 className="text-white font-semibold text-[72px]">Built on Trust</h1>
-        <p className="text-lg text-b-tertiary mb-6">
-          Businesses use Betascore to verify customers’ credit worthiness 
-        </p>
-        <div className="h-[30px] flex gap-6">
-          <Image src="/svgs/okra-logo.svg" alt="" width={84} height={30} />
-          <Image
-            src="/svgs/Barclays-logo.svg"
-            alt=""
-            className="py-[6px]"
-            width={106}
-            height={18}
-          />
-          <Image
-            src="/svgs/Equifax-logo.svg"
-            alt=""
-            className="py-[6px]"
-            width={112}
-            height={20}
-          />
-          <Image
-            src="/svgs/FirstCentral Credit Bureau-logo.svg"
-            alt=""
-            className="py-[6px]"
-            width={110}
-            height={20}
-          />
-        </div>
-        <div className="w-full">
-          <Image
-            src="/images/dashboard-screen.png"
-            alt=""
-            width={1135}
-            height={200}
-          />
-        </div>
-      </section>
-      <section className="grid grid-cols-2 m-[100px] max-w-[1240px] mx-auto gap-3">
-        <div className="bg-b-primary-700 rounded-[80px] px-10 pt-6 pb-24 text-white">
-          <div className="flex justify-center">
-            <Image
-              src="/svgs/illustration-9.svg"
-              alt=""
-              className="h-[403px]"
-              width={348}
-              height={406}
-            />
-          </div>
-          <h3 className="text-[56px] leading-none font-semibold">
-            Unique Customer Insight
-          </h3>
-          <p className="text-lg text-b-outline font-light">
-            Understanding your customers is not only critical to customer
-            acquisition, but retention and advocacy. With BetaScore you will
-            gain deep and distinctive insight into your customers’ needs,
-            preferences and motivations.
-          </p>
-        </div>
-        <div className="rounded-[80px] px-10 pt-6 pb-24 bg-[#DFE7E8]">
-          <div className="flex justify-center">
-            <Image
-              src="/svgs/illustration-11.svg"
-              alt=""
-              className="h-[403px]"
-              width={442}
-              height={416}
-            />
-          </div>
-          <h3 className="text-[56px] leading-none font-semibold">
-            Unlock an untapped credit market
-          </h3>
-          <p className="text-lg text-b-grey-200 font-light">
-            Our proprietary technology and solution transfers and integrates
-            credit scores for many underserved communities and significantly
-            increases the size of the market for your business to explore.
-          </p>
-        </div>
-      </section>
-      <section className="rounded-[80px] grid grid-cols-2 max-w-[1240px] h-[778px] mx-auto bg-white px-10 py-28">
-        <div className="self-end">
-          <div className="bg-black w-[50px] h-[50px] rounded-full mb-4 flex justify-center items-center">
-            <Image src="/svgs/lamp-on.svg" alt="" width={32} height={32} />
-          </div>
-          <h3 className="text-[56px] leading-none mb-2 font-semibold">
-            Not Just Transactional Data but Behavioural Insights
-          </h3>
-          <p className="text-b-tertiary text-lg">
-            Unlock the power of your transaction data and gain valuable insights
-            into your business with our platform. We'll help you make
-            data-driven decisions for sustainable growth.
-          </p>
-          <div className="flex mt-10 gap-6">
-            <button className="text-base py-4 text-white bg-black rounded-full px-2">
-              Request early access
-            </button>
-            <button className="text-base py-4 border border-black rounded-full px-2">
-              View demo
-            </button>
-          </div>
-        </div>
-        <div className="flex justify-end">
-          <Image
-            src="/svgs/illustration-7.svg"
-            alt=""
-            className="w-[448px] self-end"
-            width={448}
-            height={462}
-          />
-        </div>
-      </section>
-      <section className="max-w-[1240px] mx-auto mt-60">
-        <h3 className="text-8xl mb-20 font-semibold font-clashDisplay">
-          <span className="text-b-purple ">One platform,</span> <br />
-          <span>endless opportunities</span>
-        </h3>
+      <section className="max-w-[1240px] mx-auto mt-20 rounded-[80px] border border-grey-200">
         <div className="rounded-[80px] grid grid-cols-2 bg-white px-20 py-20">
-          <div>
-            <div className="mb-4">
-              <Image
-                src="/svgs/earth-with-plane.svg"
-                alt=""
-                width={50}
-                height={50}
-              />
-            </div>
+          <div className="self-center">
             <h3 className="text-[56px] leading-none font-semibold">
-              Cross-Border <br />
-              Credit Opportunities
+              Get started with Betascore
             </h3>
             <p className="text-b-tertiary text-lg py-4">
               You can now travel and move across borders with 1 less thing to
@@ -212,60 +180,17 @@ export default function Individual() {
               />
             </div>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-center">
             <Image
-              src="/images/deviceframes.png"
+              src="/images/iPhone12Mockup.png"
               alt=""
-              className="w-[448px]"
-              width={448}
-              height={500}
+              className="w-[186px] h-[512px]"
+              width={186}
+              height={512}
             />
           </div>
         </div>
       </section>
-      <section className="grid grid-cols-2 m-[100px] max-w-[1240px] mx-auto gap-3">
-        <div className="bg-[#6E59EA] rounded-[80px] px-10 pt-20 pb-6 text-white">
-          <h3 className="text-[56px] leading-none mb-2 font-semibold">
-            Credit and Financial Access anywhere you go
-          </h3>
-          <p className="text-lg mb-4 text-b-outline font-light">
-            For the first time in history, your credit history and scores are
-            now transferable across borders, thereby allowing you to enjoy the
-            support and lifestyle you always had even when you migrate.
-          </p>
-          <div className="flex justify-center">
-            <Image
-              src="/svgs/illustration-10.svg"
-              alt=""
-              className="h-[403px]"
-              width={358}
-              height={382}
-            />
-          </div>
-        </div>
-        <div className="bg-black text-white rounded-[80px] px-10 pt-20">
-          <h3 className="text-[56px] leading-none font-semibold">
-            Enjoy the same lifestyle at home and abroad
-          </h3>
-          <p className="text-lg mb-4 text-b-outline font-light">
-            Irrespective of your needs- a house, car or to obtain a credit card,
-            BetaScore makes a difference. Take control of your financial future
-            today and supercharge your credit opportunities.
-          </p>
-          <div className="flex justify-center">
-            <Image
-              src="/svgs/illustration-8.svg"
-              alt=""
-              className="h-[403px]"
-              width={603}
-              height={400}
-            />
-          </div>
-        </div>
-      </section>
-
-      <Faq />
-
       <Footer />
     </main>
   );

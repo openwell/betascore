@@ -29,7 +29,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/about"
-                    className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-900"
+                    className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-500"
                   >
                     About us
                   </Link>
@@ -37,7 +37,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="#"
-                    className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-900"
+                    className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-500"
                   >
                     Blog
                   </Link>
@@ -45,7 +45,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="#"
-                    className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-900"
+                    className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-500"
                   >
                     FAQs
                   </Link>
@@ -58,7 +58,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/individual"
-                    className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-900"
+                    className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-500"
                   >
                     Individuals
                   </Link>
@@ -66,7 +66,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/business"
-                    className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-900"
+                    className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-500"
                   >
                     Businesses
                   </Link>
@@ -79,7 +79,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/privacy-policy"
-                    className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-900"
+                    className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-500"
                   >
                     Privacy Policy
                   </Link>
@@ -87,7 +87,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/terms-conditions"
-                    className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-900"
+                    className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-500"
                   >
                     Terms & Conditions
                   </Link>
@@ -97,7 +97,7 @@ export default function Footer() {
           </div>
 
           <div className="flex justify-end space-x-6">
-            <Link href="#" className="text-gray-400 hover:text-gray-500">
+            <Link href="#" >
               <span className="sr-only">Instagram</span>
               <Image
                 src="/svgs/instagram-circled.svg"
@@ -106,7 +106,7 @@ export default function Footer() {
                 height={50}
               />
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-gray-500">
+            <Link href="#" >
               <span className="sr-only">Twitter</span>
               <Image
                 src="/svgs/twitter-circled.svg"
@@ -115,7 +115,7 @@ export default function Footer() {
                 height={50}
               />
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-gray-500">
+            <Link href="#" >
               <span className="sr-only">Linkedin</span>
               <Image
                 src="/svgs/linkedin-circled.svg"

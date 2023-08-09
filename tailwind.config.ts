@@ -19,6 +19,7 @@ const config: Config = {
         'b-primary-600': '#050923',
         'b-primary-700': '#0031B1',
         'b-primary-900': '#00154A',
+        'b-dark-200': '#95A5C5',
         'b-dark-400': '#415377',
         'b-dark-600': '#1B2232',
         'b-dark-800': '#090B10',
@@ -28,6 +29,7 @@ const config: Config = {
         'b-tertiary': '#868685',
         'b-outline': '#D1D1D1',
         'b-purple': '#6E59EA',
+        'b-filigree': '#DFE7E8',
         'b-warning': '#E48900' 
       },
       fontFamily: {

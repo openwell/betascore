@@ -36,12 +36,7 @@ export default function Home() {
             />
           </div>
           <div>
-            <Image
-              src="/svgs/map-large.svg"
-              alt=""
-              width={1261}
-              height={410}
-            />
+            <Image src="/svgs/map-large.svg" alt="" width={1261} height={410} />
           </div>
         </main>
       </header>
@@ -67,24 +62,11 @@ export default function Home() {
         </p>
         <div className="h-[30px] flex gap-6">
           <Image src="/svgs/okra-logo.svg" alt="" width={84} height={30} />
-          <Image
-            src="/svgs/Barclays-logo.svg"
-            alt=""
-            className="py-[6px]"
-            width={106}
-            height={18}
-          />
-          <Image
-            src="/svgs/Equifax-logo.svg"
-            alt=""
-            className="py-[6px]"
-            width={112}
-            height={20}
-          />
+          <Image src="/svgs/Barclays-logo.svg" alt="" width={106} height={18} />
+          <Image src="/svgs/Equifax-logo.svg" alt="" width={112} height={20} />
           <Image
             src="/svgs/FirstCentral Credit Bureau-logo.svg"
             alt=""
-            className="py-[6px]"
             width={110}
             height={20}
           />

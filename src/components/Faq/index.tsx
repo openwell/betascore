@@ -9,6 +9,23 @@ export default function FAQ() {
       question: "What is a credit check, and why is it important?",
       answer: `A credit check is a process where BetaScore collects and analyses your credit information from various sources to create a comprehensive credit report. This report is vital as it provides a snapshot of your credit history, including credit accounts, payment history, outstanding debts, and any public records related to your financial behaviour. Lenders, landlords, and employers often use this report to determine if you are creditworthy and decide if to offer you credit, rent an apartment, or provide job opportunities.`,
     },
+    {
+      question: "What is a credit check, and why is it important?",
+      answer: `A credit check is a process where BetaScore collects and analyses your credit information from various sources to create a comprehensive credit report. This report is vital as it provides a snapshot of your credit history, including credit accounts, payment history, outstanding debts, and any public records related to your financial behaviour. Lenders, landlords, and employers often use this report to determine if you are creditworthy and decide if to offer you credit, rent an apartment, or provide job opportunities.`,
+    },
+    {
+      question: "What is a credit check, and why is it important?",
+      answer: `A credit check is a process where BetaScore collects and analyses your credit information from various sources to create a comprehensive credit report. This report is vital as it provides a snapshot of your credit history, including credit accounts, payment history, outstanding debts, and any public records related to your financial behaviour. Lenders, landlords, and employers often use this report to determine if you are creditworthy and decide if to offer you credit, rent an apartment, or provide job opportunities.`,
+    },
+    {
+      question: "What is a credit check, and why is it important?",
+      answer: `A credit check is a process where BetaScore collects and analyses your credit information from various sources to create a comprehensive credit report. This report is vital as it provides a snapshot of your credit history, including credit accounts, payment history, outstanding debts, and any public records related to your financial behaviour. Lenders, landlords, and employers often use this report to determine if you are creditworthy and decide if to offer you credit, rent an apartment, or provide job opportunities.`,
+    },
+
+    {
+      question: "What is a credit check, and why is it important?",
+      answer: `A credit check is a process where BetaScore collects and analyses your credit information from various sources to create a comprehensive credit report. This report is vital as it provides a snapshot of your credit history, including credit accounts, payment history, outstanding debts, and any public records related to your financial behaviour. Lenders, landlords, and employers often use this report to determine if you are creditworthy and decide if to offer you credit, rent an apartment, or provide job opportunities.`,
+    },
   ];
   return (
     <section className="max-w-[1240px] mx-auto">
