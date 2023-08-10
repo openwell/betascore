@@ -15,7 +15,7 @@ export default function FAQ() {
           padding: 'none',
         }}
         src="https://v2-embednotion.com/F-A-Qs-41ce619d445a4b26bbfb24ba11832c69?pvs=4"
-      ></iframe>
+      />
        <Footer/>
     </div>
   );
