@@ -6,6 +6,7 @@ import { Fragment, useState } from 'react';
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
+import classNames from 'classnames';
 
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -16,9 +17,6 @@ export default function NavBar() {
     { name: 'F.A.Q', href: '/faq' },
   ];
 
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(' ');
-  }
   return (
     <>
       <nav
@@ -149,10 +147,9 @@ export default function NavBar() {
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base  leading-7 text-b-dark-600">
                         Product
                         <ChevronDownIcon
-                          className={classNames(
-                            open ? 'rotate-180' : '',
-                            'h-5 w-5 flex-none'
-                          )}
+                          className={classNames('h-5 w-5 flex-none', {
+                            'rotate-180': open,
+                          })}
                           aria-hidden="true"
                         />
                       </Disclosure.Button>
