@@ -36,7 +36,8 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    target="_blank"
+                    href="https://medium.com/@info_86420"
                     className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-500"
                   >
                     Blog
@@ -97,7 +98,10 @@ export default function Footer() {
           </div>
 
           <div className="flex justify-end space-x-6">
-            <Link href="#" >
+            <Link
+              href="https://instagram.com/getbetascore?igshid=OGQ5ZDc2ODk2ZA=="
+              target="_blank"
+            >
               <span className="sr-only">Instagram</span>
               <Image
                 src="/svgs/instagram-circled.svg"
@@ -106,7 +110,10 @@ export default function Footer() {
                 height={50}
               />
             </Link>
-            <Link href="#" >
+            <Link
+              href="https://twitter.com/getbetascore?s=21&t=UZn3090cyfwEqjLjR4CDIQ"
+              target="_blank"
+            >
               <span className="sr-only">Twitter</span>
               <Image
                 src="/svgs/twitter-circled.svg"
@@ -115,7 +122,10 @@ export default function Footer() {
                 height={50}
               />
             </Link>
-            <Link href="#" >
+            <Link
+              href="https://www.linkedin.com/company/betascore/"
+              target="_blank"
+            >
               <span className="sr-only">Linkedin</span>
               <Image
                 src="/svgs/linkedin-circled.svg"

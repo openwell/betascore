@@ -11,13 +11,13 @@ export default function pages() {
           {/* <!-- Main --> */}
           <main className="max-w-[1040px] mx-auto my-24">
             <div className="flex flex-col justify-center items-center">
-              <div className="bg-b-primary-accent p-2 w-fit">
+              <div className="bg-b-primary-accent p-2 w-fit rounded">
                 <p className="text-b-primary-700 font-medium">
                   UPDATED 01/AUG/2023
                 </p>
               </div>
               <h4 className="text-b-primary-900 my-8 font-clashDisplay text-[40px] font-medium">
-                Privacy Policy
+                Betascore’s Privacy Policy
               </h4>
             </div>
             <div className="text-b-primary-900">
@@ -237,4 +237,3 @@ export default function pages() {
     </div>
   );
 }
-
