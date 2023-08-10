@@ -44,7 +44,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/faq"
                     className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-500"
                   >
                     FAQs
