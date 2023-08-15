@@ -18,11 +18,11 @@ export default function Footer() {
                 height={40}
               />
             </Link>
-            <p className="text-sm leading-6 text-white">
+            <p className="text-sm leading-6 text-white hidden lg:block">
               2023 Betascore. All rights reserved
             </p>
           </div>
-          <div className="mt-16 grid grid-cols-3 gap-8 xl:mt-0">
+          <div className="mt-10 lg:mt-16 grid grid-cols-2 lg:grid-cols-3 gap-8 xl:mt-0">
             <div>
               <h3 className="text-sm leading-6 text-white">COMPANY</h3>
               <ul role="list" className="mt-6 space-y-4">
@@ -53,7 +53,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="mt-10 md:mt-0">
+            <div className="md:mt-0">
               <h3 className="text-sm leading-6 text-white">PRODUCT</h3>
               <ul role="list" className="mt-6 space-y-4">
                 <li>
@@ -74,7 +74,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="mt-10 md:mt-0">
+            <div className="md:mt-0">
               <h3 className="text-sm leading-6 text-white">LEGAL</h3>
               <ul role="list" className="mt-6 space-y-4">
                 <li>
@@ -97,7 +97,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex justify-end space-x-6">
+          <div className="flex justify-center lg:justify-end space-x-6 pt-24 lg:pt-0">
             <Link
               href="https://instagram.com/getbetascore?igshid=OGQ5ZDc2ODk2ZA=="
               target="_blank"
@@ -135,6 +135,9 @@ export default function Footer() {
               />
             </Link>
           </div>
+          <p className="text-sm leading-6 text-white lg:hidden text-center pt-10">
+              2023 Betascore. All rights reserved
+            </p>
         </div>
       </div>
     </footer>

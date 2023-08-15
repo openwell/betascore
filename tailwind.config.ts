@@ -17,7 +17,8 @@ const config: Config = {
       },
       colors: {
         'b-primary-accent': '#EEEFFF',
-        'b-primary-600': '#050923',
+        // 'b-primary-600': '#050923',
+        'b-primary-600': '#0042EC',
         'b-primary-700': '#0031B1',
         'b-primary-900': '#00154A',
         'b-dark-200': '#95A5C5',

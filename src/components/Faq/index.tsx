@@ -62,13 +62,13 @@ export default function FAQ() {
   ];
   return (
     <section className="max-w-[1240px] mx-auto">
-      <h6 className="text-b-dark-400 text-base">FREQUENTLY ASKED QUESTIONS</h6>
-      <h3 className="text-8xl mb-16 font-clashDisplay font-semibold">
+      <h6 className="text-b-dark-400 text-sm lg:text-base">FREQUENTLY ASKED QUESTIONS</h6>
+      <h3 className="text-[40px] leading-10 lg:leading-none lg:text-8xl mb-10 lg:mb-16 lg:font-clashDisplay font-semibold">
         You asked, <br />
         We <span className="text-b-warning">answered </span>
       </h3>
-      <div className="bg-white rounded-[80px] mb-24">
-        <div className="px-6 py-12 pt-6">
+      <div className="bg-white rounded-[40px] lg:rounded-[80px] mb-24">
+        <div className="p-4 lg:px-6 lg:py-12 lg:pt-6">
           <div className="mx-auto max-w-6xl divide-y divide-gray-900/10">
             <dl className="space-y-6 divide-y divide-gray-900/10">
               {faqs.map((faq) => (
@@ -77,7 +77,7 @@ export default function FAQ() {
                     <>
                       <dt>
                         <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
-                          <span className="text-base font-semibold leading-7">
+                          <span className="text-xl lg:text-2xl font-medium leading-7">
                             {faq.question}
                           </span>
                           <span className="ml-6 flex h-7 items-center">
@@ -95,8 +95,8 @@ export default function FAQ() {
                           </span>
                         </Disclosure.Button>
                       </dt>
-                      <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                        <p className="text-base leading-7 text-gray-600">
+                      <Disclosure.Panel as="dd" className="mt-2 lg:pr-12">
+                        <p className="text-sm lg:text-base leading-7 text-gray-600">
                           {faq.answer}
                         </p>
                       </Disclosure.Panel>

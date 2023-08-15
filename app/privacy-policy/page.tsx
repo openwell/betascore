@@ -9,7 +9,7 @@ export default function pages() {
         <header>
           <NavBar />
           {/* <!-- Main --> */}
-          <main className="max-w-[1040px] mx-auto my-24">
+          <main className="max-w-[1040px] mx-auto my-24 px-5 lg:px-0">
             <div className="flex flex-col justify-center items-center">
               <div className="bg-b-primary-accent p-2 w-fit rounded">
                 <p className="text-b-primary-700 font-medium">
