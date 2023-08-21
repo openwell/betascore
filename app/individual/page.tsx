@@ -48,10 +48,10 @@ export default function Individual() {
               Merge credit report from more than one country
             </h1>
             <p className="text-sm lg:text-lg text-b-outline py-4 lg:py-6">
-              Lorem ipsum dolor sit amet consectetur. Ac morbi egestas diam sed
-              ac suspendisse vel. Dignissim tristique arcu nunc accumsan amet
-              viverra laoreet urna arcu. Et massa sem arcu tellus suspendisse
-              duis blandit eleifend sed.
+              Our credit report system will calculate your creditworthiness even
+              if you have lived in a different country and pre-qualify you for
+              opportunities in a new country based on your history and
+              worthiness.
             </p>
             <div className="">
               <Image
@@ -70,9 +70,8 @@ export default function Individual() {
               View your credit report
             </h3>
             <p className="text-sm lg:text-lg mb-4 text-b-outline font-light py-[30px]">
-              For the first time in history, your credit history and scores are
-              now transferable across borders, thereby allowing you to enjoy the
-              support and lifestyle you always had even when you migrate.
+              Credit should be about personal integrity and trustworthiness, not
+              where you have lived.
             </p>
             <div className="flex justify-center">
               <Image
@@ -89,9 +88,8 @@ export default function Individual() {
               Your financial wellness
             </h3>
             <p className="text-sm lg:text-lg mb-4 text-b-outline font-light py-[30px]">
-              Irrespective of your needs- a house, car or to obtain a credit
-              card, BetaScore makes a difference. Take control of your financial
-              future today and supercharge your credit opportunities.
+              Transform your situation with one solution that takes you from 0
+              to 1,000 in 5 minutes.
             </p>
             <div className="flex justify-center">
               <Image
@@ -122,9 +120,8 @@ export default function Individual() {
                 Student loan
               </h4>
               <p className="py-5 lg:py-[30px]">
-                Lorem ipsum dolor sit amet consectetur. Ac morbi egestas diam
-                sed ac suspendisse vel. Dignissim tristique arcu nunc accumsan
-                amet viverra laoreet
+                Empowering your education journey. Achieve your dreams without
+                financial worry. Invest in your future today.
               </p>
             </div>
             <div className="rounded-3xl border border-grey-200 p-4 lg:p-10 max-w-[576px] mb-5 flex flex-col items-center lg:items-start">
@@ -139,9 +136,8 @@ export default function Individual() {
                 Mortgage
               </h4>
               <p className="py-5 lg:py-[30px]">
-                Lorem ipsum dolor sit amet consectetur. Ac morbi egestas diam
-                sed ac suspendisse vel. Dignissim tristique arcu nunc accumsan
-                amet viverra laoreet
+                We give you mortgage opportunities while you choose what works
+                for you. Start your homeownership journey now.
               </p>
             </div>
             <div className="rounded-3xl border border-grey-200 p-4 lg:p-10 max-w-[576px] mb-5 flex flex-col items-center lg:items-start">
@@ -156,9 +152,10 @@ export default function Individual() {
                 Loans
               </h4>
               <p className="py-5 lg:py-[30px]">
-                Lorem ipsum dolor sit amet consectetur. Ac morbi egestas diam
-                sed ac suspendisse vel. Dignissim tristique arcu nunc accumsan
-                amet viverra laoreet
+                Our platform facilitates the loans you need to enable the
+                lifestyle that you deserve. Get funds quickly and conveniently
+                with our multiple loan options and opportunities through
+                BetaScore.
               </p>
             </div>
             <div className="rounded-3xl border border-grey-200 p-4 lg:p-10 max-w-[576px] mb-5 flex flex-col items-center lg:items-start">
@@ -173,9 +170,9 @@ export default function Individual() {
                 Beta rent
               </h4>
               <p className="py-5 lg:py-[30px]">
-                Lorem ipsum dolor sit amet consectetur. Ac morbi egestas diam
-                sed ac suspendisse vel. Dignissim tristique arcu nunc accumsan
-                amet viverra laoreet
+                Our rent guarantee is the solution you have been waiting for.
+                BetaScore provides the guarantees you need, and we transfer this
+                guarantee to your landlord via our partners.
               </p>
             </div>
           </div>
@@ -186,10 +183,9 @@ export default function Individual() {
               <h3 className="text-[32px] lg:text-[56px] leading-none font-semibold text-b-primary-900">
                 Get started with Betascore
               </h3>
-              <p className="text-b-tertiary text-sm sm:text-lg py-4">
-                You can now travel and move across borders with 1 less thing to
-                worry about. Wherever you go, your credit score goes with you
-                and countless credit opportunities await you.
+              <p className="text-b-grey-200 text-sm sm:text-lg py-4">
+                BetaScore is powering financial inclusion and credit
+                opportunities of the future, today!
               </p>
               <div className="flex mt-10 lg:gap-6">
                 <Image

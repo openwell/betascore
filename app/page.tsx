@@ -125,10 +125,7 @@ export default function Home() {
               Unique Customer Insight
             </h3>
             <p className="text-sm lg:text-lg text-b-outline font-light">
-              Understanding your customers is not only critical to customer
-              acquisition, but retention and advocacy. With BetaScore you will
-              gain deep and distinctive insight into your customers’ needs,
-              preferences and motivations.
+            Understanding your customers is not only critical to customer acquisition, but retention and advocacy. With BetaScore you will gain deep and distinctive insight into your customers’ needs, preferences and motivations. 
             </p>
           </div>
           <div className="rounded-[40px] lg:rounded-[80px] p-4 lg:px-10 lg:pt-6 lg:pb-24 bg-[#DFE7E8]">
@@ -145,9 +142,7 @@ export default function Home() {
               Unlock an untapped credit market
             </h3>
             <p className="text-sm lg:text-lg text-b-grey-200 font-light">
-              Our proprietary technology and solution transfers and integrates
-              credit scores for many underserved communities and significantly
-              increases the size of the market for your business to explore.
+            Our proprietary technology and solution transfers and integrates credit scores for many underserved communities and significantly increases the size of the market for your business to explore.
             </p>
           </div>
         </section>
@@ -171,7 +166,12 @@ export default function Home() {
               </button>
               <button className="text-base py-4 border border-black rounded-full px-2 w-fit flex gap-1 items-center">
                 <span>View demo</span>
-                <Image src='/svgs/video-circle.svg' width={24} height={24} alt='' />
+                <Image
+                  src="/svgs/video-circle.svg"
+                  width={24}
+                  height={24}
+                  alt=""
+                />
               </button>
             </div>
           </div>

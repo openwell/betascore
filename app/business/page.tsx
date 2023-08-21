@@ -69,9 +69,7 @@ export default function Business() {
               Serve people with unusual income pattern
             </h3>
             <p className="text-sm lg:text-lg mb-4 text-b-outline font-light py-4">
-              For the first time in history, your credit history and scores are
-              now transferable across borders, thereby allowing you to enjoy the
-              support and lifestyle you always had even when you migrate.
+            With many more people opting for flexible, irregular and even overseas remote work opportunities, Betascore provides a platform that enables businesses to serve millions of people with unusual income patterns. 
             </p>
             <div className="flex justify-center">
               <Image
@@ -88,9 +86,7 @@ export default function Business() {
               Get insight into customer’s affordability
             </h3>
             <p className="text-sm lg:text-lg mb-4 text-b-outline font-light py-4">
-              Irrespective of your needs- a house, car or to obtain a credit
-              card, BetaScore makes a difference. Take control of your financial
-              future today and supercharge your credit opportunities.
+            Data is nothing without the insights that Betascore provides to transform the data into actionable reports that give real-time decision options. 
             </p>
             <div className="flex justify-center">
               <Image
@@ -109,9 +105,7 @@ export default function Business() {
               Verify income and identity of customers
             </h3>
             <p className="text-sm lg:text-lg mb-4 text-b-outline font-light py-4">
-              For the first time in history, your credit history and scores are
-              now transferable across borders, thereby allowing you to enjoy the
-              support and lifestyle you always had even when you migrate.
+            One critical way to understand the loan profile of customers is to verify their income. Betascore provides income verification over the past years when a potential customer was not living in the new country. 
             </p>
             <div className="flex justify-center">
               <Image
@@ -128,9 +122,7 @@ export default function Business() {
               Make informed decision about your products
             </h3>
             <p className="text-sm lg:text-lg mb-4 text-b-grey-200 font-light py-4">
-              Irrespective of your needs- a house, car or to obtain a credit
-              card, BetaScore makes a difference. Take control of your financial
-              future today and supercharge your credit opportunities.
+            Our goal is to enable decision-making that can help your business onboard more customers and improve profitability all from one platform and within minutes. Why wait for weeks when you can access the information and people to grow your business today?
             </p>
             <div className="flex justify-center">
               <Image
@@ -149,9 +141,8 @@ export default function Business() {
             <h1 className="text-b-primary-900 font-semibold text-[32px] lg:text-[56px] leading-none">
               Get started with Betascore
             </h1>
-            <p className="text-sm lg:text-lg text-b-outline py-4">
-              Lorem ipsum dolor sit amet consectetur. Ac morbi egestas diam sed
-              ac suspendisse vel.
+            <p className="text-sm lg:text-lg text-b-grey-200 py-4">
+            BetaScore is powering financial inclusion and credit opportunities of the future, today!
             </p>
             <button className="text-base py-4 text-white bg-black rounded-full px-4 my-10">
               Request early access

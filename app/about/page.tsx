@@ -73,10 +73,9 @@ export default function About() {
                 </span>
               </h3>
               <p className="text-b-tertiary text-lg">
-                Lorem ipsum dolor sit amet consectetur. Ac morbi egestas diam
-                sed ac suspendisse vel. Dignissim tristique arcu nunc accumsan
-                amet viverra laoreet urna arcu. Et massa sem arcu tellus
-                suspendisse duis blandit eleifend sed.
+                To provide credit opportunities for credit invisibles, making
+                them credit invincible, enabling opportunities and access to
+                credit and financial services in the UK.
               </p>
             </div>
           </section>
@@ -91,10 +90,8 @@ export default function About() {
                 </span>
               </h3>
               <p className="text-b-tertiary text-lg">
-                Lorem ipsum dolor sit amet consectetur. Ac morbi egestas diam
-                sed ac suspendisse vel. Dignissim tristique arcu nunc accumsan
-                amet viverra laoreet urna arcu. Et massa sem arcu tellus
-                suspendisse duis blandit eleifend sed.
+                A dynamic and highly experienced team who are on a mission for
+                credit and financial inclusion for credit invisibles.
               </p>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4">
@@ -174,8 +171,8 @@ export default function About() {
               Join us in the journey
             </h3>
             <p className="text-b-grey-200">
-              Lorem ipsum dolor sit amet consectetur. Ac morbi egestas diam sed
-              ac suspendisse
+              BetaScore is powering financial inclusion and credit opportunities
+              of the future, today!
             </p>
             <button className="text-base py-4 text-white bg-black rounded-full px-4 my-10">
               Request early access
