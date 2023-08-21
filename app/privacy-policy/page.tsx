@@ -44,7 +44,7 @@ export default function pages() {
                 and Credit Reference Agencies are.
               </p>
               <br />
-              <ol className="list-decimal">
+              <ol className="list-decimal pl-6">
                 <li>
                   We, as your authorized agent, obtain your credit information
                   from credit reference agencies once a month. This means that
@@ -53,20 +53,24 @@ export default function pages() {
                   credit reference agencies are authorized to rely on this
                   authorization.
                 </li>
+                <br />
                 <li>
                   We acts as an intermediary, connecting the Customer with
                   potential lenders and facilitating the credit application
                   process.
                 </li>
+                <br />
                 <li>
                   We provide assistance and guidance in understanding credit
                   products, completing applications, and submitting them to
                   lenders on behalf of the Customer.
                 </li>
+                <br />
                 <li>
                   We do not guarantee the approval of any credit applications or
                   the availability of specific credit products.
                 </li>
+                <br />
                 <li>
                   We will present your credit report and credit score to you if
                   you pass our identity authentication process for security
@@ -74,6 +78,7 @@ export default function pages() {
                   we are not required to notify you of the reasons for the
                   failure.
                 </li>
+                <br />
                 <li>
                   We obtain this information through a “search” of your credit
                   records. A soft search does not affect your credit score.
@@ -90,7 +95,7 @@ export default function pages() {
                 Acceptable Use Policy and you are:
               </p>
               <br />
-              <ul className="list-disc">
+              <ul className="list-disc pl-6">
                 <li>over 18 years’ old</li>
                 <li>
                   a real, live person accessing our services for your personal
@@ -119,7 +124,7 @@ export default function pages() {
                 Terms (for example, you’re using our services for business use
                 or on someone else’s behalf)
               </p>
-              <ul className="list-disc">
+              <ul className="list-disc pl-6">
                 <li>you’re rude or threatening to our staff</li>
                 <li>we decide to stop offering a service you are using</li>
                 <li>
