@@ -16,7 +16,7 @@ export default function pages() {
                   UPDATED 01/AUG/2023
                 </p>
               </div>
-              <h4 className="text-b-primary-900 my-8 font-clashDisplay text-[40px] font-medium">
+              <h4 className="text-b-primary-900 my-8 font-clashDisplay text-2xl sm:text-[40px] font-semibold text-center">
                 Betascore’s Terms and Conditions
               </h4>
             </div>

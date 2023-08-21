@@ -169,6 +169,9 @@ export default function NavBar() {
                   )}
                 </Disclosure>
               </div>
+              <button className="text-base py-4 text-white bg-black rounded-full px-2 w-full">
+                Request early access
+              </button>
             </div>
           </div>
         </Dialog.Panel>
