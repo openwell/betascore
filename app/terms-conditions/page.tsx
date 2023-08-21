@@ -757,6 +757,7 @@ export default function pages() {
                 This website is not intended for children and we do not
                 knowingly collect data relating to children.
               </p>
+              <br />
               <h4 className="font-semibold">INTERNATIONAL TRANSFER OF DATA</h4>
               <br />
               <p>
