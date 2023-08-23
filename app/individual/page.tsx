@@ -167,12 +167,12 @@ export default function Individual() {
                 className="h-[68px] w-[68px] lg:w-[100px] lg:h-[100px]"
               />
               <h4 className="font-semibold text-b-primary-900 text-[32px] lg:text-[56px]">
-                Beta rent
+                BetaRent
               </h4>
               <p className="py-5 lg:py-[30px]">
-                Our rent guarantee is the solution you have been waiting for.
-                BetaScore provides the guarantees you need, and we transfer this
-                guarantee to your landlord via our partners.
+                BetaRent is the answer to your rental woes. We use your credit
+                score to provide the guarantees you need to lease or rent a
+                property.
               </p>
             </div>
           </div>

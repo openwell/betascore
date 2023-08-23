@@ -16,9 +16,9 @@ export default function Home() {
               Transfer
             </h1>
             <p className="text-b-dark-800 text-sm lg:text-xl pt-4">
-              You can now travel and move across borders with 1 less thing to
-              worry about. Wherever you go, your credit score goes with you and
-              countless credit opportunities await you.
+              You can now relocate with one less thing to worry about. Wherever
+              you go, your credit history goes with you and countless
+              opportunities await you.
             </p>
           </div>
           <div className="flex justify-center my-10">
@@ -125,7 +125,10 @@ export default function Home() {
               Unique Customer Insight
             </h3>
             <p className="text-sm lg:text-lg text-b-outline font-light">
-            Understanding your customers is not only critical to customer acquisition, but retention and advocacy. With BetaScore you will gain deep and distinctive insight into your customers’ needs, preferences and motivations. 
+              Understanding your customers is not only critical to customer
+              acquisition, but retention and advocacy. With BetaScore you will
+              gain deep and distinctive insight into your customers’ needs,
+              preferences and motivations.
             </p>
           </div>
           <div className="rounded-[40px] lg:rounded-[80px] p-4 lg:px-10 lg:pt-6 lg:pb-24 bg-[#DFE7E8]">
@@ -142,7 +145,9 @@ export default function Home() {
               Unlock an untapped credit market
             </h3>
             <p className="text-sm lg:text-lg text-b-grey-200 font-light">
-            Our proprietary technology and solution transfers and integrates credit scores for many underserved communities and significantly increases the size of the market for your business to explore.
+              Our proprietary technology and solution transfers and integrates
+              credit scores for many underserved communities and significantly
+              increases the size of the market for your business to explore.
             </p>
           </div>
         </section>

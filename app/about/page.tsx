@@ -73,9 +73,9 @@ export default function About() {
                 </span>
               </h3>
               <p className="text-b-tertiary text-lg">
-                To provide credit opportunities for credit invisibles, making
-                them credit invincible, enabling opportunities and access to
-                credit and financial services in the UK.
+                At BetaScore, we are driven by our mission to empower credit
+                invisibles, foster financial inclusion, and shape a future where
+                everyone has equal access to financial opportunities.
               </p>
             </div>
           </section>
