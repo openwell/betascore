@@ -7,11 +7,7 @@ import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import classNames from 'classnames';
 
-export interface PropTypes {
-  openModalHandler?: Function;
-}
-
-export default function NavBar({ openModalHandler }: PropTypes) {
+export default function NavBar({ openModalHandler = () => {} }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const companyList = [
     { name: 'About us', href: '/about' },
