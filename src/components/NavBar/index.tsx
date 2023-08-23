@@ -1,17 +1,17 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { Fragment, useState } from 'react';
+import { Fragment, useState } from 'react';
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
 import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import classNames from 'classnames';
 
 export interface PropTypes {
-  openModalHandler?: React.MouseEventHandler<HTMLButtonElement>;
+  openModalHandler?: Function;
 }
 
-export default function NavBar({ openModalHandler = () => {} }: PropTypes) {
+export default function NavBar({ openModalHandler }: PropTypes) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const companyList = [
     { name: 'About us', href: '/about' },
