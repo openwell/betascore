@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 const config: Config = {
@@ -32,14 +32,17 @@ const config: Config = {
         'b-outline': '#D1D1D1',
         'b-purple': '#6E59EA',
         'b-filigree': '#DFE7E8',
-        'b-warning': '#E48900' 
+        'b-warning': '#E48900',
       },
       fontFamily: {
         sans: ['Aeonik-Regular', ...defaultTheme.fontFamily.sans],
-        clashDisplay: ['var(--font-clash-display)', ...defaultTheme.fontFamily.sans],
+        clashDisplay: [
+          'var(--font-clash-display)',
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
     },
   },
-  plugins: [],
-}
-export default config
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+};
+export default config;

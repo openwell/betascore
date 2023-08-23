@@ -1,8 +1,21 @@
+'use client';
+import { useState } from 'react';
 import Image from 'next/image';
 import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar';
+import WaitList from '@/src/components/WaitList';
 
 export default function About() {
+  const [showModal, setShowModal] = useState(false);
+
+  const closeModalHandler = () => {
+    setShowModal(false);
+  };
+
+  const openModalHandler = () => {
+    setShowModal(true);
+  };
+
   const team = [
     {
       src: '/svgs/josh-avatar.svg',
@@ -44,7 +57,10 @@ export default function About() {
     <div>
       <main className="">
         <header>
-          <NavBar />
+          {/*  */}
+          <WaitList showModal={showModal} closeHandler={closeModalHandler} />
+          {/*  */}
+          <NavBar openModalHandler={openModalHandler}/>
           {/* <!-- Main --> */}
           <main className="text-center max-w-[1040px] mx-auto my-10 lg:my-36">
             <h1 className="text-[40px] lg:text-[96px] leading-none font-bold font-clashDisplay text-b-primary-900">
@@ -174,7 +190,10 @@ export default function About() {
               BetaScore is powering financial inclusion and credit opportunities
               of the future, today!
             </p>
-            <button className="text-base py-4 text-white bg-black rounded-full px-4 my-10">
+            <button
+              onClick={openModalHandler}
+              className="text-base py-4 text-white bg-black rounded-full px-4 my-10"
+            >
               Request early access
             </button>
           </section>

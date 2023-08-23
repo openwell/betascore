@@ -1,11 +1,26 @@
-import React from 'react';
+'use client';
+import { useState } from 'react';
 import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar';
+import WaitList from '@/src/components/WaitList';
 
 export default function FAQ() {
+  const [showModal, setShowModal] = useState(false);
+
+  const closeModalHandler = () => {
+    setShowModal(false);
+  };
+
+  const openModalHandler = () => {
+    setShowModal(true);
+  };
   return (
     <div>
-      <NavBar/>
+      {/*  */}
+      <WaitList showModal={showModal} closeHandler={closeModalHandler} />
+      {/*  */}
+      <NavBar openModalHandler={openModalHandler} />
+
       <iframe
         style={{
           width: '100%',
@@ -16,7 +31,7 @@ export default function FAQ() {
         }}
         src="https://v2-embednotion.com/F-A-Qs-41ce619d445a4b26bbfb24ba11832c69?pvs=4"
       />
-       <Footer/>
+      <Footer />
     </div>
   );
 }

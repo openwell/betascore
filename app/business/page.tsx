@@ -1,19 +1,34 @@
+'use client';
+import { useState } from 'react';
 import Image from 'next/image';
 import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar';
-import Faq from '@/src/components/Faq';
+import WaitList from '@/src/components/WaitList';
+
 
 export default function Business() {
+  const [showModal, setShowModal] = useState(false);
+
+  const closeModalHandler = () => {
+    setShowModal(false);
+  };
+
+  const openModalHandler = () => {
+    setShowModal(true);
+  };
   return (
     <main className="">
       <header>
-        <NavBar />
+        <NavBar openModalHandler={openModalHandler}/>
+          {/*  */}
+          <WaitList showModal={showModal} closeHandler={closeModalHandler} />
+        {/*  */}
         {/* <!-- Main --> */}
         <main className="text-center max-w-[1040px] mx-auto my-10 lg:my-36">
           <h1 className="text-[40px] lg:text-[96px] leading-none font-bold text-b-primary-900 font-clashDisplay">
             Access to a new demography of customers
           </h1>
-          <button className="text-base py-4 text-white bg-black rounded-full px-4 my-10">
+          <button onClick={openModalHandler} className="text-base py-4 text-white bg-black rounded-full px-4 my-10">
             Request early access
           </button>
           <div>
@@ -144,7 +159,7 @@ export default function Business() {
             <p className="text-sm lg:text-lg text-b-grey-200 py-4">
             BetaScore is powering financial inclusion and credit opportunities of the future, today!
             </p>
-            <button className="text-base py-4 text-white bg-black rounded-full px-4 my-10">
+            <button onClick={openModalHandler} className="text-base py-4 text-white bg-black rounded-full px-4 my-10">
               Request early access
             </button>
           </div>

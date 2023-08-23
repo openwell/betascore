@@ -1,12 +1,27 @@
+'use client';
+import { useState } from 'react';
 import Image from 'next/image';
 import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar';
+import WaitList from '@/src/components/WaitList';
 
 export default function Individual() {
+  const [showModal, setShowModal] = useState(false);
+
+  const closeModalHandler = () => {
+    setShowModal(false);
+  };
+
+  const openModalHandler = () => {
+    setShowModal(true);
+  };
   return (
     <main className="">
       <header>
-        <NavBar />
+        <NavBar openModalHandler={openModalHandler} />
+        {/*  */}
+        <WaitList showModal={showModal} closeHandler={closeModalHandler} />
+        {/*  */}
         {/* <!-- Main --> */}
         <main className="text-center max-w-[1170px] mx-auto my-10 lg:my-36 px-5 lg:px-0">
           <div className="max-w-[1040px] mx-auto">
@@ -14,7 +29,10 @@ export default function Individual() {
               <span className="text-b-primary-600">All-in-one </span> <br /> app
               that fosters financial inclusion
             </h1>
-            <button className="text-base py-4 text-white bg-black rounded-full px-4 my-10">
+            <button
+              onClick={openModalHandler}
+              className="text-base py-4 text-white bg-black rounded-full px-4 my-10"
+            >
               Request early access
             </button>
           </div>

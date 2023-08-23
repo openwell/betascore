@@ -1,13 +1,25 @@
+'use client';
+import { useState } from 'react';
 import Image from 'next/image';
 import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar';
 import Faq from '@/src/components/Faq';
+import WaitList from '@/src/components/WaitList';
 
 export default function Home() {
+  const [showModal, setShowModal] = useState(false);
+
+  const closeModalHandler = () => {
+    setShowModal(false);
+  };
+
+  const openModalHandler = () => {
+    setShowModal(true);
+  };
   return (
     <main className="bg-b-salty-ice">
       <header>
-        <NavBar />
+        <NavBar openModalHandler={openModalHandler} />
         {/* <!-- Main --> */}
         <main className="text-center max-w-[1040px] mx-auto my-20 lg:my-36">
           <div className="p-5 lg:p-0">
@@ -42,6 +54,9 @@ export default function Home() {
           </div>
         </main>
       </header>
+      {/*  */}
+      <WaitList showModal={showModal} closeHandler={closeModalHandler} />
+      {/*  */}
       <div className="px-5 lg:p-0">
         {/* section 1 */}
         <section className="my-8 lg:my-[100px] max-w-[1240px] mx-auto">
@@ -166,7 +181,10 @@ export default function Home() {
               you make data-driven decisions for sustainable growth.
             </p>
             <div className="flex flex-col lg:flex-row mt-10 gap-6">
-              <button className="text-base py-4 text-white bg-black rounded-full px-2 w-fit">
+              <button
+                onClick={openModalHandler}
+                className="text-base py-4 text-white bg-black rounded-full px-2 w-fit"
+              >
                 Request early access
               </button>
               <button className="text-base py-4 border border-black rounded-full px-2 w-fit flex gap-1 items-center">

@@ -1,5 +1,4 @@
 'use client';
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Fragment, useState } from 'react';
@@ -8,7 +7,11 @@ import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import classNames from 'classnames';
 
-export default function NavBar() {
+export interface PropTypes {
+  openModalHandler?: Function;
+}
+
+export default function NavBar({ openModalHandler = () => {} }: PropTypes) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const companyList = [
     { name: 'About us', href: '/about' },
@@ -89,7 +92,10 @@ export default function NavBar() {
           </Popover>
         </div>
         <div className="hidden lg:flex lg:items-center lg:flex-1 lg:justify-end">
-          <button className="text-sm p-2 px-4 bg-black text-white rounded-full">
+          <button
+            onClick={openModalHandler}
+            className="text-sm p-2 px-4 bg-black text-white rounded-full"
+          >
             Request early access
           </button>
         </div>
@@ -169,7 +175,10 @@ export default function NavBar() {
                   )}
                 </Disclosure>
               </div>
-              <button className="text-base py-4 text-white bg-black rounded-full px-2 w-full">
+              <button
+                onClick={openModalHandler}
+                className="text-base py-4 text-white bg-black rounded-full px-2 w-full"
+              >
                 Request early access
               </button>
             </div>

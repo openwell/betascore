@@ -1,13 +1,27 @@
-import React from 'react';
+'use client';
+import { useState } from 'react';
 import NavBar from '@/src/components/NavBar';
 import Footer from '@/src/components/Footer';
+import WaitList from '@/src/components/WaitList';
 
-export default function pages() {
+export default function Terms() {
+  const [showModal, setShowModal] = useState(false);
+
+  const closeModalHandler = () => {
+    setShowModal(false);
+  };
+
+  const openModalHandler = () => {
+    setShowModal(true);
+  };
   return (
     <div>
       <main className="">
         <header>
-          <NavBar />
+          <NavBar openModalHandler={openModalHandler}/>
+          {/*  */}
+          <WaitList showModal={showModal} closeHandler={closeModalHandler} />
+          {/*  */}
           {/* <!-- Main --> */}
           <main className="max-w-[1040px] mx-auto my-24 px-5 lg:px-0">
             <div className="flex flex-col justify-center items-center">
@@ -768,7 +782,9 @@ export default function pages() {
                 including Personal Data, outside of the US.
               </p>
               <br />
-              <h4 className="font-semibold">NOTIFICATION OF CHANGES AND ACCEPTANCE OF POLICY</h4>
+              <h4 className="font-semibold">
+                NOTIFICATION OF CHANGES AND ACCEPTANCE OF POLICY
+              </h4>
               <p>
                 We keep our Privacy Policy under review and will place any
                 updates here. This version is dated 1 August 2023.

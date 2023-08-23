@@ -1,4 +1,4 @@
-const countryList = [
+export const countryList = [
   'Afghanistan',
   'Åland Islands',
   'Albania',
