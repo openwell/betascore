@@ -61,7 +61,7 @@ export default function Footer() {
                     href="/individual"
                     className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-500"
                   >
-                    Individuals
+                    Individual
                   </Link>
                 </li>
                 <li>
@@ -69,7 +69,7 @@ export default function Footer() {
                     href="/business"
                     className="text-sm leading-6 text-b-salty-ice-200 hover:text-gray-500"
                   >
-                    Businesses
+                    Business
                   </Link>
                 </li>
               </ul>

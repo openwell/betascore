@@ -48,10 +48,10 @@ export default function NavBar({ openModalHandler = () => {} }) {
             href="/individual"
             className="text-sm leading-6 text-b-dark-600"
           >
-            Individuals
+            Individual
           </Link>
           <Link href="/business" className="text-sm leading-6 text-b-dark-600">
-            Businesses
+            Business
           </Link>
           <Popover className="relative">
             <Popover.Button className="inline-flex items-center gap-x-1 text-sm leading-6 text-b-dark-600">
