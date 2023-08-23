@@ -96,10 +96,10 @@ export default function Index({ showModal = false, closeHandler }) {
         <span className={Styles.close} id="close_modal" onClick={closeHandler}>
           &times;
         </span>
-        <div className="m-auto max-w-lg p-10">
+        <div className="m-auto max-w-lg sm:p-10">
           <div className="flex flex-col justify-center items-center mb-6">
             <Image
-              className="h-6 sm:h-7 w-auto"
+              className="h-10 w-auto"
               src="/svgs/blue-logo.svg"
               alt=""
               width={28}

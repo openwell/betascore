@@ -172,7 +172,10 @@ export default function NavBar({ openModalHandler = () => {} }) {
                 </Disclosure>
               </div>
               <button
-                onClick={openModalHandler}
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  openModalHandler();
+                }}
                 className="text-base py-4 text-white bg-black rounded-full px-2 w-full"
               >
                 Request early access
