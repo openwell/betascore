@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { countryList } from '../../constants/countries';
 import Styles from './waitlist.module.scss';
 import classNames from 'classnames';
+import axios from 'axios';
 
 export default function Index({ showModal = false, closeHandler }) {
   const submitForm = async (event) => {
