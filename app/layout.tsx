@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import { GTMNoScript, GTMScript } from '../src/helpers/scripts';
 
 const aeonik = localFont({
   src: [
@@ -39,7 +40,6 @@ const aeonik = localFont({
       weight: '700',
       style: 'normal',
     },
-
   ],
   variable: '--font-aeonik',
 });
@@ -62,6 +62,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${aeonik.className} ${clay_display.variable}`}>
+        <GTMNoScript />
+        <GTMScript />
         {children}
       </body>
     </html>
