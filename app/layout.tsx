@@ -1,7 +1,8 @@
 import './globals.css';
+import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
-import { GTMNoScript, GTMScript } from '../src/helpers/scripts';
+import Analytics from '../src/components/Analytics';
 
 const aeonik = localFont({
   src: [
@@ -62,8 +63,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${aeonik.className} ${clay_display.variable}`}>
-        <GTMNoScript />
-        <GTMScript />
+        <Suspense>
+          <Analytics />
+        </Suspense>
         {children}
       </body>
     </html>
