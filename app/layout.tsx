@@ -3,6 +3,7 @@ import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import Analytics from '../src/components/Analytics';
+// import { register } from 'swiper/element/bundle';
 
 const aeonik = localFont({
   src: [
@@ -44,11 +45,11 @@ const aeonik = localFont({
   ],
   variable: '--font-aeonik',
 });
-const clay_display = localFont({
-  src: '../public/fonts/ClashDisplay/ClashDisplay-Variable.woff2',
-  display: 'swap',
-  variable: '--font-clash-display',
-});
+// const clay_display = localFont({
+//   src: '../public/fonts/ClashDisplay/ClashDisplay-Variable.woff2',
+//   display: 'swap',
+//   variable: '--font-clash-display',
+// });
 
 export const metadata: Metadata = {
   title: 'Beta Score',
@@ -60,9 +61,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // register();
   return (
     <html lang="en">
-      <body className={`${aeonik.className} ${clay_display.variable}`}>
+      <body className={`${aeonik.className}`}>
         <Suspense>
           <Analytics />
         </Suspense>
