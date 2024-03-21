@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import { userReviews } from './data';
 import { FreeMode, Pagination } from 'swiper/modules';
 
-const StarReview = ({ rating }) => {
+const StarReview = ({ rating }: { rating: number }) => {
   // Calculate the number of yellow stars
   const yellowStars = Math.min(Math.max(rating, 0.5), 5);
 
@@ -55,7 +55,7 @@ export default function Index() {
           clickable: true,
           dynamicBullets: true,
         }}
-        slideActiveClass='activeSwipe'
+        slideActiveClass="activeSwipe"
         modules={[FreeMode, Pagination]}
         breakpoints={{
           320: {
