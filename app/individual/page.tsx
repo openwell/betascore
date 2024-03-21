@@ -75,7 +75,7 @@ export default function Individual() {
           </h1>
           <div className="mx-auto text-center max-w-[1370px] mb-14 xl:mb-20">
             <p className="lg:text-xl text-b-outline py-4">
-              Starting fresh in a new country shouldn't mean starting from
+              Starting fresh in a new country shouldn&apos;t mean starting from
               scratch financially. Ndewo bridges the gap, leveraging your
               existing credit history from home to empower your financial
               journey in your new location.
@@ -154,7 +154,7 @@ export default function Individual() {
               <p className="text-b-black-grey-200 font-light xl:text-2xl">
                 Move across borders, not limitations. Ndewo empowers individuals
                 like you to maintain your financial standing and enjoy the same
-                lifestyle you've built, wherever life takes you.
+                lifestyle you&apos;ve built, wherever life takes you.
               </p>
             </div>
             <div className="flex flex-col xl:flex-row justify-between xl:align-bottom">

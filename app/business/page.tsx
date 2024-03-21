@@ -134,7 +134,7 @@ export default function Business() {
               Access a New Customer Landscape: Expand Opportunities with Ndewo
             </h3>
             <p className="xl:text-lg mb-4 text-b-purple-light-300 font-light py-4">
-              Ndewo's AI-powered solutions provide access to a new demography of
+              Ndewo&apos;s AI-powered solutions provide access to a new demography of
               customers with non-traditional income or credit history,
               previously overlooked by traditional methods. Expand your reach,
               attract reliable individuals, and discover hidden opportunities by
@@ -148,7 +148,7 @@ export default function Business() {
             </h3>
             <p className="xl:text-lg mb-4 text-b-black-grey font-light py-4">
               Traditional checks often miss the whole picture. Ndewo empowers
-              you to understand your customers' true financial health through
+              you to understand your customers&apos; true financial health through
               alternative data sources and AI-powered assessments. Make informed
               decisions about loans, subscriptions, and other offerings,
               expanding access while mitigating risk.
@@ -169,7 +169,7 @@ export default function Business() {
           <div className="bg-b-black-200 text-white rounded-[20px] xl:rounded-[40px]  px-4 pt-6 lg:px-10 lg:pt-20 h-[370px] xl:h-[790px]">
             <h3 className="text-[24px] xl:text-[56px] leading-none font-semibold">
               Make Informed Decisions, Empower Your Business: Ndewo Answers the
-              "Unusual Income" Challenge.
+              &quot;Unusual Income&quot; Challenge.
             </h3>
             <p className="xl:text-lg mb-4 text-b-black-grey-200 font-light py-4">
               Unsure if a client with non-traditional income or credit invisible
@@ -187,7 +187,7 @@ export default function Business() {
               Rental product
             </p>
             <p className="pt-4 pb-6 text-b-black-grey">
-              Verify tenant’s information and complete reference in a very few
+              Verify tenant&apos;s information and complete reference in a very few
               minutes instead of 2 days
             </p>
             <button className="bg-b-light-green rounded-[40px] py-3 px-[40px] xl:py-4 xl:px-[60px] mt-24 xl:mt-0">

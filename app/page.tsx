@@ -166,7 +166,7 @@ export default function Home() {
           <div className="flex-1 rounded-[20px] xl:rounded-[40px] relative">
             <Image
               src="/images/lady_on_phone_with_phone_and_card.png"
-              alt=""
+              alt="image of lady on phone with phone and card"
               fill
             />
           </div>

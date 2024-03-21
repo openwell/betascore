@@ -168,7 +168,7 @@ export default function About() {
                   Our Vision
                 </h3>
                 <p className="text-[#A5A5A5] xl:text-xl">
-                  To be the world's leading platform for empowering
+                  To be the world&apos;s leading platform for empowering
                   credit-invisible individuals, regardless of background or
                   circumstance, by transforming their financial data into
                   pathways to financial inclusion, mobility, and security.
@@ -230,13 +230,13 @@ export default function About() {
               <div className="text-b-black-grey xl:text-2xl">
                 <p>
                   We understand the challenges credit invisibles face when
-                  moving to a new country. Traditional systems often don't
+                  moving to a new country. Traditional systems often don&apos;t
                   recognize your financial history, making it difficult to
                   access essential services and build credit locally.
                 </p>
                 <br />
                 <p>
-                  That's where Ndewo comes in. We leverage your home credit and
+                  That&apos;s where Ndewo comes in. We leverage your home credit and
                   financial data to empower you with:
                 </p>
                 <br />
@@ -259,7 +259,7 @@ export default function About() {
                 </p>
                 <br />
                 <p>
-                  We're confident that Ndewo will be your key to unlocking a
+                  We&apos;re confident that Ndewo will be your key to unlocking a
                   world of financial opportunities and achieving your dreams in
                   your new home.
                 </p>
