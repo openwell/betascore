@@ -32,3 +32,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+.activeSwipe{
+  /* border-radius: 12px;
+  border: 1px solid white; */
+  box-shadow: 0 35px 60px -15px rgba(154, 92, 176, 0.18);
+}

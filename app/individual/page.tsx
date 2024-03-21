@@ -4,6 +4,13 @@ import Image from 'next/image';
 import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar';
 import WaitList from '@/src/components/WaitList';
+import StoreIcons from '@/src/components/StoreIcons';
+import StoreButtonsGroup from '@/src/components/StoreButtonsGroup';
+
+const HorizontalSpacing = (props) => (
+  <div className="px-5 xl:px-0">{props.children}</div>
+);
+
 
 export default function Individual() {
   const [showModal, setShowModal] = useState(false);
@@ -13,8 +20,17 @@ export default function Individual() {
   };
 
   const openModalHandler = () => {
-    setShowModal(true);
+    // setShowModal(true);
   };
+
+  const items = [
+    'Rent',
+    'Credit history',
+    'Student loan',
+    'Car finance',
+    'Credit cards and loans',
+    'Mortgage',
+  ];
   return (
     <main className="">
       <header>
@@ -23,217 +39,184 @@ export default function Individual() {
         <WaitList showModal={showModal} closeHandler={closeModalHandler} />
         {/*  */}
         {/* <!-- Main --> */}
-        <main className="text-center max-w-[1170px] mx-auto my-10 lg:my-36 px-5 lg:px-0">
-          <div className="max-w-[1040px] mx-auto">
-            <h1 className="text-[40px] lg:text-[96px] leading-none font-bold font-clashDisplay text-b-primary-900">
-              <span className="text-b-primary-600">All-in-one </span> <br /> app
-              that fosters financial inclusion
+        <main className="text-center my-10 md:my-20 lg:mb-16 lg:mt-44">
+          <div className="p-5 py-0 xl:p-0 max-w-[1520px] mx-auto">
+            <h1 className="text-[32px] lg:text-5xl xl:text-7xl leading-none font-semibold text-b-black-200">
+              Financial Freedom Starts Here: All-in-One App Empowers You
             </h1>
-            <button
-              onClick={openModalHandler}
-              className="text-base py-4 text-white bg-black rounded-full px-4 my-10"
-            >
-              Request early access
-            </button>
+            <p className="mt-4 text-base lg:text-lg xl:text-xl">
+              Breakthrough financial barriers! Our All-in-One App leverages your
+              unique financial data, empowering you to build credit, access
+              essential services, and achieve financial security, regardless of
+              traditional credit history. Simplify your life, unlock
+              opportunities, and take control of your financial future.
+            </p>
+            <StoreButtonsGroup />
           </div>
 
-          <div className="flex justify-between flex-wrap lg:flex-nowrap items-center">
-            <Image
-              src="/svgs/individual-hero-1.svg"
-              alt=""
-              width={356}
-              height={472}
-            />
-            <Image
-              src="/svgs/individual-hero-2.svg"
-              alt=""
-              width={356}
-              height={472}
-            />
-            <Image
-              src="/svgs/individual-hero-3.svg"
-              alt=""
-              width={356}
-              height={472}
-            />
+          <div className="flex xl:h-[800px] bg-contain xl:bg-auto justify-center bg-[url('/images/map_with_dots.png')] bg-no-repeat bg-[center_bottom_1rem] xl:bg-[center_bottom_-1rem] relative overflow-hidden">
+            <div className="xl:absolute -bottom-[146px] xl:-bottom-[146px]">
+              <Image
+                src="/images/hands_with_ndewo_app.png"
+                alt=""
+                className="w-full xl:w-[1050px]"
+                width={1323}
+                height={992}
+              />
+            </div>
           </div>
         </main>
       </header>
-      <div className="px-5 lg:px-0">
-        <section className="bg-b-primary-700 px-4 lg:px-16 pt-10 lg:pt-[60px] max-w-[1240px] mx-auto rounded-[40px] lg:rounded-[80px] ">
-          <div className="flex flex-col items-center justify-center max-w-2xl mx-auto text-center">
-            <h1 className="text-white font-semibold text-[32px] lg:text-[56px]">
-              Merge credit report from more than one country
-            </h1>
-            <p className="text-sm lg:text-lg text-b-outline py-4 lg:py-6">
-              Our credit report system will calculate your creditworthiness even
-              if you have lived in a different country and pre-qualify you for
-              opportunities in a new country based on your history and
-              worthiness.
+      {/* section 1 */}
+      <section className="bg-b-black-200 px-4 lg:px-16 pt-[50px] xl:pt-20 max-h-[1209px] overflow-hidden">
+        <div className="flex flex-col items-center justify-center mx-auto text-center max-w-[1520px]">
+          <h1 className="text-white font-semibold text-[32px] lg:text-5xl xl:text-7xl xl:leading-[80px]">
+            Move with Your Credit History, Anywhere You Go
+          </h1>
+          <div className="mx-auto text-center max-w-[1370px] mb-14 xl:mb-20">
+            <p className="lg:text-xl text-b-outline py-4">
+              Starting fresh in a new country shouldn't mean starting from
+              scratch financially. Ndewo bridges the gap, leveraging your
+              existing credit history from home to empower your financial
+              journey in your new location.
             </p>
+          </div>
+          <div className="md:w-[70%] lg:w-[80%] xl:w-full m-auto flex justify-center">
+            <Image
+              src="/images/map_globe.png"
+              alt=""
+              className="w-ful"
+              width={1075}
+              height={890}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* section 2 */}
+      <section className="mb-10 xl:mb-16 mt-36 xl:mt-60 max-w-[1240px] mx-auto">
+        <div className="text-center">
+          <h1 className="text-[32px] lg:text-5xl xl:text-7xl leading-none font-medium text-b-black-200">
+            One platform,
+          </h1>
+          <h1 className="text-[32px] lg:text-5xl xl:text-7xl leading-none font-medium text-b-purple-light">
+            {' '}
+            Limitless Opportunities
+          </h1>
+        </div>
+      </section>
+      {/* section 3 */}
+      <HorizontalSpacing>
+        <section className="bg-b-sand max-w-[1450px] xl:h-[798px] lg:py-[80px] mx-auto border-b-orange border rounded-[20px] xl:rounded-[40px] flex flex-col lg:flex-row gap-12 lg:gap-6 xl:gap-12 overflow-hidden">
+          <div className="flex-[52%] px-5 pt-5 lg:pl-[40px] xl:pl-[80px] flex flex-col justify-between">
             <div className="">
-              <Image
-                src="/svgs/world-map-grey.svg"
-                alt=""
-                width={400}
-                height={200}
-              />
+              <h1 className="text-b-purple-light xl:text-2xl">
+                EVERYWHERE AND ANYWHERE
+              </h1>
+              <p className="text-2xl lg:text-4xl xl:text-5xl font-medium mt-10 mb-6">
+                Credit and Financial Access Anywhere You Go: Unlock a World of
+                Possibilities with Ndewo
+              </p>
+              <p className="text-base xl:text-2xl text-b-black-grey mb-6 font-light">
+                Move freely, build your future. No matter where life takes you,
+                Ndewo empowers you with fair and accurate credit assessments
+                based on your unique financial profile. Access essential
+                services like housing and loans, regardless of traditional
+                credit history.
+              </p>
             </div>
+            <StoreIcons />
+          </div>
+          <div className="flex-[30%] self-center xl:self-end">
+            <Image
+              src="/svgs/illustration-10.svg"
+              alt=""
+              className="h-auto w-[287px] xl:w-[487px]"
+              width={487}
+              height={521}
+            />
           </div>
         </section>
-
-        <section className="grid grid-cols-1 lg:grid-cols-2 my-10 lg:my-[100px] max-w-[1240px] mx-auto gap-10 lg:gap-3 text-white text-center lg:text-left">
-          <div className="bg-[#6E59EA] rounded-[40px] lg:rounded-[80px] px-4 pt-10 pb-5 lg:px-10 lg:pt-20 lg:pb-6">
-            <h3 className="text-[32px] lg:text-[56px] leading-none mb-2 font-semibold">
-              View your credit report
-            </h3>
-            <p className="text-sm lg:text-lg mb-4 text-b-outline font-light py-[30px]">
-              Credit should be about personal integrity and trustworthiness, not
-              where you have lived.
-            </p>
-            <div className="flex justify-center">
-              <Image
-                src="/svgs/illustration-1.svg"
-                alt=""
-                className="h-[230px] lg:h-[404px]"
-                width={358}
-                height={382}
-              />
-            </div>
+      </HorizontalSpacing>
+       {/* section 4 */}
+      <HorizontalSpacing>
+        <section className="flex my-12 lg:my-[100px] max-w-[1450px] mx-auto lg:gap-5 xl:gap-10">
+          <div className="flex-1 bg-b-primary-700 rounded-[40px] relative">
+            <Image src="/images/meditation.png" alt="" fill />
           </div>
-          <div className="bg-black text-white rounded-[40px] lg:rounded-[80px] px-4 pt-10 pb-5 lg:px-10 lg:pt-20">
-            <h3 className="text-[32px] lg:text-[56px] leading-none font-semibold">
-              Your financial wellness
-            </h3>
-            <p className="text-sm lg:text-lg mb-4 text-b-outline font-light py-[30px]">
-              Transform your situation with one solution that takes you from 0
-              to 1,000 in 5 minutes.
-            </p>
-            <div className="flex justify-center">
-              <Image
-                src="/svgs/illustration-2.svg"
-                alt=""
-                className="h-[254px] lg:h-[403px]"
-                width={603}
-                height={400}
-              />
-            </div>
-          </div>
-        </section>
-
-        <section className="max-w-[1240px] mx-auto mt-20 lg:mt-60">
-          <h3 className="text-[40px] lg:text-8xl mb-5 lg:mb-20 font-semibold text-b-primary-900 leading-10 lg:leading-none lg:font-clashDisplay">
-            Access to credit and financial services
-          </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-3">
-            <div className="rounded-3xl border border-grey-200 p-4 lg:p-10 max-w-[576px] mb-5 flex flex-col items-center lg:items-start">
-              <Image
-                src="/svgs/graduation-cap.svg"
-                alt=""
-                className="h-[68px] w-[68px] lg:w-[100px] lg:h-[100px]"
-                width={100}
-                height={100}
-              />
-              <h4 className="font-semibold text-b-primary-900 text-[32px] lg:text-[56px]">
-                Student loan
-              </h4>
-              <p className="py-5 lg:py-[30px]">
-                Empowering your education journey. Achieve your dreams without
-                financial worry. Invest in your future today.
-              </p>
-            </div>
-            <div className="rounded-3xl border border-grey-200 p-4 lg:p-10 max-w-[576px] mb-5 flex flex-col items-center lg:items-start">
-              <Image
-                src="/svgs/house-percent.svg"
-                alt=""
-                className="h-[68px] w-[68px] lg:w-[100px] lg:h-[100px]"
-                width={100}
-                height={100}
-              />
-              <h4 className="font-semibold text-b-primary-900 text-[32px] lg:text-[56px]">
-                Mortgage
-              </h4>
-              <p className="py-5 lg:py-[30px]">
-                We give you mortgage opportunities while you choose what works
-                for you. Start your homeownership journey now.
-              </p>
-            </div>
-            <div className="rounded-3xl border border-grey-200 p-4 lg:p-10 max-w-[576px] mb-5 flex flex-col items-center lg:items-start">
-              <Image
-                src="/svgs/bag-money.svg"
-                alt=""
-                className="h-[68px] w-[68px] lg:w-[100px] lg:h-[100px]"
-                width={100}
-                height={100}
-              />
-              <h4 className="font-semibold text-b-primary-900 text-[32px] lg:text-[56px]">
-                Loans
-              </h4>
-              <p className="py-5 lg:py-[30px]">
-                Our platform facilitates the loans you need to enable the
-                lifestyle that you deserve. Get funds quickly and conveniently
-                with our multiple loan options and opportunities through
-                BetaScore.
-              </p>
-            </div>
-            <div className="rounded-3xl border border-grey-200 p-4 lg:p-10 max-w-[576px] mb-5 flex flex-col items-center lg:items-start">
-              <Image
-                src="/svgs/house.svg"
-                alt=""
-                width={100}
-                height={100}
-                className="h-[68px] w-[68px] lg:w-[100px] lg:h-[100px]"
-              />
-              <h4 className="font-semibold text-b-primary-900 text-[32px] lg:text-[56px]">
-                BetaRent
-              </h4>
-              <p className="py-5 lg:py-[30px]">
-                BetaRent is the answer to your rental woes. We use your credit
-                score to provide the guarantees you need to lease or rent a
-                property.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section className="max-w-[1240px] mx-auto mt-20 rounded-[40px] lg:rounded-[80px] border border-grey-200 text-center lg:text-left">
-          <div className="rounded-[40px] lg:rounded-[80px] grid grid-cols-1 lg:grid-cols-2 bg-white p-4 lg:p-20">
-            <div className="self-center">
-              <h3 className="text-[32px] lg:text-[56px] leading-none font-semibold text-b-primary-900">
-                Get started with Betascore
+          <div className="lg:w-[57%] rounded-[20px] xl:rounded-[40px] p-4 xl:p-10 lg:pb-0 bg-black">
+            <div className="xl:w-[95%] pb-20">
+              <h1 className="text-b-purple-dark xl:text-2xl">LIFESTYLE</h1>
+              <h3 className="text-white text-2xl xl:text-[32px] xl:text-5xl leading-none mt-10 mb-6 font-medium">
+                Enjoy the Same Lifestyle Anywhere: Unlock Financial Freedom with
+                Ndewo
               </h3>
-              <p className="text-b-grey-200 text-sm sm:text-lg py-4">
-                BetaScore is powering financial inclusion and credit
-                opportunities of the future, today!
+              <p className="text-b-black-grey-200 font-light xl:text-2xl">
+                Move across borders, not limitations. Ndewo empowers individuals
+                like you to maintain your financial standing and enjoy the same
+                lifestyle you've built, wherever life takes you.
               </p>
-              <div className="flex mt-10 lg:gap-6">
+            </div>
+            <div className="flex flex-col xl:flex-row justify-between xl:align-bottom">
+              <div className="xl:self-end lg:pb-10">
+                <StoreIcons />
+              </div>
+              <div className="self-end overflow-hidden max-h-[340px]">
                 <Image
-                  src="/svgs/apple-store.svg"
+                  src="/svgs/illustration-8.svg"
                   alt=""
-                  className="lg:w-[180px] lg:h-[56px] lg:mr-4"
-                  width={146}
-                  height={56}
-                />
-                <Image
-                  src="/svgs/play-store.svg"
-                  alt=""
-                  className="lg:w-[180px] lg:h-[56px]"
-                  width={146}
-                  height={56}
+                  className="h-[440px]"
+                  width={605}
+                  height={440}
                 />
               </div>
             </div>
-            <div className="flex justify-center pt-14 lg:p-0">
-              <Image
-                src="/images/iPhone12Mockup.png"
-                alt=""
-                className="w-[116px] lg:w-[186px] h-[320px] lg:h-[512px]"
-                width={186}
-                height={512}
-              />
-            </div>
           </div>
         </section>
-      </div>
+      </HorizontalSpacing>
+       {/* section 5 */}
+      <HorizontalSpacing>
+        <section className="max-w-[1450px] mx-auto grid grid-cols-2 lg:grid-cols-3 gap-7 mb-32 xl:my-0">
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className="py-5 xl:py-14 rounded-full text-sm xl:text-base border border-b-black-grey text-center"
+            >
+              {item}
+            </div>
+          ))}
+        </section>
+      </HorizontalSpacing>
+       {/* section 6 */}
+      <section className="my-8 xl:my-[100px] bg-black">
+        <div className="max-w-[1450px] mx-auto gap-10 py-20">
+          <div className="flex items-center px-20 md:w-[70%] lg:w-[46%] m-auto">
+            <Image
+              src="/images/free_hand_iphone.png"
+              alt=""
+              className="w-full"
+              width={518}
+              height={819}
+            />
+          </div>
+          <div className="px-10 flex flex-col justify-center items-center mb-10 max-w-[550px] m-auto text-center">
+            <p className="text-2xl xl:text-[40px] text-white font-medium pb-12 pt-10">
+              Ready to experience awesome service with ndewo?
+            </p>
+            <button className="bg-b-light-green rounded-[40px] py-3 xl:py-4 px-[19px] flex items-center justify-center">
+              <Image
+                src="/images/ndewo_icon.png"
+                alt="beta-score logo"
+                width={32}
+                height={32}
+              />
+              <span className="text-black ml-[12px] mr-[8px] xl:text-xl">
+                Download app
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
       <Footer />
     </main>
   );

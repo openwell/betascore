@@ -12,7 +12,7 @@ export default function FAQ() {
   };
 
   const openModalHandler = () => {
-    setShowModal(true);
+    // setShowModal(true);
   };
   return (
     <div>

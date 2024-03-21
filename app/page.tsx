@@ -3,8 +3,15 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar';
-import Faq from '@/src/components/Faq';
+import HowItWorks from '@/src/components/HowItWorks';
 import WaitList from '@/src/components/WaitList';
+import StoreIcons from '@/src/components/StoreIcons';
+import Testimonial from '@/src/components/Testimonial';
+import StoreButtonsGroup from '@/src/components/StoreButtonsGroup';
+
+const HorizontalSpacing = (props) => (
+  <div className="px-5 xl:px-0">{props.children}</div>
+);
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -14,297 +21,247 @@ export default function Home() {
   };
 
   const openModalHandler = () => {
-    setShowModal(true);
+    // setShowModal(true);
   };
   return (
-    <main className="bg-b-salty-ice">
-      <header>
+    <main>
+      <header className="bg-b-pale-green">
         <NavBar openModalHandler={openModalHandler} />
         {/* <!-- Main --> */}
-        <main className="text-center max-w-[1040px] mx-auto my-20 lg:my-36">
-          <div className="p-5 lg:p-0">
-            <h1 className="text-[40px] lg:text-[96px] leading-none font-bold font-clashDisplay">
-              <span className="text-b-primary-700">Cross-Border </span> Credit
-              Transfer
+        <main className="text-center my-10 md:my-20 xl:my-44">
+          <div className="p-5 py-0 xl:p-0 max-w-[1520px] mx-auto">
+            <h1 className="text-[32px] lg:text-5xl xl:text-7xl leading-none font-semibold text-b-black-200">
+              Cross-Border Credit Opportunities for All
             </h1>
-            <p className="text-b-dark-800 text-sm lg:text-xl pt-4">
-              You can now relocate with one less thing to worry about. Wherever
-              you go, your credit history goes with you and countless
-              opportunities await you.
+            <p className="text-b-black-grey text-base lg:text-lg xl:text-xl pt-4">
+              Now, you can access financial opportunities irrespective of how
+              you work, where you are from or how long you have lived in the UK.
             </p>
           </div>
-          <div className="flex justify-center my-10">
+          <StoreButtonsGroup />
+          <div className="flex justify-center bg-contain xl:bg-auto bg-[url('/images/map_with_dots.png')] bg-no-repeat bg-bottom">
             <Image
-              src="/svgs/apple-store.svg"
+              src="/images/hero_lady_with_wings.png"
               alt=""
-              className="lg:w-[180px] h-[56px] mr-4"
-              width={165}
-              height={56}
+              width={1280}
+              height={402}
             />
-            <Image
-              src="/svgs/play-store.svg"
-              alt=""
-              className="lg:w-[180px] h-[56px]"
-              width={165}
-              height={56}
-            />
-          </div>
-          <div>
-            <Image src="/svgs/map-large.svg" alt="" width={1261} height={410} />
           </div>
         </main>
       </header>
       {/*  */}
       <WaitList showModal={showModal} closeHandler={closeModalHandler} />
       {/*  */}
-      <div className="px-5 lg:p-0">
-        {/* section 1 */}
-        <section className="my-8 lg:my-[100px] max-w-[1240px] mx-auto">
-          <div className="max-w-[930px] w-full">
-            <div className="max-w-[280px] lg:max-w-[920px]">
-              <h1 className="text-[40px] lg:text-[96px] leading-none font-semibold lg:font-clashDisplay">
-                You are only as trustworthy as your
-                <span className="text-b-primary-700"> Betascore</span>
-              </h1>
-            </div>
-            <div className="max-w-[683px]">
-              <p className="mt-8 text-sm lg:text-lg text-b-grey-200">
-                This is why thousand’s of businesses are using Beta Score to
-                carry out credit checks and are able to determine the
-                credit-worthiness with a 99.9% accuracy.
-              </p>
-            </div>
-          </div>
-        </section>
-        {/* section 2 */}
-        <section className="bg-black px-5 pt-5 lg:px-16 lg:pt-[60px] max-w-[1240px] mx-auto rounded-[40px] lg:rounded-[80px]">
-          <h1 className="text-white font-semibold text-[32px] lg:text-[72px]">
-            Built on Trust
+      {/* section 1 */}
+      <section className="my-8 xl:my-[100px] max-w-[1240px] mx-auto">
+        <div className="text-center">
+          <h1 className="text-[28px] lg:text-4xl xl:text-7xl xl:leading-none font-medium text-b-black-200">
+            Move with Confidence
           </h1>
-          <p className="text-sm lg:text-lg text-b-tertiary mb-6">
-            Businesses use Betascore to verify customers’ credit worthiness 
-          </p>
-          <div className="lg:h-[30px] flex gap-6 flex-wrap">
-            <Image
-              src="/svgs/okra-logo.svg"
-              alt=""
-              width={84}
-              height={30}
-              className="w-[56px] h-[20px] lg:w-[84px] lg:h-[30px]"
-            />
-            <Image
-              src="/svgs/Barclays-logo.svg"
-              alt=""
-              className="w-[88px] h-[16px] lg:w-[106px] lg:h-[18px]"
-              width={106}
-              height={18}
-            />
-            <Image
-              src="/svgs/Equifax-logo.svg"
-              alt=""
-              width={112}
-              height={20}
-              className="w-[84px] h-[16px] lg:w-[112px] lg:h-[20px]"
-            />
-            <Image
-              src="/svgs/FirstCentral Credit Bureau-logo.svg"
-              alt=""
-              width={110}
-              height={20}
-              className="w-[82px] h-[16px] lg:w-[110px] lg:h-[20px]"
-            />
-          </div>
-          <div className="w-full pt-9">
-            <Image
-              src="/images/dashboard-screen.png"
-              alt=""
-              // className='h-[250px] w-full'
-              width={1135}
-              height={200}
-            />
-          </div>
-        </section>
-        {/* section 3*/}
-        <section className="grid grid-cols-1 lg:grid-cols-2 my-8 lg:my-[100px] max-w-[1240px] mx-auto gap-10 lg:gap-3">
-          <div className="bg-b-primary-700 rounded-[40px] lg:rounded-[80px] px-4 lg:px-10 pt-6 pb-24 text-white">
-            <div className="flex justify-center">
-              <Image
-                src="/svgs/illustration-9.svg"
-                alt=""
-                className="h-[194px] lg:h-[403px]"
-                width={348}
-                height={406}
-              />
-            </div>
-            <h3 className="text-[32px] lg:text-[56px] leading-none font-semibold py-4">
-              Unique Customer Insight
-            </h3>
-            <p className="text-sm lg:text-lg text-b-outline font-light">
-              Understanding your customers is not only critical to customer
-              acquisition, but retention and advocacy. With BetaScore you will
-              gain deep and distinctive insight into your customers’ needs,
-              preferences and motivations.
-            </p>
-          </div>
-          <div className="rounded-[40px] lg:rounded-[80px] p-4 lg:px-10 lg:pt-6 lg:pb-24 bg-[#DFE7E8]">
-            <div className="flex justify-center">
-              <Image
-                src="/svgs/illustration-11.svg"
-                alt=""
-                className="h-[194px] lg:h-[403px]"
-                width={442}
-                height={416}
-              />
-            </div>
-            <h3 className="text-[32px] lg:text-[56px] leading-none font-semibold py-4">
-              Unlock an untapped credit market
-            </h3>
-            <p className="text-sm lg:text-lg text-b-grey-200 font-light">
-              Our proprietary technology and solution transfers and integrates
-              credit scores for many underserved communities and significantly
-              increases the size of the market for your business to explore.
-            </p>
-          </div>
-        </section>
-        {/* section 4 */}
-        <section className="rounded-[40px] lg:rounded-[80px] grid grid-cols-1 lg:grid-cols-2 max-w-[1240px] lg:h-[778px] mx-auto bg-white px-5 lg:px-10 py-4 lg:py-28">
-          <div className="lg:self-end">
-            <div className="bg-black w-[50px] h-[50px] rounded-full mb-4 flex justify-center items-center">
-              <Image src="/svgs/lamp-on.svg" alt="" width={32} height={32} />
-            </div>
-            <h3 className="text-[32px] lg:text-[56px] leading-none mb-2 font-semibold">
-              Not Just Transactional Data but Behavioural Insights
-            </h3>
-            <p className="text-b-tertiary text-sm lg:text-lg">
-              Unlock the power of your transaction data and gain valuable
-              insights into your business with our platform. We&apos;`ll help
-              you make data-driven decisions for sustainable growth.
-            </p>
-            <div className="flex flex-col lg:flex-row mt-10 gap-6">
-              <button
-                onClick={openModalHandler}
-                className="text-base py-4 text-white bg-black rounded-full px-2 w-fit"
-              >
-                Request early access
-              </button>
-              <button className="text-base py-4 border border-black rounded-full px-2 w-fit flex gap-1 items-center">
-                <span>View demo</span>
-                <Image
-                  src="/svgs/video-circle.svg"
-                  width={24}
-                  height={24}
-                  alt=""
-                />
-              </button>
-            </div>
-          </div>
-          <div className="hidden lg:flex justify-end">
-            <Image
-              src="/svgs/illustration-7.svg"
-              alt=""
-              className="w-[448px] self-end"
-              width={448}
-              height={462}
-            />
-          </div>
-        </section>
-        {/* section 5 */}
-        <section className="max-w-[1240px] mx-auto mt-28 lg:mt-60">
-          <h3 className="text-[40px] leading-10 lg:leading-none lg:text-8xl mb-4 lg:mb-20 font-semibold lg:font-clashDisplay">
-            <span className="text-b-purple">One platform,</span> <br />
-            endless opportunities
-          </h3>
-          <div className="rounded-[40px] lg:rounded-[80px] flex flex-col-reverse lg:grid grid-flow-dense grid-cols-1 lg:grid-cols-2 bg-white p-4 lg:p-20">
+          <h1 className="text-[28px] lg:text-4xl xl:text-7xl leading-none font-medium text-b-dark-green">
+            {' '}
+            Do more with Ndewo
+          </h1>
+        </div>
+      </section>
+      {/* section 2 */}
+      <HorizontalSpacing>
+        <section className="bg-b-sand max-w-[1450px] xl:h-[798px] mx-auto border-b-orange border rounded-[20px] xl:rounded-[40px] flex flex-col lg:flex-row overflow-hidden">
+          <div className="flex-1 px-5 pt-5 xl:pl-[80px] xl:py-[80px] flex flex-col xl:justify-between">
             <div>
-              <div className="mb-4 hidden lg:block">
-                <Image
-                  src="/svgs/earth-with-plane.svg"
-                  alt=""
-                  width={50}
-                  height={50}
-                />
-              </div>
-              <h3 className="text-[32px] lg:text-[56px] leading-none font-semibold">
-                Cross-Border <br />
-                Credit Opportunities
-              </h3>
-              <p className="text-b-tertiary text-sm lg:text-lg py-4">
-                You can now travel and move across borders with 1 less thing to
-                worry about. Wherever you go, your credit score goes with you
-                and countless credit opportunities await you.
+              <h1 className="text-b-purple-light xl:text-2xl">
+                FINANCIAL AND CREDIT FOOTPRINT
+              </h1>
+              <p className="text-2xl xl:text-5xl font-semibold my-6 xl:mt-10 xl:mb-6">
+                Generate your financial report and leverage it to unlock
+                opportunities tailored for you
               </p>
-              <div className="flex mt-10 lg:gap-6">
+              <p className="text-base xl:text-2xl text-b-black-grey mb-6 font-light">
+                Unlock new opportunities tailored to your unique situation. 
+                Financial freedom and access to essential services, starting
+                with your personalised financial report.
+              </p>
+            </div>
+            <StoreIcons />
+          </div>
+          <div className="flex-1 self-end pt-8 lg:pt-20">
+            <Image
+              src="/images/ndewo_mobile_app_iphone.png"
+              alt=""
+              className="h-auto w-[450px] xl:w-[725px]"
+              width={1049}
+              height={699}
+            />
+          </div>
+        </section>
+      </HorizontalSpacing>
+      {/* section 3*/}
+      <HorizontalSpacing>
+        <section className="flex flex-col lg:flex-row my-8 xl:my-[100px] max-w-[1450px] mx-auto gap-5 xl:gap-10">
+          <div className="flex-1 bg-b-primary-700 rounded-[20px] xl:rounded-[40px] relative">
+            <Image src="/images/lady_looking_up.png" alt="" fill />
+          </div>
+          <div className="lg:w-[57%] rounded-[20px] xl:rounded-[40px] p-6 xl:px-10 xl:pt-20 xl:pb-10 bg-black">
+            <div className="xl:w-[90%]">
+              <h1 className="text-b-purple-dark xl:text-2xl">STUDENT LOAN</h1>
+              <h3 className="text-white text-2xl xl:text-[32px] xl:text-5xl leading-none mt-10 mb-6 font-semibold">
+                Access the funds you need to realise your academic goals
+              </h3>
+              <p className="text-b-black-grey-200 font-light xl:text-2xl">
+                With Ndewo, you can access student loans and transform your
+                financial challenges into opportunities. Move towards your
+                future with confidence.
+              </p>
+            </div>
+            <div className="mt-6 xl:mt-0 flex flex-col xl:flex-row justify-between xl:align-bottom">
+              <div className="xl:self-end">
+                <StoreIcons />
+              </div>
+              <div className="self-end mt-12 xl:mt-0">
                 <Image
-                  src="/svgs/apple-store.svg"
+                  src="/images/book_bulb.png"
                   alt=""
-                  className="w-[144px] lg:w-[180px] h-[56px] mr-4"
-                  width={166}
-                  height={56}
-                />
-                <Image
-                  src="/svgs/play-store.svg"
-                  alt=""
-                  className="w-[138px] lg:w-[180px] h-[56px]"
-                  width={166}
-                  height={56}
+                  className="w-[260px] xl:w-full xl:h-[374px]"
+                  width={377}
+                  height={4374}
                 />
               </div>
             </div>
-            <div className="flex justify-center lg:justify-end">
-              <Image
-                src="/images/deviceframes.png"
-                alt=""
-                className="w-[448px]"
-                width={448}
-                height={500}
-              />
+          </div>
+        </section>
+      </HorizontalSpacing>
+      {/* section 4 */}
+      <HorizontalSpacing>
+        <section className="bg-b-light-200-green max-w-[1450px] xl:h-[798px] mx-auto border rounded-[20px] xl:rounded-[40px] flex flex-col lg:flex-row overflow-hidden">
+          <div className="flex-1 flex flex-col xl:justify-between pl-5 pt-5 xl:pl-[80px] xl:py-[80px]">
+            <div className="">
+              <h1 className="text-b-purple-light xl:text-2xl">
+                Rental & Mortgage Opportunities
+              </h1>
+              <h3 className="text-2xl xl:text-5xl leading-none mt-10 mb-6 font-semibold">
+                Cross-Border Rental & Mortgage Opportunities
+              </h3>
+              <p className="text-b-tertiary font-light xl:text-2xl mb-6">
+                With Ndewo, you can rent a house or buy a home without the
+                rigours of traditional checks for those with non-traditional
+                situations.
+              </p>
+            </div>
+            <StoreIcons />
+          </div>
+          <div className="flex-1 flex flex-col justify-center pt-[80px]">
+            <Image
+              src="/images/ndewo_app_mockup.png"
+              alt=""
+              className="w-[695px] self-end"
+              width={695}
+              height={706}
+            />
+          </div>
+        </section>
+      </HorizontalSpacing>
+      {/* section 5 */}
+      <HorizontalSpacing>
+        <section className="flex flex-col md:flex-row my-8 xl:my-[100px] max-w-[1450px] mx-auto gap-5 xl:gap-10">
+          <div className="flex-1 rounded-[20px] xl:rounded-[40px] relative">
+            <Image
+              src="/images/lady_on_phone_with_phone_and_card.png"
+              alt=""
+              fill
+            />
+          </div>
+          <div className="md:w-[57%] rounded-[20px] xl:rounded-[40px] pb-0 xl:px-10 xl:pt-20 xl:pb-0 bg-b-purple-light">
+            <div className="md:w-[82%] p-6 xl:pb-10 ">
+              <h1 className="text-b-purple-light-200 xl:text-2xl">
+                CREDIT CARDS
+              </h1>
+              <h3 className="text-b-purple-light-300 text-2xl xl:text-5xl leading-none mt-10 mb-6 font-medium">
+                Credit cards that allow you live the life that you deserve
+              </h3>
+              <p className="text-b-purple-light-300 text-sm font-light xl:text-2xl">
+                You can now spend with confidence and do more with credit cards
+                accessed through Ndewo.
+              </p>
+            </div>
+            <div className="flex justify-between flex-col xl:flex-row align-bottom">
+              <div className="xl:self-end p-6 xl:pb-10">
+                <StoreIcons />
+              </div>
+              <div className="mt-36 lg:mt-0 self-end">
+                <Image
+                  src="/images/atm_cards.png"
+                  alt=""
+                  className="w-[643px]"
+                  width={643}
+                  height={400}
+                />
+              </div>
             </div>
           </div>
         </section>
-        {/* section 6 */}
-        <section className="grid grid-cols-1 lg:grid-cols-2 my-10 lg:my-[100px] max-w-[1240px] mx-auto gap-10 lg:gap-3">
-          <div className="bg-[#6E59EA] rounded-[40px] lg:rounded-[80px] p-4 lg:px-10 lg:pt-20 lg:pb-6 text-white">
-            <h3 className="text-[32px] lg:text-[56px] leading-none mb-2 font-semibold">
-              Credit and Financial Access anywhere you go
-            </h3>
-            <p className="text-sm lg:text-lg mb-4 text-b-outline font-light py-4">
-              For the first time in history, your credit history and scores are
-              now transferable across borders, thereby allowing you to enjoy the
-              support and lifestyle you always had even when you migrate.
+      </HorizontalSpacing>
+      {/* section 6 */}
+      <section className="my-8 xl:my-[240px] px-5 py-[50px] xl:py-20 bg-black">
+        <div className="max-w-[1450px] mx-auto gap-10 xl:gap-10">
+          <div className="flex flex-col justify-center items-center mb-10 max-w-[550px] m-auto text-center">
+            <p className="text-[32px] xl:text-7xl text-white font-semibold">
+              Built on Trust
             </p>
-            <div className="flex justify-center">
-              <Image
-                src="/svgs/illustration-10.svg"
-                alt=""
-                className="h-[252px] lg:h-[403px]"
-                width={358}
-                height={382}
-              />
-            </div>
-          </div>
-          <div className="bg-black text-white rounded-[40px] lg:rounded-[80px] p-4 lg:px-10 lg:pt-20">
-            <h3 className="text-[32px] lg:text-[56px] leading-none font-semibold">
-              Enjoy the same lifestyle at home and abroad
-            </h3>
-            <p className="text-sm lg:text-lg mb-4 text-b-outline font-light py-4">
-              Irrespective of your needs- a house, car or to obtain a credit
-              card, BetaScore makes a difference. Take control of your financial
-              future today and supercharge your credit opportunities.
+            <p className="pt-4 pb-6 text-b-black-grey">
+              Businesses make use of Ndewo to assess customer’s credit
+              worthiness, make rental decision, verify employee’s details and so
+              much more
             </p>
-            <div className="flex justify-center">
-              <Image
-                src="/svgs/illustration-8.svg"
-                alt=""
-                className="h-[252px] lg:h-[403px]"
-                width={603}
-                height={400}
-              />
-            </div>
+            <button className="bg-b-light-green rounded-[40px] py-3 px-[40px] xl:py-4 xl:px-[60px] mt-24 xl:mt-0">
+              Learn more
+            </button>
           </div>
-        </section>
-        {/* section 7 */}
-        <Faq />
-      </div>
+          <div className="flex flex-col justify-center items-center">
+            <Image
+              src="/images/ndewo_dashboard.png"
+              alt=""
+              className="w-[1386px]"
+              width={1386}
+              height={635}
+            />
+          </div>
+        </div>
+      </section>
+      {/* section 7 */}
+      <HowItWorks />
+      {/* section 8 */}
+      <Testimonial />
+      {/* section 9 */}
+      <section className="my-8 xl:my-[100px] bg-black">
+        <div className="max-w-[1450px] mx-auto gap-10 py-20">
+          <div className="flex items-center px-20 md:w-[70%] lg:w-[46%] m-auto">
+            <Image
+              src="/images/free_hand_iphone.png"
+              alt=""
+              className="w-full"
+              width={518}
+              height={819}
+            />
+          </div>
+          <div className="px-10 flex flex-col justify-center items-center mb-10 max-w-[550px] m-auto text-center">
+            <p className="text-2xl xl:text-[40px] text-white font-medium pb-12 pt-10">
+              Ready to experience awesome service with ndewo?
+            </p>
+            <button className="bg-b-light-green rounded-[40px] py-3 xl:py-4 px-[19px] flex items-center justify-center">
+              <Image
+                src="/images/ndewo_icon.png"
+                alt="beta-score logo"
+                width={32}
+                height={32}
+              />
+              <span className="text-black ml-[12px] mr-[8px] xl:text-xl">
+                Download app
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+      {/* </div> */}
       <Footer />
     </main>
   );

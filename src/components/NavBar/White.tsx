@@ -23,11 +23,10 @@ export default function NavBar({ openModalHandler = () => {} }) {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          {/* -m-1.5 p-1.5 */}
           <Link href="/" className="">
             <span className="sr-only">Beta Score Logo</span>
             <Image
-              src="/images/ndewo_small.png"
+              src="/images/ndewo_small_white.png"
               alt="beta-score logo"
               className='h-[24px] w-[119px] xl:w-[194px] xl:h-[40px]'
               width={194}
@@ -38,7 +37,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -48,18 +47,18 @@ export default function NavBar({ openModalHandler = () => {} }) {
         <div className="hidden lg:flex lg:gap-x-12">
           <Link
             href="/individual"
-            className="xl:text-lg leading-6 text-b-black-grey"
+            className="xl:text-lg leading-6 text-white"
           >
             Individual
           </Link>
-          <Link href="/business" className="xl:text-lg leading-6 text-b-black-grey">
+          <Link href="/business" className="xl:text-lg leading-6 text-white">
             Business
           </Link>
           <Popover className="relative">
-            <Popover.Button className="inline-flex items-center gap-x-1 xl:text-lg leading-6 text-b-black-grey">
+            <Popover.Button className="inline-flex items-center gap-x-1 xl:text-lg leading-6 text-white">
               <span>Company</span>
               <ChevronDownIcon
-                className="h-5 w-5 text-b-black-grey"
+                className="h-5 w-5 text-white"
                 aria-hidden="true"
               />
             </Popover.Button>
@@ -88,7 +87,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <Link href="/business" className="xl:text-lg leading-6 text-b-black-grey">
+          <Link href="/business" className="xl:text-lg leading-6 text-white">
             Blog
           </Link>
         </div>

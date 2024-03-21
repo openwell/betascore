@@ -27,7 +27,7 @@ export default function Page() {
   };
 
   const openModalHandler = () => {
-    setShowModal(true);
+    // setShowModal(true);
   };
   return (
     <main className="bg-white">

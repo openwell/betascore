@@ -12,7 +12,7 @@ export default function Terms() {
   };
 
   const openModalHandler = () => {
-    setShowModal(true);
+    // setShowModal(true);
   };
   return (
     <div>
@@ -30,7 +30,7 @@ export default function Terms() {
                   UPDATED 01/AUG/2023
                 </p>
               </div>
-              <h4 className="text-b-primary-900 my-8 font-clashDisplay text-2xl sm:text-[40px] font-semibold text-center">
+              <h4 className="text-b-primary-900 my-8 text-2xl sm:text-[40px] font-semibold text-center">
                 Betascore’s Terms and Conditions
               </h4>
             </div>

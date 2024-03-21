@@ -42,11 +42,23 @@ export default function Index({ showModal = false, closeHandler }) {
         otherInterest: otherInterest.value,
       },
     };
-
+    const payLoad = {
+      country_of_origin: countryOfOrigin.value,
+      country_of_residence: countryOfResidence.value,
+      email: email.value,
+      fullname: fullName.value,
+      car_loan_interest: true,
+      other_interest: carLoanInterest.checked,
+      credit_card_interest: creditCardInterest.checked,
+      mortgage_interest: mortgageInterest.checked,
+      rent_guarantor_interest: rentGuarantorInterest.checked,
+      student_loan_interest: studentLoanInterest.checked,
+    };
+    // 'https://us-central1-betascore-waitlist.cloudfunctions.net/saveWaitList',
     try {
       await axios.post(
-        'https://us-central1-betascore-waitlist.cloudfunctions.net/saveWaitList',
-        raw,
+        'https://docker-betascore-rlnebvmeya-uc.a.run.app/api/v1/wait',
+        payLoad,
         {
           headers: { 'Content-Type': ['application/json'] },
         }
@@ -290,7 +302,7 @@ export default function Index({ showModal = false, closeHandler }) {
             </div>
             <button
               type="submit"
-              id='submitButton'
+              id="submitButton"
               className="bg-[#2864FF] text-white p-3 w-full"
             >
               Join waitlist
