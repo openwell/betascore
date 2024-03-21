@@ -102,7 +102,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
               width={32}
               height={32}
             />
-            <span className="text-black ml-[12px] mr-[8px] xl:text-lg">Let's begin</span>
+            <span className="text-black ml-[12px] mr-[8px] xl:text-lg">Let&apos;s begin</span>
             <ArrowRightIcon className="h-4 w-6 text-black" aria-hidden="true" />
           </button>
         </div>
@@ -189,7 +189,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
                 }}
                 className="text-base py-4 text-white bg-black rounded-full px-2 w-full"
               >
-                Let's begin
+                Let&apos;s begin
               </button>
             </div>
           </div>
