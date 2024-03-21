@@ -7,7 +7,7 @@ import WaitList from '@/src/components/WaitList';
 import StoreButtonsGroup from '@/src/components/StoreButtonsGroup';
 import ContactForm from '@/src/components/ContactForm';
 
-const HorizontalSpacing = (props) => (
+const HorizontalSpacing = (props: { children: React.ReactNode }) => (
   <div className="px-5 xl:px-0">{props.children}</div>
 );
 
