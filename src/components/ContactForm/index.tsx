@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 export default function Index() {
 
   const [loader, setLoader] = useState(false);
-  const submitHandler = async (e) => {
-    e.preventDefault();
-    const email = e.target.email.value;
-    const business_name = e.target.name.value;
+  const submitHandler = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const email = event.currentTarget['email'].value;
+    const business_name = event.currentTarget['business_name'].value;
    
     try {
       setLoader(true);
@@ -21,7 +21,7 @@ export default function Index() {
         }
       );
       const data = await response.json();
-      e.target.reset();
+      event.currentTarget.reset();
       console.log('Success:', data);
     } catch (error) {
       console.error('Error:', error);
@@ -46,7 +46,7 @@ export default function Index() {
             <input
               type="text"
               placeholder="Enter your business name"
-              name="name"
+              name="business_name"
               id="name"
               className="rounded border-b-outline bg-transparent"
             />
