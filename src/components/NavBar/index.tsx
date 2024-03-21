@@ -159,7 +159,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base  leading-7 text-b-black-grey">
-                        Product
+                        Company
                         <ChevronDownIcon
                           className={classNames('h-5 w-5 flex-none', {
                             'rotate-180': open,

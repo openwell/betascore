@@ -28,7 +28,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
             <Image
               src="/images/ndewo_small_white.png"
               alt="beta-score logo"
-              className='h-[24px] w-[119px] xl:w-[194px] xl:h-[40px]'
+              className="h-[24px] w-[119px] xl:w-[194px] xl:h-[40px]"
               width={194}
               height={40}
             />
@@ -45,10 +45,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <Link
-            href="/individual"
-            className="xl:text-lg leading-6 text-white"
-          >
+          <Link href="/individual" className="xl:text-lg leading-6 text-white">
             Individual
           </Link>
           <Link href="/business" className="xl:text-lg leading-6 text-white">
@@ -102,7 +99,9 @@ export default function NavBar({ openModalHandler = () => {} }) {
               width={32}
               height={32}
             />
-            <span className="text-black ml-[12px] mr-[8px] xl:text-lg">Let&apos;s begin</span>
+            <span className="text-black ml-[12px] mr-[8px] xl:text-lg">
+              Let&apos;s begin
+            </span>
             <ArrowRightIcon className="h-4 w-6 text-black" aria-hidden="true" />
           </button>
         </div>
@@ -158,7 +157,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base  leading-7 text-b-black-grey">
-                        Product
+                        Company
                         <ChevronDownIcon
                           className={classNames('h-5 w-5 flex-none', {
                             'rotate-180': open,
