@@ -159,31 +159,6 @@ export default function Business() {
           </div>
         </section>
       </HorizontalSpacing>
-      <section className="my-8 xl:my-[240px] px-5 py-[50px] xl:py-20 bg-black">
-        <div className="max-w-[1450px] mx-auto gap-10 xl:gap-10">
-          <div className="flex flex-col justify-center items-center mb-10 max-w-[500px] m-auto text-center">
-            <p className="text-[32px] xl:text-7xl text-white font-semibold">
-              Rental product
-            </p>
-            <p className="pt-4 pb-6 text-b-grey text-xl">
-              Verify tenant&apos;s information and complete reference in a very
-              few minutes instead of 2 days
-            </p>
-            <button className="bg-b-light-green rounded-[40px] py-3 px-[40px] xl:py-4 xl:px-[60px] mt-24 xl:mt-0">
-              Go to Rental
-            </button>
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <Image
-              src="/images/ndewo_dashboard.png"
-              alt=""
-              className="w-[1386px]"
-              width={1386}
-              height={635}
-            />
-          </div>
-        </div>
-      </section>
       <LargeDashboard
         title=" Rental product"
         description="Verify tenant's information and complete reference in a very
