@@ -11,7 +11,6 @@ const HorizontalSpacing = (props: { children: React.ReactNode }) => (
   <div className="px-5 xl:px-0">{props.children}</div>
 );
 
-
 export default function Individual() {
   const [showModal, setShowModal] = useState(false);
 
@@ -54,7 +53,7 @@ export default function Individual() {
             <StoreButtonsGroup />
           </div>
 
-          <div className="flex xl:h-[800px] bg-contain xl:bg-auto justify-center bg-[url('/images/map_with_dots.png')] bg-no-repeat bg-[center_bottom_1rem] xl:bg-[center_bottom_-1rem] relative overflow-hidden">
+          <div className="flex xl:h-[800px] bg-contain xl:bg-auto justify-center bg-[url('/images/map_with_dots_orange.png')] bg-no-repeat bg-[center_bottom_1rem] xl:bg-[center_bottom_-1rem] relative overflow-hidden">
             <div className="xl:absolute -bottom-[146px] xl:-bottom-[146px]">
               <Image
                 src="/images/hands_with_ndewo_app.png"
@@ -68,26 +67,26 @@ export default function Individual() {
         </main>
       </header>
       {/* section 1 */}
-      <section className="bg-b-black-200 px-4 lg:px-16 pt-[50px] xl:pt-20 max-h-[1209px] overflow-hidden">
+      <section className="bg-b-black-200 px-4 lg:px-16 pt-[50px] xl:pt-20 overflow-hidden">
         <div className="flex flex-col items-center justify-center mx-auto text-center max-w-[1520px]">
           <h1 className="text-white font-semibold text-[32px] lg:text-5xl xl:text-7xl xl:leading-[80px]">
             Move with Your Credit History, Anywhere You Go
           </h1>
           <div className="mx-auto text-center max-w-[1370px] mb-14 xl:mb-20">
-            <p className="lg:text-xl text-b-outline py-4">
+            <p className="lg:text-xl text-b-grey py-4">
               Starting fresh in a new country shouldn&apos;t mean starting from
               scratch financially. Ndewo bridges the gap, leveraging your
               existing credit history from home to empower your financial
               journey in your new location.
             </p>
           </div>
-          <div className="md:w-[70%] lg:w-[80%] xl:w-full m-auto flex justify-center">
+          <div className="mb-40 mt-32 m-auto">
             <Image
-              src="/images/map_globe.png"
+              src="/images/map_globe_2.png"
               alt=""
               className="w-ful"
-              width={1075}
-              height={890}
+              width={658}
+              height={606}
             />
           </div>
         </div>
@@ -107,9 +106,9 @@ export default function Individual() {
       </section>
       {/* section 3 */}
       <HorizontalSpacing>
-        <section className="bg-b-sand max-w-[1450px] xl:h-[798px] lg:py-[80px] mx-auto border-b-orange border rounded-[20px] xl:rounded-[40px] flex flex-col lg:flex-row gap-12 lg:gap-6 xl:gap-12 overflow-hidden">
-          <div className="flex-[52%] px-5 pt-5 lg:pl-[40px] xl:pl-[80px] flex flex-col justify-between">
-            <div className="">
+        <section className="bg-b-sand max-w-[1450px] xl:h-[798px] lg:pt-[80px] mx-auto rounded-[20px] xl:rounded-[40px] overflow-hidden">
+          <div className="h-full px-5 pt-5 lg:pl-[40px] lg:pr-0 xl:pl-[80px] flex flex-col justify-between">
+            <div className="w-full xl:w-[56%]">
               <h1 className="text-b-purple-light xl:text-2xl">
                 EVERYWHERE AND ANYWHERE
               </h1>
@@ -125,20 +124,22 @@ export default function Individual() {
                 credit history.
               </p>
             </div>
-            <StoreIcons />
-          </div>
-          <div className="flex-[30%] self-center xl:self-end">
-            <Image
-              src="/svgs/illustration-10.svg"
-              alt=""
-              className="h-auto w-[287px] xl:w-[487px]"
-              width={487}
-              height={521}
-            />
+            <div className="flex items-end justify-between">
+              <div className="xl:self-end pb-6 xl:pb-10">
+                <StoreIcons />
+              </div>
+              <Image
+                src="/images/cities_silhouette.png"
+                alt=""
+                className="h-auto w-[287px] xl:w-[899px]"
+                width={899}
+                height={299}
+              />
+            </div>
           </div>
         </section>
       </HorizontalSpacing>
-       {/* section 4 */}
+      {/* section 4 */}
       <HorizontalSpacing>
         <section className="flex my-12 lg:my-[100px] max-w-[1450px] mx-auto lg:gap-5 xl:gap-10">
           <div className="flex-1 bg-b-primary-700 rounded-[40px] relative">
@@ -147,7 +148,7 @@ export default function Individual() {
           <div className="lg:w-[57%] rounded-[20px] xl:rounded-[40px] p-4 xl:p-10 lg:pb-0 bg-black">
             <div className="xl:w-[95%] pb-20">
               <h1 className="text-b-purple-dark xl:text-2xl">LIFESTYLE</h1>
-              <h3 className="text-white text-2xl xl:text-[32px] xl:text-5xl leading-none mt-10 mb-6 font-medium">
+              <h3 className="text-white text-2xl xl:text-5xl leading-none mt-10 mb-6 font-medium">
                 Enjoy the Same Lifestyle Anywhere: Unlock Financial Freedom with
                 Ndewo
               </h3>
@@ -174,33 +175,24 @@ export default function Individual() {
           </div>
         </section>
       </HorizontalSpacing>
-       {/* section 5 */}
+      {/* section 5 */}
       <HorizontalSpacing>
         <section className="max-w-[1450px] mx-auto grid grid-cols-2 lg:grid-cols-3 gap-7 mb-32 xl:my-0">
           {items.map((item, index) => (
             <div
               key={index}
-              className="py-5 xl:py-14 rounded-full text-sm xl:text-base border border-b-black-grey text-center"
+              className="py-5 xl:py-14 rounded-full text-sm xl:text-base border bg-b-grey-400 border-b-border-grey text-center"
             >
               {item}
             </div>
           ))}
         </section>
       </HorizontalSpacing>
-       {/* section 6 */}
+      {/* section 6 */}
       <section className="my-8 xl:my-[100px] bg-black">
-        <div className="max-w-[1450px] mx-auto gap-10 py-20">
-          <div className="flex items-center px-20 md:w-[70%] lg:w-[46%] m-auto">
-            <Image
-              src="/images/free_hand_iphone.png"
-              alt=""
-              className="w-full"
-              width={518}
-              height={819}
-            />
-          </div>
-          <div className="px-10 flex flex-col justify-center items-center mb-10 max-w-[550px] m-auto text-center">
-            <p className="text-2xl xl:text-[40px] text-white font-medium pb-12 pt-10">
+        <div className="max-w-[1450px] mx-auto gap-10 py-20 flex items-center">
+          <div className="px-10 flex flex-col justify-center items-center max-w-[550px] text-center">
+            <p className="text-2xl xl:text-[40px] text-white leading-10 font-medium pb-12 pt-10">
               Ready to experience awesome service with ndewo?
             </p>
             <button className="bg-b-light-green rounded-[40px] py-3 xl:py-4 px-[19px] flex items-center justify-center">
@@ -214,6 +206,15 @@ export default function Individual() {
                 Download app
               </span>
             </button>
+          </div>
+          <div className="flex items-center px-20 m-auto">
+            <Image
+              src="/images/free_hand_iphone.png"
+              alt=""
+              className="w-full"
+              width={518}
+              height={819}
+            />
           </div>
         </div>
       </section>

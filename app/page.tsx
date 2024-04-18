@@ -8,7 +8,7 @@ import WaitList from '@/src/components/WaitList';
 import StoreIcons from '@/src/components/StoreIcons';
 import Testimonial from '@/src/components/Testimonial';
 import StoreButtonsGroup from '@/src/components/StoreButtonsGroup';
-
+import LargeDashboard from '@/src/components/LargeDashboard'
 
 const HorizontalSpacing = (props: { children: React.ReactNode }) => (
   <div className="px-5 xl:px-0">{props.children}</div>
@@ -30,7 +30,7 @@ export default function Home() {
         <NavBar openModalHandler={openModalHandler} />
         {/* <!-- Main --> */}
         <main className="text-center my-10 md:my-20 xl:my-44">
-          <div className="p-5 py-0 xl:p-0 max-w-[1520px] mx-auto">
+          <div className="p-5 py-0 xl:p-0 max-w-[1200px] mx-auto">
             <h1 className="text-[32px] lg:text-5xl xl:text-7xl leading-none font-semibold text-b-black-200">
               Cross-Border Credit Opportunities for All
             </h1>
@@ -42,6 +42,7 @@ export default function Home() {
           <StoreButtonsGroup />
           <div className="flex justify-center bg-contain xl:bg-auto bg-[url('/images/map_with_dots.png')] bg-no-repeat bg-bottom">
             <Image
+              className="my-20"
               src="/images/hero_lady_with_wings.png"
               alt=""
               width={1280}
@@ -67,10 +68,10 @@ export default function Home() {
       </section>
       {/* section 2 */}
       <HorizontalSpacing>
-        <section className="bg-b-sand max-w-[1450px] xl:h-[798px] mx-auto border-b-orange border rounded-[20px] xl:rounded-[40px] flex flex-col lg:flex-row overflow-hidden">
+        <section className="bg-b-sand max-w-[1450px] xl:h-[798px] mx-auto border rounded-[20px] xl:rounded-[40px] flex flex-col lg:flex-row overflow-hidden">
           <div className="flex-1 px-5 pt-5 xl:pl-[80px] xl:py-[80px] flex flex-col xl:justify-between">
             <div>
-              <h1 className="text-b-purple-light xl:text-2xl">
+              <h1 className="text-b-orange-200 xl:text-2xl">
                 FINANCIAL AND CREDIT FOOTPRINT
               </h1>
               <p className="text-2xl xl:text-5xl font-semibold my-6 xl:mt-10 xl:mb-6">
@@ -98,14 +99,14 @@ export default function Home() {
       </HorizontalSpacing>
       {/* section 3*/}
       <HorizontalSpacing>
-        <section className="flex flex-col lg:flex-row my-8 xl:my-[100px] max-w-[1450px] mx-auto gap-5 xl:gap-10">
-          <div className="flex-1 bg-b-primary-700 rounded-[20px] xl:rounded-[40px] relative">
-            <Image src="/images/lady_looking_up.png" alt="" fill />
+        <section className="flex flex-col lg:flex-row my-8 xl:my-[100px] h-[798px] max-w-[1450px] mx-auto gap-5 xl:gap-10">
+          <div className="flex-1 rounded-[20px] xl:rounded-[40px] relative">
+            <Image src="/images/graduate_student.png" alt="" fill />
           </div>
-          <div className="lg:w-[57%] rounded-[20px] xl:rounded-[40px] p-6 xl:px-10 xl:pt-20 xl:pb-10 bg-black">
-            <div className="xl:w-[90%]">
+          <div className="lg:w-[57%] flex flex-col justify-between rounded-[20px] xl:rounded-[40px] bg-black">
+            <div className="xl:w-[90%] p-6 xl:px-10 xl:pt-20 xl:pb-0">
               <h1 className="text-b-purple-dark xl:text-2xl">STUDENT LOAN</h1>
-              <h3 className="text-white text-2xl xl:text-[32px] xl:text-5xl leading-none mt-10 mb-6 font-semibold">
+              <h3 className="text-white text-2xl xl:text-5xl leading-none mt-10 mb-6 font-semibold">
                 Access the funds you need to realise your academic goals
               </h3>
               <p className="text-b-black-grey-200 font-light xl:text-2xl">
@@ -114,15 +115,15 @@ export default function Home() {
                 future with confidence.
               </p>
             </div>
-            <div className="mt-6 xl:mt-0 flex flex-col xl:flex-row justify-between xl:align-bottom">
-              <div className="xl:self-end">
+            <div className="mt-6 xl:mt-0 flex flex-col xl:flex-row justify-between xl:align-bottom p-6 xl:pl-10 xl:pr-0 xl:pb-0">
+              <div className="xl:self-end pb-6 xl:pb-10">
                 <StoreIcons />
               </div>
               <div className="self-end mt-12 xl:mt-0">
                 <Image
-                  src="/images/book_bulb.png"
+                  src="/images/hat_icon.png"
                   alt=""
-                  className="w-[260px] xl:w-full xl:h-[374px]"
+                  className="w-[560px] h-auto"
                   width={377}
                   height={4374}
                 />
@@ -133,11 +134,11 @@ export default function Home() {
       </HorizontalSpacing>
       {/* section 4 */}
       <HorizontalSpacing>
-        <section className="bg-b-light-200-green max-w-[1450px] xl:h-[798px] mx-auto border rounded-[20px] xl:rounded-[40px] flex flex-col lg:flex-row overflow-hidden">
+        <section className="bg-b-light-200-green max-w-[1450px] xl:h-[798px] mx-auto rounded-[20px] xl:rounded-[40px] flex flex-col lg:flex-row overflow-hidden">
           <div className="flex-1 flex flex-col xl:justify-between pl-5 pt-5 xl:pl-[80px] xl:py-[80px]">
             <div className="">
               <h1 className="text-b-purple-light xl:text-2xl">
-                Rental & Mortgage Opportunities
+                RENTAL & MORTGAGE OPPORTUNITIES
               </h1>
               <h3 className="text-2xl xl:text-5xl leading-none mt-10 mb-6 font-semibold">
                 Cross-Border Rental & Mortgage Opportunities
@@ -163,20 +164,20 @@ export default function Home() {
       </HorizontalSpacing>
       {/* section 5 */}
       <HorizontalSpacing>
-        <section className="flex flex-col md:flex-row my-8 xl:my-[100px] max-w-[1450px] mx-auto gap-5 xl:gap-10">
+        <section className="flex flex-col md:flex-row my-8 xl:my-[100px] max-w-[1450px] h-[798px] mx-auto gap-5 xl:gap-10 overflow-hidden">
           <div className="flex-1 rounded-[20px] xl:rounded-[40px] relative">
             <Image
-              src="/images/lady_on_phone_with_phone_and_card.png"
+              src="/images/lady_shopping.png"
               alt="image of lady on phone with phone and card"
               fill
             />
           </div>
-          <div className="md:w-[57%] rounded-[20px] xl:rounded-[40px] pb-0 xl:px-10 xl:pt-20 xl:pb-0 bg-b-purple-light">
-            <div className="md:w-[82%] p-6 xl:pb-10 ">
+          <div className="md:w-[57%] rounded-[20px] flex flex-col justify-between xl:rounded-[40px] pb-0 xl:px-10 xl:pt-20 xl:pb-0 bg-b-purple-light">
+            <div className="md:w-[88%] ">
               <h1 className="text-b-purple-light-200 xl:text-2xl">
                 CREDIT CARDS
               </h1>
-              <h3 className="text-b-purple-light-300 text-2xl xl:text-5xl leading-none mt-10 mb-6 font-medium">
+              <h3 className="text-white text-2xl xl:text-5xl leading-none mt-10 mb-6 font-medium">
                 Credit cards that allow you live the life that you deserve
               </h3>
               <p className="text-b-purple-light-300 text-sm font-light xl:text-2xl">
@@ -185,15 +186,15 @@ export default function Home() {
               </p>
             </div>
             <div className="flex justify-between flex-col xl:flex-row align-bottom">
-              <div className="xl:self-end p-6 xl:pb-10">
+              <div className="xl:self-end pb-6 xl:pb-10">
                 <StoreIcons />
               </div>
               <div className="mt-36 lg:mt-0 self-end">
                 <Image
                   src="/images/atm_cards.png"
                   alt=""
-                  className="w-[643px]"
-                  width={643}
+                  className="w-[562px]"
+                  width={562}
                   height={400}
                 />
               </div>
@@ -202,50 +203,23 @@ export default function Home() {
         </section>
       </HorizontalSpacing>
       {/* section 6 */}
-      <section className="my-8 xl:my-[240px] px-5 py-[50px] xl:py-20 bg-black">
-        <div className="max-w-[1450px] mx-auto gap-10 xl:gap-10">
-          <div className="flex flex-col justify-center items-center mb-10 max-w-[550px] m-auto text-center">
-            <p className="text-[32px] xl:text-7xl text-white font-semibold">
-              Built on Trust
-            </p>
-            <p className="pt-4 pb-6 text-b-black-grey">
-              Businesses make use of Ndewo to assess customer’s credit
+      <LargeDashboard
+        title="Built on Trust"
+        description="Businesses make use of Ndewo to assess customer’s credit
               worthiness, make rental decision, verify employee’s details and so
-              much more
-            </p>
-            <button className="bg-b-light-green rounded-[40px] py-3 px-[40px] xl:py-4 xl:px-[60px] mt-24 xl:mt-0">
-              Learn more
-            </button>
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <Image
-              src="/images/ndewo_dashboard.png"
-              alt=""
-              className="w-[1386px]"
-              width={1386}
-              height={635}
-            />
-          </div>
-        </div>
-      </section>
+              much more"
+        buttonCta='Learn more'
+      />
+
       {/* section 7 */}
       <HowItWorks />
       {/* section 8 */}
       <Testimonial />
       {/* section 9 */}
       <section className="my-8 xl:my-[100px] bg-black">
-        <div className="max-w-[1450px] mx-auto gap-10 py-20">
-          <div className="flex items-center px-20 md:w-[70%] lg:w-[46%] m-auto">
-            <Image
-              src="/images/free_hand_iphone.png"
-              alt=""
-              className="w-full"
-              width={518}
-              height={819}
-            />
-          </div>
-          <div className="px-10 flex flex-col justify-center items-center mb-10 max-w-[550px] m-auto text-center">
-            <p className="text-2xl xl:text-[40px] text-white font-medium pb-12 pt-10">
+        <div className="max-w-[1450px] mx-auto gap-10 py-20 flex items-center">
+          <div className="px-10 flex flex-col justify-center items-center max-w-[550px] text-center">
+            <p className="text-2xl xl:text-[40px] text-white leading-10 font-medium pb-12 pt-10">
               Ready to experience awesome service with ndewo?
             </p>
             <button className="bg-b-light-green rounded-[40px] py-3 xl:py-4 px-[19px] flex items-center justify-center">
@@ -259,6 +233,15 @@ export default function Home() {
                 Download app
               </span>
             </button>
+          </div>
+          <div className="flex items-center px-20 m-auto">
+            <Image
+              src="/images/free_hand_iphone.png"
+              alt=""
+              className="w-full"
+              width={518}
+              height={819}
+            />
           </div>
         </div>
       </section>

@@ -6,6 +6,7 @@ import NavBar from '@/src/components/NavBar';
 import WaitList from '@/src/components/WaitList';
 import StoreButtonsGroup from '@/src/components/StoreButtonsGroup';
 import ContactForm from '@/src/components/ContactForm';
+import HorizontalLogos from '@/src/components/HorizontalLogos';
 
 const HorizontalSpacing = (props: { children: React.ReactNode }) => (
   <div className="px-5 xl:px-0">{props.children}</div>
@@ -22,17 +23,6 @@ export default function About() {
     // setShowModal(true);
   };
 
-  const items = [
-    'Rent',
-    'Credit history',
-    'Student loan',
-    'Car finance',
-    'Credit cards and loans',
-    'Mortgage',
-    'Rental reference',
-    'Rental guarantee',
-    'Financial health check',
-  ];
   return (
     <div>
       <main className="">
@@ -42,11 +32,13 @@ export default function About() {
           {/*  */}
           <NavBar openModalHandler={openModalHandler} />
           {/* <!-- Main --> */}
-          <main className="text-center my-10 md:my-20 lg:my-44">
-            <div className="p-5 lg:p-0 max-w-[1520px] mx-auto">
+          <main className=" mt-10 md:mt-20 lg:mt-44">
+            <div className="p-5 lg:p-0 max-w-[1080px] mx-auto text-center">
               <h1 className="text-[32px] lg:text-5xl xl:text-7xl leading-none font-semibold">
                 We are building a future for the financial system
               </h1>
+            </div>
+            <div className="max-w-[1500px] mx-auto text-center">
               <p className="mt-4 text-base lg:text-lg xl:text-xl">
                 Bridging the financial gap: We empower credit-invisibles to move
                 freely and access amazing opportunities. Our partners gain
@@ -55,85 +47,46 @@ export default function About() {
               <StoreButtonsGroup />
             </div>
             <HorizontalSpacing>
-              <div className="p-5 lg:p-0 max-w-[1373px] mx-auto my-6 lg:my-32 xl:my-52">
-                <p className="text-b-purple-light text-xl lg:text-3xl xl:text-[40px] pb-6">
-                  Our impact so far
-                </p>
-                <div className="w-full grid grid-cols-2 gap-y-4 lg:flex flex-wrap">
-                  <div className="flex-1">
-                    <p className="text-[40px] xl:text-[90px] font-semibold leading-none">
+              <div className="p-5 lg:p-0 max-w-[1286px] gap-5 mx-auto my-6 lg:my-36 flex">
+                <div className="flex flex-col justify-end bg-contain xl:bg-auto bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/images/teamwork.png')] bg-no-repeat bg-bottom w-[712px] h-[516px] rounded-[30px]">
+                  <div className='w-72'>
+                    <p className="text-white !leading-normal text-xl lg:text-3xl xl:text-[40px] p-8">
+                      Our Impact so far
+                    </p>
+                  </div>
+                </div>
+                <div className="w-[544px] grid grid-cols-2 gap-y-5">
+                  <div className="flex flex-col justify-center bg-b-light-green w-[260px] h-[248px] rounded-[30px] pl-5">
+                    <p className="text-[40px] xl:text-[80px] font-semibold leading-none">
                       100k
                     </p>
-                    <p className="text-b-black-grey">Customers served</p>
+                    <p className="text-3xl">Customers served</p>
                   </div>
-                  <div className="flex-1">
+                  <div className="flex flex-col justify-center bg-b-light-300-green w-[260px] h-[248px] rounded-[30px] pl-5">
                     {' '}
-                    <p className="text-[40px] xl:text-[90px] font-semibold leading-none">
+                    <p className="text-[40px] xl:text-[80px] font-semibold leading-none">
                       2k
                     </p>
-                    <p className="text-b-black-grey">References provided</p>
+                    <p className="text-3xl">References provided</p>
                   </div>
-                  <div className="flex-1">
+                  <div className="flex flex-col justify-center bg-b-light-400-green w-[260px] h-[248px] rounded-[30px] pl-5">
                     {' '}
-                    <p className="text-[40px] xl:text-[90px] font-semibold leading-none">
+                    <p className="text-[40px] xl:text-[80px] font-semibold leading-none">
                       500
                     </p>
-                    <p className="text-b-black-grey">Businesses supported</p>
+                    <p className="text-3xl">Businesses supported</p>
                   </div>
-                  <div className="flex-1">
+                  <div className="flex flex-col justify-center bg-b-light-500-green w-[260px] h-[248px] rounded-[30px] pl-5">
                     {' '}
-                    <p className="text-[40px] xl:text-[90px] font-semibold leading-none">
+                    <p className="text-[40px] xl:text-[80px] font-semibold leading-none">
                       100k+
                     </p>
-                    <p className="text-b-black-grey">
-                      Credit and financial report generated
-                    </p>
+                    <p className=" text-3xl">Report <br /> Generated</p>
                   </div>
                 </div>
               </div>
             </HorizontalSpacing>
-            <HorizontalSpacing>
-              <p className="text-b-black-grey font-semibold">
-                TRUSTED BY MERCHANTS AND BUSINESSES
-              </p>
-              <div className="xl:h-[30px] flex justify-center items-center flex-wrap gap-6 mt-6">
-                <Image
-                  src="/svgs/okra-green-logo.svg"
-                  alt=""
-                  className="w-[62px] h-[24px] lg:w-[84px] lg:h-[30px]"
-                  width={84}
-                  height={30}
-                />
-                <Image
-                  src="/svgs/Barclays-logo.svg"
-                  alt=""
-                  width={106}
-                  height={18}
-                  className="w-[94px] h-[16px] lg:w-[106px] lg:h-[18px]"
-                />
-                <Image
-                  src="/svgs/Equifax-logo.svg"
-                  alt=""
-                  className="w-[88px] h-[16px] lg:w-[106px] lg:h-[18px]"
-                  width={106}
-                  height={18}
-                />
-                <Image
-                  src="/svgs/mono-logo.svg"
-                  alt=""
-                  width={110}
-                  height={20}
-                  className="w-[104px] h-[16px] lg:w-[110px] lg:h-[20px]"
-                />
-                <Image
-                  src="/svgs/FirstCentral Credit Bureau-logo-lg.svg"
-                  alt=""
-                  width={110}
-                  height={20}
-                  className="w-[88px] h-[16px] lg:w-[110px] lg:h-[20px]"
-                />
-              </div>
-            </HorizontalSpacing>
+            <HorizontalLogos />
           </main>
         </header>
 
@@ -153,7 +106,7 @@ export default function About() {
                 <h3 className="text-[32px] lg:text-5xl xl:text-7xl text-white leading-none mb-2 font-semibold py-5 lg:py-0">
                   Our Mission
                 </h3>
-                <p className="text-[#A5A5A5] xl:text-xl">
+                <p className="text-b-grey-600 xl:text-xl">
                   At BetaScore Finance Limited, we aim to empower individuals
                   who are currently credit-invisible due to factors like
                   non-traditional income, recent migration, or starting
@@ -167,7 +120,7 @@ export default function About() {
                 <h3 className="text-[32px] lg:text-5xl xl:text-7xl text-white leading-none mb-2 font-semibold py-5 lg:py-0">
                   Our Vision
                 </h3>
-                <p className="text-[#A5A5A5] xl:text-xl">
+                <p className="text-b-grey-600 xl:text-xl">
                   To be the world&apos;s leading platform for empowering
                   credit-invisible individuals, regardless of background or
                   circumstance, by transforming their financial data into
@@ -190,29 +143,35 @@ export default function About() {
           </div>
         </section>
         <HorizontalSpacing>
-          <section className="max-w-[1450px] mx-auto my-36 xl:mt-[200px] xl:mb-[300px]">
-            <div className="text-center">
+          <section className="max-w-[1450px] rounded-[30px] mx-auto my-36 xl:mt-[108px] xl:mb-[150px] bg-b-light-green pt-24">
+            <div className="text-center pb-24">
               <h1 className="text-[40px] lg:text-5xl xl:text-7xl leading-none font-medium text-b-black-200">
                 One platform,
               </h1>
-              <h1 className="text-[40px] lg:text-5xl xl:text-[72px] leading-none font-medium text-b-purple-light">
+              <h1 className="text-[40px] lg:text-5xl xl:text-[72px] leading-none font-medium">
                 {' '}
                 Limitless Opportunities
               </h1>
             </div>
-            <div className="max-w-[1450px] mx-auto grid grid-cols-2 xl:grid-cols-3 gap-7 mt-24">
-              {items.map((item, index) => (
-                <div
-                  key={index}
-                  className="py-5 px-3 xl:py-14 rounded-full text-sm xl:text-base border border-b-black-grey text-center flex items-center justify-center"
-                >
-                  <p> {item}</p>
-                </div>
-              ))}
+            <div>
+              <Image
+                className=""
+                src="/images/services_long.png"
+                width={1611}
+                height={492}
+                alt="services"
+              />
+              <Image
+                className="hidden"
+                src="/images/services_short.png"
+                width={1611}
+                height={492}
+                alt="services"
+              />
             </div>
           </section>
         </HorizontalSpacing>
-        <section className="bg-b-sand px-4 lg:px-10 xl:px-20 py-10 xl:py-40">
+        <section className="bg-b-sand px-4 lg:px-10 xl:px-20 py-10 xl:pt-[126px] xl:pb-[80px]">
           <div className="max-w-[1520px] mx-auto grid grid-cols-1 lg:grid-cols-2">
             <div className="w-full flex justify-center lg:hidden mb-20">
               <Image
@@ -236,8 +195,8 @@ export default function About() {
                 </p>
                 <br />
                 <p>
-                  That&apos;s where Ndewo comes in. We leverage your home credit and
-                  financial data to empower you with:
+                  That&apos;s where Ndewo comes in. We leverage your home credit
+                  and financial data to empower you with:
                 </p>
                 <br />
                 <p>
@@ -259,30 +218,12 @@ export default function About() {
                 </p>
                 <br />
                 <p>
-                  We&apos;re confident that Ndewo will be your key to unlocking a
-                  world of financial opportunities and achieving your dreams in
-                  your new home.
+                  We&apos;re confident that Ndewo will be your key to unlocking
+                  a world of financial opportunities and achieving your dreams
+                  in your new home.
                 </p>
               </div>
-              <div>
-                <div className="w-[146px] lg:w-[202px] h-[132px] lg:h-[168px] flex justify-center gap-4 items-center mb-8">
-                  <Image
-                    src="/svgs/josh-avatar.svg"
-                    alt=""
-                    width={60}
-                    height={60}
-                    className="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]"
-                  />
-                  <div>
-                    <h4 className="text-base sm:text-lg">Josh</h4>
-                    <p className="text-b-tertiary text-sm lg:text-base whitespace-nowrap">
-                      Founder & CEO
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
-
             <div className="w-full lg:flex justify-center hidden">
               <Image
                 src="/images/ndewo_big.png"
@@ -291,6 +232,22 @@ export default function About() {
                 width={485}
                 height={100}
               />
+            </div>
+          </div>
+
+          <div className="max-w-[1520px] flex gap-4 m-auto mt-16">
+            <Image
+              src="/svgs/josh-avatar.svg"
+              alt=""
+              width={60}
+              height={60}
+              className="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]"
+            />
+            <div>
+              <h4 className="text-base sm:text-lg">Josh</h4>
+              <p className="text-b-tertiary text-sm lg:text-base whitespace-nowrap">
+                Founder & CEO
+              </p>
             </div>
           </div>
         </section>

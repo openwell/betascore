@@ -57,25 +57,25 @@ export default function Index() {
             <div className="w-[10px] bg-b-grey-300">
               <div
                 className={classNames('w-full h-[20%]', {
-                  ['bg-b-purple-light']: activeRole === 0,
+                  ['bg-b-light-green']: activeRole === 0,
                 })}
               />
               <div className="w-full h-[5%]" />
               <div
                 className={classNames('w-full h-[20%]', {
-                  ['bg-b-purple-light']: activeRole === 1,
+                  ['bg-b-light-green']: activeRole === 1,
                 })}
               />
               <div className="w-full h-[10%]" />
               <div
                 className={classNames('w-full h-[20%]', {
-                  ['bg-b-purple-light']: activeRole === 2,
+                  ['bg-b-light-green']: activeRole === 2,
                 })}
               />
               <div className="w-full h-[5%]" />
               <div
                 className={classNames('w-full h-[20%]', {
-                  ['bg-b-purple-light']: activeRole === 3,
+                  ['bg-b-light-green']: activeRole === 3,
                 })}
               />
             </div>

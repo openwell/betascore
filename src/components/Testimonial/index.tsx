@@ -82,7 +82,7 @@ export default function Index() {
                 height={40}
                 className="mt-12 mb-4"
               />
-              <p className="text-b-black-200 xl:text-2xl">{e.name}</p>
+              <p className="text-b-black-200 xl:text-2xl uppercase">{e.name}</p>
             </div>
           </SwiperSlide>
         ))}
