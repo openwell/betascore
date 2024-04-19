@@ -3,7 +3,10 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { howItWorksIndividual, howItWorksBusiness } from './data';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+
 import 'swiper/css';
+import 'swiper/element/css/autoplay';
 
 export default function Index() {
   const [activeTab, setActiveTab] = useState('individual');
@@ -37,7 +40,7 @@ export default function Index() {
             })}
             onClick={() => setActiveHandler('individual')}
           >
-            <p className='text-base xl:text-xl'>Individuals</p>
+            <p className="text-base xl:text-xl">Individuals</p>
           </div>
           <div
             role="tab"
@@ -49,36 +52,50 @@ export default function Index() {
             )}
             onClick={() => setActiveHandler('business')}
           >
-            <p className='text-base xl:text-xl'>Businesses</p>
+            <p className="text-base xl:text-xl">Businesses</p>
           </div>
         </div>
         <div className="flex items-center justify-between">
           <div className="flex gap-10">
-            <div className="w-[10px] bg-b-grey-300">
-              <div
-                className={classNames('w-full h-[20%]', {
-                  ['bg-b-light-green']: activeRole === 0,
-                })}
-              />
-              <div className="w-full h-[5%]" />
-              <div
-                className={classNames('w-full h-[20%]', {
-                  ['bg-b-light-green']: activeRole === 1,
-                })}
-              />
-              <div className="w-full h-[10%]" />
-              <div
-                className={classNames('w-full h-[20%]', {
-                  ['bg-b-light-green']: activeRole === 2,
-                })}
-              />
-              <div className="w-full h-[5%]" />
-              <div
-                className={classNames('w-full h-[20%]', {
-                  ['bg-b-light-green']: activeRole === 3,
-                })}
-              />
-            </div>
+            {activeTab === 'individual' ? (
+              <div className="w-[10px] bg-b-grey-300">
+                <div
+                  className={classNames('w-full h-[20%]', {
+                    ['bg-b-light-green']: activeRole === 0,
+                  })}
+                />
+                <div className="w-full h-[5%]" />
+                <div
+                  className={classNames('w-full h-[20%]', {
+                    ['bg-b-light-green']: activeRole === 1,
+                  })}
+                />
+                <div className="w-full h-[10%]" />
+                <div
+                  className={classNames('w-full h-[20%]', {
+                    ['bg-b-light-green']: activeRole === 2,
+                  })}
+                />
+                <div className="w-full h-[5%]" />
+                <div
+                  className={classNames('w-full h-[20%]', {
+                    ['bg-b-light-green']: activeRole === 3,
+                  })}
+                />
+              </div>
+            ) : (
+              <div className="w-[10px] bg-b-grey-300">
+                <div
+                  className={classNames('w-full h-[20%] bg-b-light-green')}
+                />
+                <div className="w-full h-[5%]" />
+                <div className={classNames('w-full h-[20%]')} />
+                <div className="w-full h-[10%]" />
+                <div className={classNames('w-full h-[20%]')} />
+                <div className="w-full h-[5%]" />
+                <div className={classNames('w-full h-[20%]')} />
+              </div>
+            )}
             <div className="[&>*:nth-child(4)]:mb-0 flex-1">
               {howItWorks.map((e, index) => (
                 <div key={e.id} className="mb-[91px] cursor-pointer">
@@ -105,6 +122,11 @@ export default function Index() {
                 <Swiper
                   className="mySwiper"
                   onSlideChange={(e) => setActiveRole(e.activeIndex)}
+                  autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                  }}
+                  modules={[Autoplay]}
                 >
                   {slideImage.map((e, index) => (
                     <SwiperSlide key={index}>
@@ -124,7 +146,7 @@ export default function Index() {
                 <Image
                   src="/images/macbook_pro_ndewo.png"
                   alt="macbook_pro_ndewo"
-                  className='w-[446px] xl:w-[1015px]'
+                  className="w-[446px] xl:w-[1015px]"
                   width={1015}
                   height={571}
                 />
