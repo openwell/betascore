@@ -72,7 +72,7 @@ const config: Config = {
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
-    plugin(function ({ addUtilities }) {
+    plugin(function ({ addUtilities }: { addUtilities: any }) {
       addUtilities({
         '.no-scrollbar': {
           '-ms-overflow-style': 'none',  /* IE and Edge */
