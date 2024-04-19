@@ -90,14 +90,14 @@ export default function Business() {
           {items.map((item, index) => (
             <div
               key={index}
-              className="py-5 px-3 xl:py-10 w-full md:w-[300px] md:h-[180px] border border-b-border-white rounded-lg md:rounded-3xl text-sm xl:text-base text-center gap-5 flex sm:flex-col items-center md:justify-center"
+              className="py-5 px-3 xl:py-10 w-full md:w-[300px] md:h-[180px] border border-b-border-white rounded-lg md:rounded-3xl text-sm xl:text-base md:text-center gap-4 md:gap-2 flex sm:flex-col items-center md:justify-center"
             >
               <Image
                 src={item.icon}
                 alt=""
                 width={65}
                 height={49}
-                className="w-[52px] xl:[65px] md:mb-6"
+                className="w-[52px] xl:[65px]"
               />
               <div>
                 <p className="md:text-xl font-medium"> {item.text}</p>
