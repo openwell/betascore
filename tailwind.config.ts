@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss';
 const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin')
 
 const config: Config = {
   content: [
@@ -40,18 +41,18 @@ const config: Config = {
         'b-light-500-green': '#D5FFA7',
         'b-dark-green': '#4B8F00',
         'b-pale-green': 'rgba(233, 255, 210, 0.15)',
-        'b-black-grey':'#586487',
-        'b-black-grey-200':'#A7B3D3',
-        'b-purple-light':'#5603AD',
-        'b-purple-dark':'#8367C7',
-        'b-sand':'#FFF1E1',
-        'b-orange':'#FE9920',
-        'b-purple-light-200':'#E5DBFF',
-        'b-purple-light-300':'#C0ACF0',
-        'b-grey':'#848484',
-        'b-grey-300':'#EBEBEB',
-        'b-black-200':'#0A0A0A',
-        'b-orange-200':'#FA7921',
+        'b-black-grey': '#586487',
+        'b-black-grey-200': '#A7B3D3',
+        'b-purple-light': '#5603AD',
+        'b-purple-dark': '#8367C7',
+        'b-sand': '#FFF1E1',
+        'b-orange': '#FE9920',
+        'b-purple-light-200': '#E5DBFF',
+        'b-purple-light-300': '#C0ACF0',
+        'b-grey': '#848484',
+        'b-grey-300': '#EBEBEB',
+        'b-black-200': '#0A0A0A',
+        'b-orange-200': '#FA7921',
         'b-grey-400': '#F8F8F8',
         'b-grey-500': '#F9F9F9',
         'b-grey-600': '#A5A5A5',
@@ -68,6 +69,17 @@ const config: Config = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.no-scrollbar': {
+          '-ms-overflow-style': 'none',  /* IE and Edge */
+          'scrollbar-width': 'none'  /* Firefox */
+        }
+      });
+    }),
+  ],
 };
 export default config;

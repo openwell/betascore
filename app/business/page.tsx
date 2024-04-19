@@ -86,29 +86,31 @@ export default function Business() {
 
       <section>
         <HorizontalLogos />
-        <div className="max-w-[1052px] mx-auto grid grid-cols-2 xl:grid-cols-3 gap-7 mt-[88px]">
+        <div className="max-w-[1052px] mx-auto px-5 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 lg:gap-7 mt-10 lg:mt-[88px] place-items-center">
           {items.map((item, index) => (
             <div
               key={index}
-              className="py-5 px-3 xl:py-10 w-[300px] h-[180px] border border-b-border-white rounded-3xl text-sm xl:text-base text-center flex flex-col items-center justify-center"
+              className="py-5 px-3 xl:py-10 w-full md:w-[300px] md:h-[180px] border border-b-border-white rounded-lg md:rounded-3xl text-sm xl:text-base text-center gap-5 flex sm:flex-col items-center md:justify-center"
             >
               <Image
                 src={item.icon}
                 alt=""
                 width={65}
                 height={49}
-                className="mb-6"
+                className="w-[52px] xl:[65px] md:mb-6"
               />
-              <p className="text-xl"> {item.text}</p>
+              <div>
+                <p className="md:text-xl font-medium"> {item.text}</p>
+              </div>
             </div>
           ))}
         </div>
       </section>
 
-      <HorizontalSpacing>
-        <section className="grid grid-cols-1 lg:grid-cols-2 my-20 lg:my-[100px] max-w-[1440px] mx-auto gap-10 lg:gap-[30px] text-center lg:text-left">
-          <div className="bg-b-purple-light rounded-[20px] xl:rounded-[40px] px-4 pt-6 lg:pl-10 lg:pr-[49px] lg:pt-20 lg:pb-6 h-[370px] xl:h-[790px]">
-            <h3 className="text-[24px] xl:text-[56px] text-white leading-none mb-2 font-semibold">
+      {/* <HorizontalSpacing> */}
+        <section className="px-5 grid grid-cols-1 md:grid-cols-2 my-20 lg:my-[100px] max-w-[1440px] mx-auto gap-10 lg:gap-[30px] md:text-center lg:text-left">
+          <div className="bg-b-purple-light rounded-[20px] xl:rounded-[40px] px-4 pt-6 lg:pl-10 lg:pr-[49px] lg:pt-20 lg:pb-6 xl:h-[790px]">
+            <h3 className="text-[24px] xl:text-[56px] text-white md:leading-none  mb-2 font-semibold">
               Access a New Customer Landscape: Expand Opportunities with Ndewo
             </h3>
             <p className="xl:text-2xl mb-4 text-b-purple-light-300 font-light py-4">
@@ -120,8 +122,8 @@ export default function Business() {
               health.
             </p>
           </div>
-          <div className="bg-b-light-200-green rounded-[20px] xl:rounded-[40px] px-4 pt-6 lg:pl-10 lg:pr-[49px] lg:pt-20 h-[370px] xl:h-[790px]">
-            <h3 className="text-[24px] xl:text-[56px] text-black leading-none font-semibold">
+          <div className="bg-b-light-200-green rounded-[20px] xl:rounded-[40px] px-4 pt-6 lg:pl-10 lg:pr-[49px] lg:pt-20 xl:h-[790px]">
+            <h3 className="text-[24px] xl:text-[56px] text-black md:leading-none font-semibold">
               Get Insights into Customer Affordability, Beyond Traditional
               Limits
             </h3>
@@ -133,8 +135,8 @@ export default function Business() {
               offerings, expanding access while mitigating risk.
             </p>
           </div>
-          <div className="bg-b-sand text-white rounded-[20px] xl:rounded-[40px] px-4 pt-6 lg:pl-10 lg:pr-[49px] lg:pt-20 h-[370px] xl:h-[790px]">
-            <h3 className="text-[24px] xl:text-[56px] text-black leading-none font-semibold">
+          <div className="bg-b-sand text-white rounded-[20px] xl:rounded-[40px] px-4 pt-6 lg:pl-10 lg:pr-[49px] lg:pt-20 xl:h-[790px]">
+            <h3 className="text-[24px] xl:text-[56px] text-black md:leading-none font-semibold">
               Verify Income & Identity of Customers : Streamline onboarding &
               reduce risk with Ndewo
             </h3>
@@ -145,8 +147,8 @@ export default function Business() {
               history.
             </p>
           </div>
-          <div className="bg-b-black-200 text-white rounded-[20px] xl:rounded-[40px] px-4 pt-6 lg:pl-10 lg:pr-[49px] lg:pt-20 h-[370px] xl:h-[790px]">
-            <h3 className="text-[24px] xl:text-[56px] leading-none font-semibold">
+          <div className="bg-b-black-200 text-white rounded-[20px] xl:rounded-[40px] px-4 pt-6 lg:pl-10 lg:pr-[49px] lg:pt-20 xl:h-[790px]">
+            <h3 className="text-[24px] xl:text-[56px] md:leading-none font-semibold">
               Make Informed Decisions, Empower Your Business: Ndewo Answers the
               &quot;Unusual Income&quot; Challenge.
             </h3>
@@ -158,12 +160,12 @@ export default function Business() {
             </p>
           </div>
         </section>
-      </HorizontalSpacing>
+      {/* </HorizontalSpacing> */}
       <LargeDashboard
         title=" Rental product"
         description="Verify tenant's information and complete reference in a very
               few minutes instead of 2 days"
-        buttonCta='Go to Rental'
+        buttonCta="Go to Rental"
       />
       <Faq />
       <HorizontalSpacing>

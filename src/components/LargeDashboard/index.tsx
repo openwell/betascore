@@ -17,7 +17,7 @@ export default function Index({
           <p className="text-[32px] xl:text-7xl text-white font-semibold">
             {title}
           </p>
-          <p className="pt-4 pb-6 text-b-grey text-xl">{description}</p>
+          <p className="pt-4 pb-6 text-b-grey xl:text-xl">{description}</p>
           <button className="bg-b-light-green rounded-[40px] py-3 px-[40px] xl:py-4 xl:px-[60px] mt-24 xl:mt-0">
             {buttonCta}
           </button>

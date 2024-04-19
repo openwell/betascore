@@ -29,7 +29,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
             <Image
               src="/images/ndewo_small.png"
               alt="beta-score logo"
-              className='h-[24px] w-[119px] xl:w-[190px] xl:h-[40px]'
+              className='h-[24px] w-[119px] xl:w-[194px] xl:h-[40px]'
               width={194}
               height={40}
             />

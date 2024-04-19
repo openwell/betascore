@@ -163,7 +163,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="h-[1px] w-full bg-b-black-grey hidden xl:block" />
-      <div className="flex flex-col lg:flex-row justify-between items-center py-8 px-4 font-light">
+      <div className="flex flex-col lg:flex-row justify-between items-center py-8 px-4">
         <p className="text-b-black-grey mb-6 text-sm xl:text-base">2023 Betascore. All rights reserved</p>
         <p className="text-b-black-grey max-w-[621px] text-center lg:text-right lg:text-sm xl:text-base hidden lg:block">
           Ndewo is a product of Betascore Finance. A company registered in the

@@ -8,7 +8,8 @@ import WaitList from '@/src/components/WaitList';
 import StoreIcons from '@/src/components/StoreIcons';
 import Testimonial from '@/src/components/Testimonial';
 import StoreButtonsGroup from '@/src/components/StoreButtonsGroup';
-import LargeDashboard from '@/src/components/LargeDashboard'
+import LargeDashboard from '@/src/components/LargeDashboard';
+import LargeHandWithPhone from '@/src/components/LargeHandWithPhone';
 
 const HorizontalSpacing = (props: { children: React.ReactNode }) => (
   <div className="px-5 xl:px-0">{props.children}</div>
@@ -40,7 +41,7 @@ export default function Home() {
             </p>
           </div>
           <StoreButtonsGroup />
-          <div className="flex justify-center bg-contain xl:bg-auto bg-[url('/images/map_with_dots.png')] bg-no-repeat bg-bottom">
+          <div className="px-5 flex justify-center bg-contain xl:bg-auto bg-[url('/images/map_with_dots.png')] bg-no-repeat bg-bottom">
             <Image
               className="my-20"
               src="/images/hero_lady_with_wings.png"
@@ -55,7 +56,39 @@ export default function Home() {
       <WaitList showModal={showModal} closeHandler={closeModalHandler} />
       {/*  */}
       {/* section 1 */}
-      <section className="my-8 xl:my-[100px] max-w-[1240px] mx-auto">
+      <section className="py-[78px] xl:py-[100px] max-w-[1240px] mx-auto relative overflow-y-hidden">
+        <div className="absolute left-0 flex items-center">
+          <Image
+            src="/images/three_logo_triangle_left.png"
+            alt=""
+            className="w-[91px] h-auto hidden sm:block"
+            width={141}
+            height={194}
+          />
+          <Image
+            src="/images/three_logo_triangle_left_small.png"
+            alt=""
+            className="w-[67px] h-auto sm:hidden"
+            width={67}
+            height={120}
+          />
+        </div>
+        <div className="absolute right-0 flex items-center justify-end">
+          <Image
+            src="/images/three_logo_triangle_right.png"
+            alt=""
+            className="w-[71px] h-auto hidden sm:block"
+            width={91}
+            height={184}
+          />
+          <Image
+            src="/images/three_logo_triangle_right_small.png"
+            alt=""
+            className="w-[57px] h-auto sm:hidden"
+            width={67}
+            height={120}
+          />
+        </div>
         <div className="text-center">
           <h1 className="text-[28px] lg:text-4xl xl:text-7xl xl:leading-none font-medium text-b-black-200">
             Move with Confidence
@@ -99,11 +132,11 @@ export default function Home() {
       </HorizontalSpacing>
       {/* section 3*/}
       <HorizontalSpacing>
-        <section className="flex flex-col lg:flex-row my-8 xl:my-[100px] h-[798px] max-w-[1450px] mx-auto gap-5 xl:gap-10">
-          <div className="flex-1 rounded-[20px] xl:rounded-[40px] relative">
+        <section className="flex flex-col lg:flex-row my-8 xl:my-[100px] h-[715px] lg:h-[598px] xl:h-[798px] max-w-[1450px] mx-auto gap-5 xl:gap-10">
+          <div className="flex-1 rounded-[20px] xl:rounded-[40px] relative hidden sm:block">
             <Image src="/images/graduate_student.png" alt="" fill />
           </div>
-          <div className="lg:w-[57%] flex flex-col justify-between rounded-[20px] xl:rounded-[40px] bg-black">
+          <div className="lg:w-[57%] h-full flex flex-col justify-between rounded-[20px] xl:rounded-[40px] bg-black">
             <div className="xl:w-[90%] p-6 xl:px-10 xl:pt-20 xl:pb-0">
               <h1 className="text-b-purple-dark xl:text-2xl">STUDENT LOAN</h1>
               <h3 className="text-white text-2xl xl:text-5xl leading-none mt-10 mb-6 font-semibold">
@@ -114,16 +147,19 @@ export default function Home() {
                 financial challenges into opportunities. Move towards your
                 future with confidence.
               </p>
+              <div className="xl:self-end pt-6 sm:hidden">
+                <StoreIcons />
+              </div>
             </div>
-            <div className="mt-6 xl:mt-0 flex flex-col xl:flex-row justify-between xl:align-bottom p-6 xl:pl-10 xl:pr-0 xl:pb-0">
-              <div className="xl:self-end pb-6 xl:pb-10">
+            <div className="mt-6 xl:mt-0 flex flex-col lg:flex-row justify-between xl:align-bottom pl-6 xl:pl-10 xl:pr-0 xl:pb-0">
+              <div className="lg:self-end pb-6 xl:pb-10 hidden sm:block">
                 <StoreIcons />
               </div>
               <div className="self-end mt-12 xl:mt-0">
                 <Image
                   src="/images/hat_icon.png"
                   alt=""
-                  className="w-[560px] h-auto"
+                  className="w-[560px] lg:w-[377px] h-auto"
                   width={377}
                   height={4374}
                 />
@@ -134,7 +170,7 @@ export default function Home() {
       </HorizontalSpacing>
       {/* section 4 */}
       <HorizontalSpacing>
-        <section className="bg-b-light-200-green max-w-[1450px] xl:h-[798px] mx-auto rounded-[20px] xl:rounded-[40px] flex flex-col lg:flex-row overflow-hidden">
+        <section className="bg-b-light-200-green max-w-[1450px] lg:h-[598px] xl:h-[798px] mx-auto rounded-[20px] xl:rounded-[40px] flex flex-col lg:flex-row overflow-hidden">
           <div className="flex-1 flex flex-col xl:justify-between pl-5 pt-5 xl:pl-[80px] xl:py-[80px]">
             <div className="">
               <h1 className="text-b-purple-light xl:text-2xl">
@@ -163,17 +199,18 @@ export default function Home() {
         </section>
       </HorizontalSpacing>
       {/* section 5 */}
+
       <HorizontalSpacing>
-        <section className="flex flex-col md:flex-row my-8 xl:my-[100px] max-w-[1450px] h-[798px] mx-auto gap-5 xl:gap-10 overflow-hidden">
-          <div className="flex-1 rounded-[20px] xl:rounded-[40px] relative">
+        <section className="flex flex-col lg:flex-row my-8 xl:my-[100px] max-w-[1450px] h-[715px] lg:h-[598px] xl:h-[798px] mx-auto gap-5 xl:gap-10 overflow-hidden">
+          <div className="flex-1 rounded-[20px] xl:rounded-[40px] relative hidden sm:block">
             <Image
               src="/images/lady_shopping.png"
               alt="image of lady on phone with phone and card"
               fill
             />
           </div>
-          <div className="md:w-[57%] rounded-[20px] flex flex-col justify-between xl:rounded-[40px] pb-0 xl:px-10 xl:pt-20 xl:pb-0 bg-b-purple-light">
-            <div className="md:w-[88%] ">
+          <div className="lg:w-[57%] rounded-[20px] h-full flex flex-col justify-between xl:rounded-[40px] pb-0 pt-5 pl-5 xl:px-10 xl:pt-20 xl:pb-0 bg-b-purple-light">
+            <div className="xl:w-[90%]">
               <h1 className="text-b-purple-light-200 xl:text-2xl">
                 CREDIT CARDS
               </h1>
@@ -186,7 +223,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex justify-between flex-col xl:flex-row align-bottom">
-              <div className="xl:self-end pb-6 xl:pb-10">
+              <div className="xl:self-end py-6 xl:py-10">
                 <StoreIcons />
               </div>
               <div className="mt-36 lg:mt-0 self-end">
@@ -208,7 +245,7 @@ export default function Home() {
         description="Businesses make use of Ndewo to assess customer’s credit
               worthiness, make rental decision, verify employee’s details and so
               much more"
-        buttonCta='Learn more'
+        buttonCta="Learn more"
       />
 
       {/* section 7 */}
@@ -216,35 +253,7 @@ export default function Home() {
       {/* section 8 */}
       <Testimonial />
       {/* section 9 */}
-      <section className="my-8 xl:my-[100px] bg-black">
-        <div className="max-w-[1450px] mx-auto gap-10 py-20 flex items-center">
-          <div className="px-10 flex flex-col justify-center items-center max-w-[550px] text-center">
-            <p className="text-2xl xl:text-[40px] text-white leading-10 font-medium pb-12 pt-10">
-              Ready to experience awesome service with ndewo?
-            </p>
-            <button className="bg-b-light-green rounded-[40px] py-3 xl:py-4 px-[19px] flex items-center justify-center">
-              <Image
-                src="/images/ndewo_icon.png"
-                alt="beta-score logo"
-                width={32}
-                height={32}
-              />
-              <span className="text-black ml-[12px] mr-[8px] xl:text-xl">
-                Download app
-              </span>
-            </button>
-          </div>
-          <div className="flex items-center px-20 m-auto">
-            <Image
-              src="/images/free_hand_iphone.png"
-              alt=""
-              className="w-full"
-              width={518}
-              height={819}
-            />
-          </div>
-        </div>
-      </section>
+      <LargeHandWithPhone />
       {/* </div> */}
       <Footer />
     </main>

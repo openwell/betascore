@@ -6,6 +6,7 @@ import NavBar from '@/src/components/NavBar';
 import WaitList from '@/src/components/WaitList';
 import StoreIcons from '@/src/components/StoreIcons';
 import StoreButtonsGroup from '@/src/components/StoreButtonsGroup';
+import LargeHandWithPhone from '@/src/components/LargeHandWithPhone';
 
 const HorizontalSpacing = (props: { children: React.ReactNode }) => (
   <div className="px-5 xl:px-0">{props.children}</div>
@@ -80,11 +81,11 @@ export default function Individual() {
               journey in your new location.
             </p>
           </div>
-          <div className="mb-40 mt-32 m-auto">
+          <div className="my-20 xl:mb-40 xl:mt-32 m-auto">
             <Image
               src="/images/map_globe_2.png"
               alt=""
-              className="w-ful"
+              className="w-full h-auto"
               width={658}
               height={606}
             />
@@ -106,7 +107,7 @@ export default function Individual() {
       </section>
       {/* section 3 */}
       <HorizontalSpacing>
-        <section className="bg-b-sand max-w-[1450px] xl:h-[798px] lg:pt-[80px] mx-auto rounded-[20px] xl:rounded-[40px] overflow-hidden">
+        <section className="bg-b-sand max-w-[1450px] h-[715px] md:h-[598px] xl:h-[798px] lg:pt-[80px] mx-auto rounded-[20px] xl:rounded-[40px] overflow-hidden">
           <div className="h-full px-5 pt-5 lg:pl-[40px] lg:pr-0 xl:pl-[80px] flex flex-col justify-between">
             <div className="w-full xl:w-[56%]">
               <h1 className="text-b-purple-light xl:text-2xl">
@@ -123,15 +124,18 @@ export default function Individual() {
                 services like housing and loans, regardless of traditional
                 credit history.
               </p>
+              <div className="xl:self-end pt-6 sm:hidden">
+                <StoreIcons />
+              </div>
             </div>
             <div className="flex items-end justify-between">
-              <div className="xl:self-end pb-6 xl:pb-10">
+              <div className="lg:self-end pb-6 xl:pb-10 hidden sm:block">
                 <StoreIcons />
               </div>
               <Image
                 src="/images/cities_silhouette.png"
                 alt=""
-                className="h-auto w-[287px] xl:w-[899px]"
+                className="h-auto w-[287px] md:w-[498px] lg:w-[699px] xl:w-[899px]"
                 width={899}
                 height={299}
               />
@@ -189,35 +193,7 @@ export default function Individual() {
         </section>
       </HorizontalSpacing>
       {/* section 6 */}
-      <section className="my-8 xl:my-[100px] bg-black">
-        <div className="max-w-[1450px] mx-auto gap-10 py-20 flex items-center">
-          <div className="px-10 flex flex-col justify-center items-center max-w-[550px] text-center">
-            <p className="text-2xl xl:text-[40px] text-white leading-10 font-medium pb-12 pt-10">
-              Ready to experience awesome service with ndewo?
-            </p>
-            <button className="bg-b-light-green rounded-[40px] py-3 xl:py-4 px-[19px] flex items-center justify-center">
-              <Image
-                src="/images/ndewo_icon.png"
-                alt="beta-score logo"
-                width={32}
-                height={32}
-              />
-              <span className="text-black ml-[12px] mr-[8px] xl:text-xl">
-                Download app
-              </span>
-            </button>
-          </div>
-          <div className="flex items-center px-20 m-auto">
-            <Image
-              src="/images/free_hand_iphone.png"
-              alt=""
-              className="w-full"
-              width={518}
-              height={819}
-            />
-          </div>
-        </div>
-      </section>
+      <LargeHandWithPhone />
       <Footer />
     </main>
   );

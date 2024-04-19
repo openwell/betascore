@@ -14,7 +14,7 @@ export default function FAQ() {
       question:
         'What types of businesses do we work with?',
       answer:
-        "We work with diverse businesses, including financial institutions, oil and gas companies, e-commerce businesses, governmental institutions or nont for profit companies. Whether you're a large corporation or a small business, we're committed to exploring partnership opportunities that can unlock more growth opportunities for you.",
+        "We work with diverse businesses, including financial institutions, oil and gas companies, e-commerce businesses, governmental institutions or not for profit companies. Whether you're a large corporation or a small business, we're committed to exploring partnership opportunities that can unlock more growth opportunities for you.",
     },
     {
       question: 'How does the partnership process work?',
@@ -30,7 +30,7 @@ export default function FAQ() {
     {
       question: 'How can my business get started by partnering with your credit reporting company?',
       answer:
-        "Getting started is easy! Simply reach out to our partnership team through our website - business page form or contact us directly by emailing business@betascore.io. We'll schedule an initial consultation to discuss your needs and explore how we can work together to create value for your business.",
+        "Getting started is easy! Simply reach out to our partnership team through our website - business page form or contact us directly by emailing <span class='text-b-purple-light'>business@betascore.io.</span> We'll schedule an initial consultation to discuss your needs and explore how we can work together to create value for your business.",
     },
 
   ];
@@ -70,9 +70,8 @@ export default function FAQ() {
                         </Disclosure.Button>
                       </dt>
                       <Disclosure.Panel as="dd" className="mt-2 lg:pr-12">
-                        <p className="text-sm lg:text-2xl leading-7 text-b-black-grey">
-                          {faq.answer}
-                        </p>
+                        <div className="text-sm lg:text-2xl leading-7 text-b-black-grey" 
+                        dangerouslySetInnerHTML={{ __html: faq.answer }}/>
                       </Disclosure.Panel>
                     </>
                   )}
