@@ -80,7 +80,7 @@ export default function Individual() {
           </div>
           {/* my-20 xl:mb-40 xl:mt-32 */}
           <div className="m-auto">
-            <video
+            {/* <video
               autoPlay
               playsInline
               loop
@@ -92,14 +92,14 @@ export default function Individual() {
                 src="/video/spinning_globe_captions.vtt"
                 label="English"
               />
-            </video>
-            {/* <Image
-              src="/svgs/globe.svg"
+            </video> */}
+            <Image
+              src="/video/globe.gif"
               alt=""
               className="w-full h-auto"
               width={658}
               height={606}
-            /> */}
+            />
           </div>
         </div>
       </section>
