@@ -46,7 +46,7 @@ const StarReview = ({ rating }: { rating: number }) => {
 
 export default function Index() {
   return (
-    <div className="max-w-[1450px] mx-auto my-10 xl:my-20">
+    <div className="max-w-[960px] mx-auto my-10 xl:my-20">
       <Swiper
         className="mySwiper"
         slidesPerView={3}
@@ -72,17 +72,21 @@ export default function Index() {
       >
         {userReviews.map((e, index) => (
           <SwiperSlide key={index}>
-            <div className="max-w-[280px] px-4 xl:max-w-[460px] h-[266px] xl:h-[432px] text-center flex flex-col justify-center items-center">
-              <StarReview rating={e.star} />
-              <p className="xl:text-lg text-b-black-grey">{e.review}</p>
-              <Image
-                alt=""
-                src={e.avatar}
-                width={40}
-                height={40}
-                className="mt-6 xl:mt-12 mb-4"
-              />
-              <p className="text-b-black-200 xl:text-2xl uppercase">{e.name}</p>
+            <div className="max-w-[280px] px-4 h-[366px] xl:max-w-[302px] xl:h-[432px] text-center flex flex-col justify-between items-center">
+              <div className='py-12 flex flex-col items-center justify-center'>
+                <StarReview rating={e.star} />
+                <p className="text-b-black-grey">{e.review}</p>
+              </div>
+              <div className='pb-12 flex flex-col items-center justify-center'>
+                <Image
+                  alt=""
+                  src={e.avatar}
+                  width={40}
+                  height={40}
+                  className="mt-6 xl:mt-12 mb-4"
+                />
+                <p className="text-b-black-200 uppercase">{e.name}</p>
+              </div>
             </div>
           </SwiperSlide>
         ))}

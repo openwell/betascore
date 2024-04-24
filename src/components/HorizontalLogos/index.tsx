@@ -4,17 +4,17 @@ import Marque from 'react-fast-marquee';
 
 export default function Index() {
   return (
-    <div className="text-center bg-b-grey-500 mx-auto pb-10 xl:pb-[90px]">
+    <div className="text-center bg-b-grey-500 mx-auto pb-10 xl:pb-[50px]">
       <p className="text-b-black-grey font-semibold py-11">
         TRUSTED BY MERCHANTS AND BUSINESSES
       </p>
 
       <Marque>
-        <div className="w-full relative flex justify-start items-center gap-10 lg:gap-20 xl:gap-32  px-10">
+        <div className="w-full relative flex justify-start items-center gap-10 lg:gap-20 xl:gap-32 px-10">
           <Image
             src="/svgs/grey_logos/okra.svg"
             alt=""
-            className="w-[62px] h-[24px] lg:w-[124px] xl:w-[224px] lg:h-[80px]"
+            className="w-[62px] h-[24px] lg:w-[124px] xl:w-[127px] lg:h-[45px]"
             width={84}
             height={30}
           />
@@ -23,12 +23,12 @@ export default function Index() {
             alt=""
             width={106}
             height={18}
-            className="w-[94px] h-[16px] lg:w-[124px] xl:w-[351px] lg:h-[59px]"
+            className="w-[94px] h-[16px] lg:w-[124px] xl:w-[198px] lg:h-[34px]"
           />
           <Image
             src="/svgs/grey_logos/equifax.svg"
             alt=""
-            className="w-[88px] h-[16px] lg:w-[124px] xl:w-[337px] lg:h-[61px]"
+            className="w-[88px] h-[16px] lg:w-[124px] xl:w-[190px] lg:h-[34px]"
             width={106}
             height={18}
           />
@@ -37,14 +37,14 @@ export default function Index() {
             alt=""
             width={110}
             height={20}
-            className="w-[104px] h-[16px] lg:w-[124px] xl:w-[317px] lg:h-[49px]"
+            className="w-[104px] h-[16px] lg:w-[124px] xl:w-[179px] lg:h-[28px]"
           />
           <Image
             src="/svgs/grey_logos/first_central.svg"
             alt=""
             width={110}
             height={20}
-            className="w-[88px] h-[16px] lg:w-[124px] xl:w-[391px] lg:h-[72px]"
+            className="w-[88px] h-[16px] lg:w-[124px] xl:w-[221px] lg:h-[40px]"
           />
         </div>
       </Marque>

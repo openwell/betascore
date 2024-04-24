@@ -19,7 +19,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
   return (
     <>
       <nav
-        className="flex items-center justify-between p-6 lg:px-8 max-w-[1520px] m-auto"
+        className="flex items-center justify-between p-6 lg:px-8 max-w-[1440px] m-auto"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -29,9 +29,9 @@ export default function NavBar({ openModalHandler = () => {} }) {
             <Image
               src="/images/ndewo_small.png"
               alt="beta-score logo"
-              className='h-[24px] w-[119px] xl:w-[194px] xl:h-[40px]'
-              width={194}
-              height={40}
+              className='h-[24px] w-[119px] xl:w-[150px] xl:h-[30px]'
+              width={150}
+              height={30}
             />
           </Link>
         </div>
@@ -48,15 +48,15 @@ export default function NavBar({ openModalHandler = () => {} }) {
         <div className="hidden lg:flex lg:gap-x-12">
           <Link
             href="/individual"
-            className="text-base xl:text-lg leading-6 text-b-black-grey"
+            className="xl:text-lg leading-6 text-b-black-grey"
           >
             Individual
           </Link>
-          <Link href="/business" className="text-base xl:text-lg leading-6 text-b-black-grey">
+          <Link href="/business" className="xl:text-lg leading-6 text-b-black-grey">
             Business
           </Link>
           <Popover className="relative">
-            <Popover.Button className="inline-flex items-center gap-x-1 text-base xl:text-lg leading-6 text-b-black-grey">
+            <Popover.Button className="inline-flex items-center gap-x-1 xl:text-lg leading-6 text-b-black-grey">
               <span>Company</span>
               <ChevronDownIcon
                 className="h-5 w-5 text-b-black-grey"
@@ -88,14 +88,14 @@ export default function NavBar({ openModalHandler = () => {} }) {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <Link href="/business" className="text-base xl:text-lg leading-6 text-b-black-grey">
+          <Link href="/business" className="xl:text-lg leading-6 text-b-black-grey">
             Blog
           </Link>
         </div>
         <div className="hidden lg:flex lg:items-center lg:flex-1 lg:justify-end">
           <button
             onClick={openModalHandler}
-            className="text-sm py-2 pl-2 pr-8 bg-b-light-green rounded-full flex items-center justify-center"
+            className="text-sm py-2 pl-2 pr-2 bg-b-light-green rounded-full flex items-center justify-center"
           >
             <Image
               src="/images/ndewo_icon.png"

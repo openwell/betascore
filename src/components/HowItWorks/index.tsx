@@ -30,29 +30,29 @@ export default function Index() {
 
   return (
     <div className="px-5 2xl:p-0">
-      <div className="max-w-[1450px] m-auto">
-        <p className="text-[32px] xl:text-[72px] mb-4 xl:mb-10">How it works</p>
+      <div className="max-w-[1170px] m-auto">
+        <p className="text-[32px] xl:text-[44px] mb-4 xl:mb-10">How it works</p>
         <div className="flex bg-[#E6E6E6] w-fit rounded-full cursor-pointer mb-[40px] xl:mb-24">
           <div
             role="tab"
-            className={classNames('py-4 xl:py-9 px-10 xl:px-20 rounded-full', {
+            className={classNames('py-4 xl:py-6 px-10 xl:px-[52px] rounded-full', {
               ['bg-b-black-200 text-white']: activeTab === 'individual',
             })}
             onClick={() => setActiveHandler('individual')}
           >
-            <p className="text-base xl:text-xl">Individuals</p>
+            <p className="text-base xl:text-lg">Individuals</p>
           </div>
           <div
             role="tab"
             className={classNames(
-              'py-4 xl:py-9 px-10 xl:px-20 rounded-full text-b-black-200',
+              'py-4 xl:py-6 px-10 xl:px-[52px] rounded-full text-b-black-200',
               {
                 ['bg-b-black-200 !text-white']: activeTab === 'business',
               }
             )}
             onClick={() => setActiveHandler('business')}
           >
-            <p className="text-base xl:text-xl">Businesses</p>
+            <p className="text-base xl:text-lg">Businesses</p>
           </div>
         </div>
         <div className="flex items-center justify-between">
@@ -102,14 +102,14 @@ export default function Index() {
                   <Image
                     src={e.img}
                     alt=""
-                    className="w-[30px] xl:w-[40px] mb-4"
+                    className="w-[30px] mb-4"
                     width={40}
                     height={40}
                   />
-                  <p className="text-2xl xl:text-[40px] text-b-black-200">
+                  <p className="text-2xl text-b-black-200">
                     {e.title}
                   </p>
-                  <p className="text-base xl:text-2xl text-b-black-grey">
+                  <p className="text-base  text-b-black-grey">
                     {e.description}
                   </p>
                 </div>
@@ -134,7 +134,7 @@ export default function Index() {
                         <Image
                           alt=""
                           src={e}
-                          className="w-[400px] h-auto xl:w-[1020px] xl:h-[690px]"
+                          className="w-[400px] h-auto xl:w-[620px] xl:h-[490px]"
                           width={446}
                           height={818}
                         />
@@ -146,9 +146,9 @@ export default function Index() {
                 <Image
                   src="/images/macbook_pro_ndewo.png"
                   alt="macbook_pro_ndewo"
-                  className="w-[446px] xl:w-[1015px]"
-                  width={1015}
-                  height={571}
+                  className="w-[446px] xl:w-[585px]"
+                  width={585}
+                  height={329}
                 />
               )}
             </div>

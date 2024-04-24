@@ -11,9 +11,9 @@ export default function Index() {
         <Image
           src="/images/applestore_button.png"
           alt=""
-          className="w-[165px] h-[50px] xl:w-[238px] xl:h-[72px] mr-4"
-          width={238}
-          height={72}
+          className="w-[165px] h-[50px] xl:w-[205px] xl:h-[64px] mr-4"
+          width={180}
+          height={64}
         />
       </a>
       <a
@@ -23,9 +23,9 @@ export default function Index() {
         <Image
           src="/images/playstore_button.png"
           alt=""
-          className="w-[165px] h-[50px] xl:w-[238px] xl:h-[72px] "
-          width={238}
-          height={72}
+          className="w-[165px] h-[50px] xl:w-[180px] xl:h-[64px] "
+          width={180}
+          height={64}
         />
       </a>
     </div>

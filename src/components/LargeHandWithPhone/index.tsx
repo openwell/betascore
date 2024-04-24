@@ -4,9 +4,9 @@ import Image from 'next/image';
 export default function Index() {
   return (
     <section className="my-8 xl:my-[100px] bg-black">
-      <div className="max-w-[1450px] mx-auto lg:gap-10 py-20 flex flex-wrap md:flex-nowrap flex-col-reverse md:flex-row items-center">
-        <div className="px-10 flex flex-col justify-center items-center max-w-[550px] text-center">
-          <p className="text-2xl xl:text-[40px] text-white leading-10 font-medium pb-12 lg:pt-10">
+      <div className="max-w-[1170px] mx-auto lg:gap-10 py-20 flex flex-wrap md:flex-nowrap flex-col-reverse md:flex-row items-center">
+        <div className="px-10 flex flex-col justify-center items-center max-w-[350px] text-center">
+          <p className="text-2xl text-white leading-10 font-medium pb-12 lg:pt-10">
             Ready to experience awesome service with ndewo?
           </p>
           <button className="bg-b-light-green rounded-[40px] py-3 xl:py-4 px-[19px] flex items-center justify-center">
@@ -26,8 +26,8 @@ export default function Index() {
             src="/images/free_hand_iphone.png"
             alt=""
             className="w-full"
-            width={518}
-            height={819}
+            width={423}
+            height={668}
           />
         </div>
       </div>

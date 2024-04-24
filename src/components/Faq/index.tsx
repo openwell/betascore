@@ -35,9 +35,9 @@ export default function FAQ() {
 
   ];
   return (
-    <section className="max-w-[1520px] mx-auto">
+    <section className="max-w-[1170px] mx-auto">
       <div className='flex justify-center'>
-        <h3 className="text-[32px] xl:text-[72px] leading-10 lg:leading-none mb-0 xl:mb-10 lg:mb-16 font-semibold">
+        <h3 className="text-[32px] xl:text-[40px] leading-10 lg:leading-none mb-0 xl:mb-10 lg:mb-16 font-semibold">
           FAQs
         </h3>
       </div>
@@ -51,7 +51,7 @@ export default function FAQ() {
                     <>
                       <dt>
                         <Disclosure.Button className="flex w-full items-start justify-between text-left text-b-black-200">
-                          <span className="text-xl lg:text-[32px] font-medium leading-none">
+                          <span className="text-xl lg:text-2xl font-medium leading-none">
                             {faq.question}
                           </span>
                           <span className="ml-6 flex h-7 items-center">
@@ -70,7 +70,7 @@ export default function FAQ() {
                         </Disclosure.Button>
                       </dt>
                       <Disclosure.Panel as="dd" className="mt-2 lg:pr-12">
-                        <div className="text-sm lg:text-2xl leading-7 text-b-black-grey" 
+                        <div className="leading-7 text-b-black-grey" 
                         dangerouslySetInnerHTML={{ __html: faq.answer }}/>
                       </Disclosure.Panel>
                     </>

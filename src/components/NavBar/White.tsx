@@ -19,7 +19,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
   return (
     <>
       <nav
-        className="flex items-center justify-between p-6 lg:px-8 max-w-[1520px] m-auto"
+        className="flex items-center justify-between p-6 lg:px-8 max-w-[1440px] m-auto"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">

@@ -12,14 +12,27 @@ import classNames from 'classnames';
 const HorizontalSpacing = (props: { children: React.ReactNode }) => (
   <div className="px-5 xl:px-0">{props.children}</div>
 );
-const Card = ({ title, subTile, customBgClass }: { title: string; subTile: string, customBgClass?: string }) => {
+const Card = ({
+  title,
+  subTile,
+  customBgClass,
+}: {
+  title: string;
+  subTile: string;
+  customBgClass?: string;
+}) => {
   return (
-    <div className={classNames("flex flex-col justify-end w-[150px] xl:w-[260px] h-[142px] xl:h-[248px] rounded-[11px] xl:rounded-[30px] pl-4 pb-4 xl:pl-5", customBgClass)}>
-      <p className="text-[40px] xl:text-[80px] font-semibold leading-none">
+    <div
+      className={classNames(
+        'flex flex-col justify-end w-[150px] h-[142px] xl:w-[190px] xl:h-[180px] rounded-[11px] xl:rounded-[30px] pl-4 pb-4 xl:pl-5',
+        customBgClass
+      )}
+    >
+      <p className="text-[40px] font-semibold leading-none">
         {title}
       </p>
       <p
-        className="xl:text-3xl"
+        className=""
         dangerouslySetInnerHTML={{ __html: subTile }}
       />
     </div>
@@ -49,31 +62,46 @@ export default function About() {
           <main className="px-5 mt-10 md:mt-20 lg:mt-44">
             <div className="p-5 lg:p-0 max-w-[1080px] mx-auto text-center">
               <h1 className="text-[32px] lg:text-5xl xl:text-7xl leading-none font-semibold">
-                We are building a future for the financial system
+                Building a More Inclusive Financial Future
               </h1>
             </div>
-            <div className="max-w-[1500px] mx-auto text-center">
+            <div className="max-w-[800px] mx-auto text-center">
               <p className="mt-4 text-base lg:text-lg xl:text-xl">
-                Bridging the financial gap: We empower credit-invisibles to move
-                freely and access amazing opportunities. Our partners gain
-                unrivaled access to this previously untapped market.
+                Break through financial barriers. With Ndewo, now you can 
+                unlock opportunities and take control of your financial future.
               </p>
               <StoreButtonsGroup />
             </div>
 
-            <div className="lg:p-0 max-w-[1286px] gap-5 mx-auto my-6 lg:my-36 flex flex-wrap justify-center items-center md:flex-nowrap">
-              <div className="flex flex-col justify-end bg-cover xl:bg-auto bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/images/teamwork.png')] bg-no-repeat bg-top w-full h-[230px] md:h-[330px] lg:w-[60%] xl:w-[712px] lg:h-[316px] xl:h-[516px] rounded-xl lg:rounded-[30px]">
-                <div className="w-56 xl:w-[70%]">
-                  <p className="text-white !leading-tight text-3xl xl:text-[72px] p-5 lg:p-8">
+            <div className="lg:p-0 max-w-[1170px] gap-5 mx-auto my-6 lg:my-36 flex flex-wrap justify-center items-center md:flex-nowrap">
+              <div className="flex flex-col justify-end bg-cover xl:bg-auto bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/images/teamwork.png')] bg-no-repeat bg-top w-full h-[230px] md:h-[330px] lg:w-[60%] lg:h-[316px] xl:w-[594px] xl:h-[382px] rounded-xl lg:rounded-[30px]">
+                <div className="w-56 xl:w-[50%]">
+                  <p className="text-white !leading-tight text-3xl xl:text-[40px] p-5 lg:p-8">
                     Our Impact so far
                   </p>
                 </div>
               </div>
-              <div className="w-full lg:w-[40%] xl:w-[50%] h-full items-center justify-center flex flex-wrap gap-5">
-                <Card title="100k" subTile="Customers <br /> served" customBgClass='bg-b-light-green' />
-                <Card title="2k" subTile="References <br /> provided" customBgClass='bg-b-light-300-green' />
-                <Card title="500" subTile="Businesses <br /> supported"  customBgClass='bg-b-light-400-green'/>
-                <Card title="100k+" subTile="Reports <br /> Generated" customBgClass='bg-b-light-500-green'/>
+              <div className="w-full lg:w-[40%] xl:w-[35%] h-full items-center justify-center flex flex-wrap gap-5">
+                <Card
+                  title="100k"
+                  subTile="Customers <br /> served"
+                  customBgClass="bg-b-light-green"
+                />
+                <Card
+                  title="2k"
+                  subTile="References <br /> provided"
+                  customBgClass="bg-b-light-300-green"
+                />
+                <Card
+                  title="500"
+                  subTile="Businesses <br /> supported"
+                  customBgClass="bg-b-light-400-green"
+                />
+                <Card
+                  title="100k+"
+                  subTile="Reports <br /> Generated"
+                  customBgClass="bg-b-light-500-green"
+                />
               </div>
             </div>
           </main>
@@ -81,13 +109,13 @@ export default function About() {
         </header>
 
         <section className="bg-b-black-200 px-4 py-10 lg:px-10 xl:px-20 lg:py-40">
-          <div className="max-w-[1520px] mx-auto grid grid-cols-1 lg:grid-cols-2 place-items-center">
+          <div className="max-w-[1170px] mx-auto grid grid-cols-1 lg:grid-cols-2 place-items-center">
             <div className="">
               <div className="mb-10 xl:mb-20">
-                <h3 className="text-[32px] lg:text-5xl xl:text-7xl text-white leading-none mb-2 font-semibold py-5 lg:py-0">
+                <h3 className="text-[32px] lg:text-5xl text-white leading-none mb-2 font-semibold py-5 lg:py-0">
                   Our Mission
                 </h3>
-                <p className="text-b-grey-600 xl:text-xl">
+                <p className="text-b-grey-600">
                   At BetaScore Finance Limited, we aim to empower individuals
                   who are currently credit-invisible due to factors like
                   non-traditional income, recent migration, or starting
@@ -98,10 +126,10 @@ export default function About() {
                 </p>
               </div>
               <div>
-                <h3 className="text-[32px] lg:text-5xl xl:text-7xl text-white leading-none mb-2 font-semibold py-5 lg:py-0">
+                <h3 className="text-[32px] lg:text-5xl text-white leading-none mb-2 font-semibold py-5 lg:py-0">
                   Our Vision
                 </h3>
-                <p className="text-b-grey-600 xl:text-xl">
+                <p className="text-b-grey-600">
                   To be the world&apos;s leading platform for empowering
                   credit-invisible individuals, regardless of background or
                   circumstance, by transforming their financial data into
@@ -116,20 +144,20 @@ export default function About() {
               <Image
                 src="/images/ndewo_circular_large.png"
                 alt=""
-                className="w-[600px] self-end"
-                width={600}
-                height={600}
+                className="w-[300px] self-end"
+                width={300}
+                height={300}
               />
             </div>
           </div>
         </section>
         <HorizontalSpacing>
-          <section className="max-w-[1450px] rounded-[20px] lg:rounded-[30px] mx-auto my-10 xl:mt-[108px] xl:mb-[150px] bg-b-light-green lg:pt-24">
-            <div className="text-center py-10 lg:pb-24">
-              <h1 className="text-2xl lg:text-[40px] lg:text-5xl xl:text-7xl leading-none font-medium text-b-black-200">
+          <section className="max-w-[1170px] rounded-[20px] lg:rounded-[30px] mx-auto my-10 xl:mt-[108px] xl:mb-[150px] bg-b-light-green lg:py-14 px-4">
+            <div className="text-center py-10 lg:pb-14">
+              <h1 className="text-2xl lg:text-[40px] leading-none font-medium text-b-black-200">
                 One platform,
               </h1>
-              <h1 className="text-2xl lg:text-[40px] lg:text-5xl xl:text-[72px] leading-none font-medium">
+              <h1 className="text-2xl lg:text-[40px] leading-none font-medium">
                 {' '}
                 Limitless Opportunities
               </h1>
@@ -138,14 +166,14 @@ export default function About() {
               <Image
                 className="hidden md:block"
                 src="/images/services_long.png"
-                width={1611}
+                width={1411}
                 height={492}
                 alt="services"
               />
               <Image
                 className="block md:hidden"
                 src="/images/services_short.png"
-                width={1611}
+                width={1411}
                 height={492}
                 alt="services"
               />
@@ -153,7 +181,7 @@ export default function About() {
           </section>
         </HorizontalSpacing>
         <section className="bg-b-sand px-4 lg:px-10 xl:px-20 py-10 xl:pt-[126px] xl:pb-[80px]">
-          <div className="max-w-[1520px] mx-auto grid grid-cols-1 lg:grid-cols-2">
+          <div className="max-w-[1170px] mx-auto grid grid-cols-1 lg:grid-cols-2">
             <div className="w-full flex justify-center lg:hidden pt-20 pb-14 lg:mb-20">
               <Image
                 src="/images/ndewo_big.png"
@@ -164,10 +192,10 @@ export default function About() {
               />
             </div>
             <div className="">
-              <h3 className="text-[32px] lg:text-5xl xl:text-7xl text-b-black-200 leading-none mb-2 xl:mb-10 font-semibold py-5 lg:py-0">
+              <h3 className="text-[32px] lg:text-5xl text-b-black-200 leading-none mb-2 xl:mb-10 font-semibold py-5 lg:py-0">
                 Why we started
               </h3>
-              <div className="text-b-black-grey xl:text-2xl">
+              <div className="text-b-black-grey">
                 <p>
                   We understand the challenges credit invisibles face when
                   moving to a new country. Traditional systems often don&apos;t
@@ -209,14 +237,14 @@ export default function About() {
               <Image
                 src="/images/ndewo_big.png"
                 alt=""
-                className="lg:w-[280px] xl:w-[485px] self-center"
-                width={485}
-                height={100}
+                className="xl:w-[271px] self-center"
+                width={271}
+                height={56}
               />
             </div>
           </div>
 
-          <div className="max-w-[1520px] flex gap-4 m-auto mt-16">
+          <div className="max-w-[1170px] flex gap-4 m-auto mt-16">
             <Image
               src="/svgs/josh-avatar.svg"
               alt=""
@@ -236,9 +264,9 @@ export default function About() {
           <ContactForm />
         </HorizontalSpacing>
         <section className="my-8 lg:my-[100px] bg-black">
-          <div className="max-w-[1450px] mx-auto gap-10 py-10 lg:py-[200px] xl:py-[300px]">
+          <div className="max-w-[960px] mx-auto gap-10 py-10 lg:py-[130px]">
             <div className="flex flex-col justify-center items-center mb-10 text-center">
-              <p className="text-2xl lg:text-5xl xl:text-7xl text-white font-medium pb-12 pt-10 px-12 lg:px-20 leading-none">
+              <p className="text-2xl lg:text-[40px] text-white font-medium pb-12 pt-10 px-12 lg:px-20 leading-none">
                 Ndewo by Betascore Finance Limited is powering financial
                 inclusion and opportunities of the future today!
               </p>

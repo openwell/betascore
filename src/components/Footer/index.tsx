@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <footer
-      className="mt-10 mx-auto max-w-[1520px]"
+      className="mt-10 mx-auto max-w-[1170px]"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">
@@ -18,23 +18,23 @@ export default function Footer() {
               <Image
                 src="/images/ndewo_by_betascore.png"
                 alt="beta-score logo"
-                className="w-[120px] xl:h-[71px] xl:w-[264px] "
-                width={264}
-                height={71}
+                className="h-[40px] w-[140px]"
+                width={140}
+                height={40}
               />
             </Link>
           </div>
           {/* flex flex-wrap xl:flex-nowrap gap-16 xl:whitespace-nowrap*/}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8 xl:gap-16 xl:flex max-w-[1117px] xl:whitespace-nowrap">
             <div className="md:mt-0 flex-1">
-              <h3 className="text-lg xl:text-xl leading-6 text-black xl:font-semibold">
+              <h3 className=" text-black xl:font-semibold">
                 Products
               </h3>
               <ul role="list" className="mt-6 space-y-4">
                 <li>
                   <Link
                     href="/individual"
-                    className="xl:text-xl leading-6 text-b-black-grey hover:text-gray-500"
+                    className=" text-b-black-grey hover:text-gray-500"
                   >
                     Individual
                   </Link>
@@ -42,7 +42,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/business"
-                    className="xl:text-xl leading-6 text-b-black-grey hover:text-gray-500"
+                    className=" text-b-black-grey hover:text-gray-500"
                   >
                     Business
                   </Link>
@@ -50,14 +50,14 @@ export default function Footer() {
               </ul>
             </div>
             <div className="flex-1">
-              <h3 className="text-lg xl:text-xl leading-6 text-black xl:font-semibold">
+              <h3 className=" text-black xl:font-semibold">
                 Company
               </h3>
               <ul role="list" className="mt-6 space-y-4">
                 <li>
                   <Link
                     href="/about"
-                    className="xl:text-xl leading-6 text-b-black-grey  hover:text-gray-500"
+                    className=" text-b-black-grey  hover:text-gray-500"
                   >
                     About us
                   </Link>
@@ -66,7 +66,7 @@ export default function Footer() {
                   <Link
                     target="_blank"
                     href="https://medium.com/@info_86420"
-                    className="xl:text-xl leading-6 text-b-black-grey  hover:text-gray-500"
+                    className=" text-b-black-grey  hover:text-gray-500"
                   >
                     Blog
                   </Link>
@@ -74,7 +74,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/faq"
-                    className="xl:text-xl leading-6 text-b-black-grey  hover:text-gray-500"
+                    className=" text-b-black-grey  hover:text-gray-500"
                   >
                     F.A.Qs
                   </Link>
@@ -83,14 +83,14 @@ export default function Footer() {
             </div>
 
             <div className="md:mt-0 flex-1">
-              <h3 className="text-lg xl:text-xl leading-6 text-black xl:font-semibold">
+              <h3 className=" text-black xl:font-semibold">
                 Contact us
               </h3>
               <ul role="list" className="mt-6 space-y-4">
                 <li>
                   <Link
                     href="/privacy-policy"
-                    className="xl:text-xl leading-6 text-b-black-grey  hover:text-gray-500"
+                    className=" text-b-black-grey  hover:text-gray-500"
                   >
                     +2348095763213
                   </Link>
@@ -98,7 +98,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/terms-conditions"
-                    className="xl:text-xl leading-6 text-b-black-grey  hover:text-gray-500 break-words"
+                    className=" text-b-black-grey  hover:text-gray-500 break-words"
                   >
                     product@betascore.io
                   </Link>
@@ -106,14 +106,14 @@ export default function Footer() {
               </ul>
             </div>
             <div className="md:mt-0 flex-1">
-              <h3 className="text-lg xl:text-xl leading-6 text-black xl:font-semibold ">
+              <h3 className=" text-black xl:font-semibold ">
                 Legal
               </h3>
               <ul role="list" className="mt-6 space-y-4">
                 <li>
                   <Link
                     href="/privacy-policy"
-                    className="xl:text-xl leading-6 text-b-black-grey  hover:text-gray-500"
+                    className=" text-b-black-grey  hover:text-gray-500"
                   >
                     Privacy Policy
                   </Link>
@@ -121,7 +121,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/terms-conditions"
-                    className="xl:text-xl leading-6 text-b-black-grey  hover:text-gray-500"
+                    className=" text-b-black-grey  hover:text-gray-500"
                   >
                     Terms & Conditions
                   </Link>
@@ -129,7 +129,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="md:mt-0 flex-1">
-              <h3 className="text-lg xl:text-xl leading-6 text-black xl:font-semibold">
+              <h3 className=" text-black xl:font-semibold">
                 Social media
               </h3>
               <ul role="list" className="mt-6 space-y-4">
@@ -137,7 +137,7 @@ export default function Footer() {
                   <a
                     target="_blank"
                     href="https://twitter.com/getbetascore?s=21&t=UZn3090cyfwEqjLjR4CDIQ"
-                    className="xl:text-xl leading-6 text-b-black-grey  hover:text-gray-500"
+                    className=" text-b-black-grey  hover:text-gray-500"
                   >
                     Twitter
                   </a>
@@ -146,7 +146,7 @@ export default function Footer() {
                   <a
                     target="_blank"
                     href="https://instagram.com/getbetascore?igshid=OGQ5ZDc2ODk2ZA=="
-                    className="xl:text-xl leading-6 text-b-black-grey  hover:text-gray-500"
+                    className=" text-b-black-grey  hover:text-gray-500"
                   >
                     Instagram
                   </a>
@@ -155,7 +155,7 @@ export default function Footer() {
                   <a
                     target="_blank"
                     href="https://www.linkedin.com/company/betascore/"
-                    className="xl:text-xl leading-6 text-b-black-grey  hover:text-gray-500"
+                    className=" text-b-black-grey  hover:text-gray-500"
                   >
                     LinkedIn
                   </a>
@@ -164,7 +164,7 @@ export default function Footer() {
                   <a
                     target="_blank"
                     href="https://www.facebook.com/share/Q2YPT3RNeNkubgyv/?mibextid=LQQJ4d"
-                    className="xl:text-xl leading-6 text-b-black-grey  hover:text-gray-500"
+                    className=" text-b-black-grey  hover:text-gray-500"
                   >
                     Facebook
                   </a>
@@ -177,7 +177,7 @@ export default function Footer() {
       <div className="h-[1px] w-full bg-b-black-grey hidden xl:block" />
       <div className="flex flex-col lg:flex-row justify-between items-center py-8 px-4">
         <p className="text-b-black-grey mb-6 text-sm xl:text-base">
-          2023 Betascore. All rights reserved
+          2024 Betascore. All rights reserved
         </p>
         <p className="text-b-black-grey max-w-[621px] text-center lg:text-right lg:text-sm xl:text-base hidden lg:block">
           Ndewo is a product of Betascore Finance. A company registered in the
