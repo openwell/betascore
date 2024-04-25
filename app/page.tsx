@@ -106,11 +106,11 @@ export default function Home() {
               <h1 className="text-b-purple-light">
                 FINANCIAL AND CREDIT FOOTPRINT
               </h1>
-              <p className="text-2xl font-semibold my-6 xl:mt-10 xl:mb-6">
+              <p className="text-2xl xl:text-3xl font-semibold my-4 xl:mb-6">
                 Unlock unique opportunities simply by generating your financial
                 report
               </p>
-              <p className="text-base text-b-black-grey mb-6 font-light">
+              <p className="text-base text-b-black-grey mb-6">
                 We provide access to essential products that allow you access
                 the lifestyle that you deserve.
               </p>
@@ -136,11 +136,11 @@ export default function Home() {
           </div>
           <div className="lg:w-[57%] h-full flex flex-col justify-between rounded-[20px] xl:rounded-[40px] bg-black">
             <div className="xl:w-[90%] p-6 xl:px-10 xl:pt-20 xl:pb-0">
-              <h1 className="text-b-purple-dark xl:text-xl">STUDENT LOAN</h1>
-              <h3 className="text-white text-2xl xl:text-3xl leading-none mt-10 mb-6 font-semibold">
+              <h1 className="text-b-purple-dark">STUDENT LOAN</h1>
+              <h3 className="text-white text-2xl xl:text-3xl leading-none my-4 font-semibold">
                 Access the funds you need to realise your academic goals
               </h3>
-              <p className="text-b-black-grey-200 font-light xl:text-xl">
+              <p className="text-b-black-grey-200">
                 With Ndewo, you can access student loans and transform your
                 financial challenges into opportunities. Move towards your
                 future with confidence.
@@ -171,13 +171,13 @@ export default function Home() {
         <section className="bg-b-light-200-green max-w-[1170px] lg:h-[598px] xl:h-[698px] mx-auto rounded-[20px] xl:rounded-[40px] flex flex-col lg:flex-row overflow-hidden">
           <div className="flex-1 flex flex-col xl:justify-between pl-5 pt-5 xl:pl-[80px] xl:py-[80px]">
             <div className="">
-              <h1 className="text-b-purple-light xl:text-xl">
+              <h1 className="text-b-purple-light">
                 RENTAL & MORTGAGE OPPORTUNITIES
               </h1>
-              <h3 className="text-2xl xl:text-3xl leading-none mt-10 mb-6 font-semibold">
+              <h3 className="text-2xl xl:text-3xl leading-none my-4 font-semibold">
                 Cross-Border Rental & Mortgage Opportunities
               </h3>
-              <p className="text-b-tertiary font-light xl:text-xl mb-6">
+              <p className="text-b-tertiary mb-6">
                 With Ndewo, you can rent a house or buy a home without the
                 rigours of traditional checks for those with non-traditional
                 situations.
@@ -209,15 +209,14 @@ export default function Home() {
           </div>
           <div className="lg:w-[57%] rounded-[20px] h-full flex flex-col justify-between xl:rounded-[40px] pb-0 pt-5 pl-5 xl:px-10 xl:pt-20 xl:pb-0 bg-b-purple-light">
             <div className="xl:w-[90%]">
-              <h1 className="text-b-purple-light-200 xl:text-xl">
-                CREDIT CARDS
-              </h1>
-              <h3 className="text-white text-2xl xl:text-3xl leading-none mt-10 mb-6 font-medium">
-                Credit cards that allow you live the life that you deserve
+              <h1 className="text-b-purple-light-200">CREDIT CARDS</h1>
+              <h3 className="text-white text-2xl xl:text-3xl leading-none my-4 font-medium">
+                Credit Cards that Elevate Your Lifestyle
               </h3>
-              <p className="text-b-purple-light-300 text-sm font-light xl:text-xl">
-                You can now spend with confidence and do more with credit cards
-                accessed through Ndewo.
+              <p className="text-b-purple-light-300">
+                Confidence has a new name - Ndewo. With our credit card offers,
+                the sky becomes the beginning. We offer opportunities for
+                credit-invisibles.
               </p>
             </div>
             <div className="flex justify-between flex-col xl:flex-row align-bottom">

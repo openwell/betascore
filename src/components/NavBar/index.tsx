@@ -13,7 +13,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
     { name: 'About us', href: '/about' },
     { name: 'Privacy Policy', href: '/privacy-policy' },
     { name: 'Terms & conditions', href: '/terms-conditions' },
-    { name: 'F.A.Q', href: '/faq' },
+    // { name: 'F.A.Q', href: '/faq' },
   ];
 
   return (
@@ -88,9 +88,9 @@ export default function NavBar({ openModalHandler = () => {} }) {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <Link href="/business" className="xl:text-lg leading-6 text-b-black-grey">
+          {/* <Link href="/business" className="xl:text-lg leading-6 text-b-black-grey">
             Blog
-          </Link>
+          </Link> */}
         </div>
         <div className="hidden lg:flex lg:items-center lg:flex-1 lg:justify-end">
           <button
@@ -103,7 +103,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
               width={32}
               height={32}
             />
-            <span className="text-black ml-[12px] mr-[8px] xl:text-lg">Let&apos;s begin</span>
+            <span className="text-black ml-[12px] mr-[8px]">Let&apos;s begin</span>
             <ArrowRightIcon className="h-4 w-6 text-black" aria-hidden="true" />
           </button>
         </div>

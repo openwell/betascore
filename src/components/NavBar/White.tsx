@@ -13,7 +13,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
     { name: 'About us', href: '/about' },
     { name: 'Privacy Policy', href: '/privacy-policy' },
     { name: 'Terms & conditions', href: '/terms-conditions' },
-    { name: 'F.A.Q', href: '/faq' },
+    // { name: 'F.A.Q', href: '/faq' },
   ];
 
   return (
@@ -28,9 +28,9 @@ export default function NavBar({ openModalHandler = () => {} }) {
             <Image
               src="/images/ndewo_small_white.png"
               alt="beta-score logo"
-              className="h-[24px] w-[119px] xl:w-[194px] xl:h-[40px]"
-              width={194}
-              height={40}
+              className='h-[24px] w-[119px] xl:w-[150px] xl:h-[30px]'
+              width={150}
+              height={30}
             />
           </Link>
         </div>
@@ -84,14 +84,14 @@ export default function NavBar({ openModalHandler = () => {} }) {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <Link href="/business" className="xl:text-lg leading-6 text-white">
+          {/* <Link href="/business" className="xl:text-lg leading-6 text-white">
             Blog
-          </Link>
+          </Link> */}
         </div>
         <div className="hidden lg:flex lg:items-center lg:flex-1 lg:justify-end">
           <button
             onClick={openModalHandler}
-            className="text-sm py-2 pl-2 pr-8 bg-b-light-green rounded-full flex items-center justify-center"
+            className="text-sm py-2 pl-2 pr-2 bg-b-light-green rounded-full flex items-center justify-center"
           >
             <Image
               src="/images/ndewo_icon.png"
@@ -99,7 +99,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
               width={32}
               height={32}
             />
-            <span className="text-black ml-[12px] mr-[8px] xl:text-lg">
+            <span className="text-black ml-[12px] mr-[8px]">
               Let&apos;s begin
             </span>
             <ArrowRightIcon className="h-4 w-6 text-black" aria-hidden="true" />

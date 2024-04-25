@@ -6,7 +6,7 @@ export default function Index() {
     <div className="flex justify-center my-10">
       <a
         target="_blank"
-        href="https://play.google.com/store/apps/details?id=com.betascore.betascore&pcampaignid=web_sha"
+        href="https://apps.apple.com/gb/app/ndewo/id1662882346"
       >
         <Image
           src="/images/applestore_button.png"

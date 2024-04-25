@@ -62,7 +62,7 @@ export default function Footer() {
                     About us
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     target="_blank"
                     href="https://medium.com/@info_86420"
@@ -70,15 +70,15 @@ export default function Footer() {
                   >
                     Blog
                   </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link
                     href="/faq"
                     className=" text-b-black-grey  hover:text-gray-500"
                   >
                     F.A.Qs
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -89,18 +89,10 @@ export default function Footer() {
               <ul role="list" className="mt-6 space-y-4">
                 <li>
                   <Link
-                    href="/privacy-policy"
-                    className=" text-b-black-grey  hover:text-gray-500"
-                  >
-                    +2348095763213
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     href="/terms-conditions"
                     className=" text-b-black-grey  hover:text-gray-500 break-words"
                   >
-                    product@betascore.io
+                    product@ndewo.com
                   </Link>
                 </li>
               </ul>

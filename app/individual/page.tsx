@@ -129,7 +129,7 @@ export default function Individual() {
                   Credit and Financial Access Anywhere You Go
                 </p>
               </div>
-              <p className="text-base text-b-black-grey mb-6 font-light">
+              <p className="text-base text-b-black-grey mb-6">
                 No matter where life takes you, Ndewo empowers you with fair and
                 accurate credit assessments based on your unique financial
                 profile. Now you can access essential services like housing and
@@ -164,12 +164,12 @@ export default function Individual() {
             <div className="xl:w-[95%] pb-20">
               <h1 className="text-b-purple-dark">LIFESTYLE</h1>
               <div className="w-[60%]">
-                <h3 className="text-white text-2xl leading-none mt-10 mb-6 font-medium">
+                <h3 className="text-white text-2xl leading-none my-4 font-medium">
                   Enjoy the Same Lifestyle Everywhere You Go
                 </h3>
               </div>
               <div className="w-[80%]">
-                <p className="text-b-black-grey-200 font-light">
+                <p className="text-b-black-grey-200">
                   Ndewo empowers you to maintain your lifestyle even when you
                   move across borders and work remotely, globally.
                 </p>

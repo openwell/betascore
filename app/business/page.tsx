@@ -114,7 +114,7 @@ export default function Business() {
           <h3 className="text-[24px]  text-white md:leading-none  mb-2 font-semibold">
             Access a New Customer Landscape: Expand Opportunities with Ndewo
           </h3>
-          <p className=" mb-4 text-b-purple-light-300 font-light py-4">
+          <p className=" mb-4 text-b-purple-light-300 py-4">
             Ndewo&apos;s AI-powered solutions provide access to a new demography
             of customers with non-traditional income or credit history,
             previously overlooked by traditional methods. Expand your reach,
@@ -126,7 +126,7 @@ export default function Business() {
           <h3 className="text-[24px]  text-black md:leading-none font-semibold">
             Get Insights into Customer Affordability, Beyond Traditional Limits
           </h3>
-          <p className=" mb-4 text-b-black-grey font-light py-4">
+          <p className=" mb-4 text-b-black-grey py-4">
             Traditional checks often miss the whole picture. Ndewo empowers you
             to understand your customers&apos; true financial health through
             alternative data sources and AI-powered assessments. Make informed
@@ -139,7 +139,7 @@ export default function Business() {
             Verify Income & Identity of Customers : Streamline onboarding &
             reduce risk with Ndewo
           </h3>
-          <p className=" mb-4 text-b-black-grey font-light py-4">
+          <p className=" mb-4 text-b-black-grey py-4">
             Our AI-powered platform goes beyond traditional methods, accurately
             assessing financial stability & verifying identities - even for
             those with non-traditional income or recent migration history.
@@ -150,7 +150,7 @@ export default function Business() {
             Make Informed Decisions, Empower Your Business: Ndewo Answers the
             &quot;Unusual Income&quot; Challenge.
           </h3>
-          <p className=" mb-4 text-b-black-grey-200 font-light py-4">
+          <p className=" mb-4 text-b-black-grey-200 py-4">
             Unsure if a client with non-traditional income or credit invisible
             qualifies ? Ndewo unlocks insights beyond traditional credit scores,
             empowering you to assess financial stability accurately and make
