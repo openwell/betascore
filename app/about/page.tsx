@@ -28,13 +28,8 @@ const Card = ({
         customBgClass
       )}
     >
-      <p className="text-[40px] font-semibold leading-none">
-        {title}
-      </p>
-      <p
-        className=""
-        dangerouslySetInnerHTML={{ __html: subTile }}
-      />
+      <p className="text-[40px] font-semibold leading-none">{title}</p>
+      <p className="" dangerouslySetInnerHTML={{ __html: subTile }} />
     </div>
   );
 };
@@ -270,7 +265,11 @@ export default function About() {
                 Ndewo by Betascore Finance Limited is powering financial
                 inclusion and opportunities of the future today!
               </p>
-              <button className="bg-b-light-green rounded-[40px] py-3 px-[19px] flex items-center justify-center">
+              <a
+                className="bbg-b-light-green rounded-[40px] py-3 px-[19px] flex items-center justify-center"
+                target="_blank"
+                href="https://play.google.com/store/apps/details?id=com.betascore.betascore&pcampaignid=web_sha"
+              >
                 <Image
                   src="/images/ndewo_icon.png"
                   alt="beta-score logo"
@@ -280,7 +279,7 @@ export default function About() {
                 <span className="text-black ml-[12px] mr-[8px] text-xl">
                   Download app
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </section>

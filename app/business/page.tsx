@@ -5,7 +5,7 @@ import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar/White';
 import WaitList from '@/src/components/WaitList';
 import Faq from '@/src/components/Faq';
-import ContactForm from '@/src/components/ContactForm';
+import ZohoForm from '@/src/components/ContactForm/ZohoForm';
 import HorizontalLogos from '@/src/components/HorizontalLogos';
 import LargeDashboard from '@/src/components/LargeDashboard';
 
@@ -65,12 +65,14 @@ export default function Business() {
               migrants, or alternative earners. Discover untapped business
               opportunities.
             </p>
-            <button
+
+            <a
+              href="#zoho-form"
               onClick={openModalHandler}
-              className="text-base py-4 text-black bg-white rounded-full px-[60px] my-10"
+              className="text-base py-4 text-black bg-white rounded-full px-[60px] my-10 inline-block"
             >
               Learn More
-            </button>
+            </a>
             <div className="flex xl:h-[660px] justify-center bg-[center_bottom_-1rem] relative overflow-hidden mt-16">
               <div className="">
                 <Image
@@ -167,7 +169,7 @@ export default function Business() {
       />
       <Faq />
       <HorizontalSpacing>
-        <ContactForm />
+        <ZohoForm />
       </HorizontalSpacing>
       <Footer />
     </main>

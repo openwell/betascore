@@ -81,19 +81,18 @@ export default function Footer() {
                 </li> */}
               </ul>
             </div>
-
             <div className="md:mt-0 flex-1">
               <h3 className=" text-black xl:font-semibold">
                 Contact us
               </h3>
               <ul role="list" className="mt-6 space-y-4">
                 <li>
-                  <Link
-                    href="/terms-conditions"
+                  <a
+                    href="mailto:product@ndewo.com"
                     className=" text-b-black-grey  hover:text-gray-500 break-words"
                   >
                     product@ndewo.com
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>

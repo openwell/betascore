@@ -9,7 +9,12 @@ export default function Index() {
           <p className="text-2xl text-white leading-10 font-medium pb-12 lg:pt-10">
             Ready to experience awesome service with ndewo?
           </p>
-          <button className="bg-b-light-green rounded-[40px] py-3 xl:py-4 px-[19px] flex items-center justify-center">
+
+          <a
+            className="bg-b-light-green rounded-[40px] py-3 xl:py-4 px-[19px] flex items-center justify-center"
+            target="_blank"
+            href="https://play.google.com/store/apps/details?id=com.betascore.betascore&pcampaignid=web_sha"
+          >
             <Image
               src="/images/ndewo_icon.png"
               alt="beta-score logo"
@@ -19,7 +24,7 @@ export default function Index() {
             <span className="text-black ml-[12px] mr-[8px] xl:text-xl">
               Download app
             </span>
-          </button>
+          </a>
         </div>
         <div className="flex items-center px-20 m-auto">
           <Image

@@ -48,15 +48,15 @@ export default function NavBar({ openModalHandler = () => {} }) {
         <div className="hidden lg:flex lg:gap-x-12">
           <Link
             href="/individual"
-            className="xl:text-lg leading-6 text-b-black-grey"
+            className=" leading-6 text-b-black-grey"
           >
             Individual
           </Link>
-          <Link href="/business" className="xl:text-lg leading-6 text-b-black-grey">
+          <Link href="/business" className=" leading-6 text-b-black-grey">
             Business
           </Link>
           <Popover className="relative">
-            <Popover.Button className="inline-flex items-center gap-x-1 xl:text-lg leading-6 text-b-black-grey">
+            <Popover.Button className="inline-flex items-center gap-x-1  leading-6 text-b-black-grey">
               <span>Company</span>
               <ChevronDownIcon
                 className="h-5 w-5 text-b-black-grey"
@@ -88,7 +88,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
               </Popover.Panel>
             </Transition>
           </Popover>
-          {/* <Link href="/business" className="xl:text-lg leading-6 text-b-black-grey">
+          {/* <Link href="/business" className=" leading-6 text-b-black-grey">
             Blog
           </Link> */}
         </div>

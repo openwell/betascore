@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 export default function Index() {
   const [loader, setLoader] = useState(false);
+  const [showMessage, setShowMessage] = useState(false);
+  const ref = useRef(null);
+
   const submitHandler = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const email = event.currentTarget['email'].value;
@@ -19,9 +22,12 @@ export default function Index() {
           body: JSON.stringify({ email, business_name }),
         }
       );
-      const data = await response.json();
-      event.currentTarget.reset();
-      console.log('Success:', data);
+      await response.json();
+      setShowMessage(true);
+      (ref.current as HTMLFormElement | null)?.reset();
+      setTimeout(() => {
+        setShowMessage(false);
+      }, 3000);
     } catch (error) {
       console.error('Error:', error);
     } finally {
@@ -36,11 +42,14 @@ export default function Index() {
             Find out how Ndewo can unlock revenue opportunities for you!
           </p>
         </div>
-        <form onSubmit={submitHandler} className="w-full">
+        <form onSubmit={submitHandler} className="w-full" ref={ref}>
           <div className="flex flex-col gap-4 mb-10 w-full lg:max-w-[304px] m-auto">
-            <h3 className="text-b-purple-light mb-2">
-              GET IN TOUCH
-            </h3>
+            <h3 className="text-b-purple-light mb-2">GET IN TOUCH</h3>
+            {showMessage && (
+              <div>
+                <p>Contact submitted. We will be in touch.</p>
+              </div>
+            )}
             <input
               type="text"
               placeholder="Business name"
@@ -56,11 +65,10 @@ export default function Index() {
               id="email"
               className=" border-b-border-green bg-white rounded-[46px] py-4 pl-10"
             />
-
             <button
               type="submit"
               disabled={loader}
-              className="bg-b-light-green rounded-[40px] py-4 xl:py-4 px-[80px] mt-3 w-full text-xl"
+              className="bg-b-light-green rounded-[40px] py-4 xl:py-4 px-[80px] mt-3 w-full"
             >
               {loader ? 'Submitting...' : 'Submit'}
             </button>
