@@ -5,7 +5,7 @@ import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar/White';
 import WaitList from '@/src/components/WaitList';
 import Faq from '@/src/components/Faq';
-import ZohoForm from '@/src/components/ContactForm/ZohoForm';
+import ContactForm from '@/src/components/ContactForm';
 import HorizontalLogos from '@/src/components/HorizontalLogos';
 import LargeDashboard from '@/src/components/LargeDashboard';
 
@@ -169,7 +169,7 @@ export default function Business() {
       />
       <Faq />
       <HorizontalSpacing>
-        <ZohoForm />
+        <ContactForm />
       </HorizontalSpacing>
       <Footer />
     </main>
