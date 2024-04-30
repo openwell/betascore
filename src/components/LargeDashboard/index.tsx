@@ -2,13 +2,17 @@ import React from 'react';
 import Image from 'next/image';
 
 export default function Index({
-    description,
-    title,
-    buttonCta
+  description,
+  title,
+  buttonCta,
+  externalLink,
+  link,
 }: {
-    readonly description: string;
-    readonly title: string;
-    readonly buttonCta: string;
+  readonly description: string;
+  readonly title: string;
+  readonly buttonCta: string;
+  readonly externalLink?: boolean;
+  readonly link?: string;
 }) {
   return (
     <section className="my-8 xl:my-[200px] px-5 py-[50px] xl:py-20 bg-black">
@@ -18,9 +22,20 @@ export default function Index({
             {title}
           </p>
           <p className="pt-4 pb-6 text-b-grey xl:text-xl">{description}</p>
-          <button className="bg-b-light-green rounded-[40px] py-3 px-[40px] xl:py-4 xl:px-[60px] mt-24 xl:mt-0">
-            {buttonCta}
-          </button>
+          {externalLink ? (
+            <a
+              href={link}
+              target="_blank"
+              className="bg-b-light-green rounded-[40px] py-3 px-[40px] xl:py-4 xl:px-[60px] mt-24 xl:mt-0"
+            >
+              {' '}
+              {buttonCta}
+            </a>
+          ) : (
+            <button className="bg-b-light-green rounded-[40px] py-3 px-[40px] xl:py-4 xl:px-[60px] mt-24 xl:mt-0">
+              {buttonCta}
+            </button>
+          )}
         </div>
         <div className="flex flex-col justify-center items-center">
           <Image

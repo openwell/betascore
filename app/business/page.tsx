@@ -166,6 +166,8 @@ export default function Business() {
         description="Verify tenant's information and complete reference in a very
               few minutes instead of 2 days"
         buttonCta="Learn more"
+        externalLink
+        link='https://rent.ndewo.com/'
       />
       <Faq />
       <HorizontalSpacing>
