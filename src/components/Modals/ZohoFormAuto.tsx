@@ -13,13 +13,25 @@ const customStyles = {
   },
 };
 
-export default function ZohoForm({
-  showZohoModal,
-  closeModalHandler,
-}: {
-  showZohoModal: boolean;
-  closeModalHandler: () => void;
-}) {
+export default function ZohoForm() {
+  const [showZohoModal, setShowZohoModal] = useState(false);
+  const closeModalHandler = () => {
+    setShowZohoModal(false);
+    sessionStorage.setItem('qrCodeSeen', 'true');
+  };
+  const openModalHandler = () => {
+    setShowZohoModal(true);
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (sessionStorage.getItem('qrCodeSeen') !== 'true') {
+        openModalHandler();
+      }
+    }, 5000);
+    return () => {};
+  }, []);
+
   return (
     <div>
       <Modal
@@ -41,6 +53,8 @@ export default function ZohoForm({
           </button>
         </div>
         <iframe
+          // width="610px"
+          // height="820px"
           className="h-[420px] w-full md:h-[620px] md:w-[510px] lg:h-[720px] lg:w-[610px]"
           src="https://us.bigin.online/org851693650/forms/learn-more"
         />

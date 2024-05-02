@@ -7,7 +7,7 @@ import WaitList from '@/src/components/WaitList';
 import StoreIcons from '@/src/components/StoreIcons';
 import StoreButtonsGroup from '@/src/components/StoreButtonsGroup';
 import LargeHandWithPhone from '@/src/components/LargeHandWithPhone';
-import ZohoForm from '@/src/components/Modals/ZohoForm';
+import ZohoForm from '@/src/components/Modals/ZohoFormAuto';
 
 const HorizontalSpacing = (props: { children: React.ReactNode }) => (
   <div className="px-5 xl:px-0">{props.children}</div>

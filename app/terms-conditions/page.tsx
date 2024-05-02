@@ -2,7 +2,7 @@
 import React from 'react';
 import NavBar from '@/src/components/NavBar';
 import Footer from '@/src/components/Footer';
-import ZohoForm from '@/src/components/Modals/ZohoForm';
+import ZohoForm from '@/src/components/Modals/ZohoFormAuto';
 
 export default function Terms() {
   return (

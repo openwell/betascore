@@ -1,9 +1,8 @@
 'use client';
-import { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar';
-import WaitList from '@/src/components/WaitList';
 import StoreButtonsGroup from '@/src/components/StoreButtonsGroup';
 import ContactForm from '@/src/components/ContactForm';
 import HorizontalLogos from '@/src/components/HorizontalLogos';
@@ -35,24 +34,11 @@ const Card = ({
 };
 
 export default function About() {
-  const [showModal, setShowModal] = useState(false);
-
-  const closeModalHandler = () => {
-    setShowModal(false);
-  };
-
-  const openModalHandler = () => {
-    // setShowModal(true);
-  };
-
   return (
     <div>
       <main className="">
         <header>
-          {/*  */}
-          <WaitList showModal={showModal} closeHandler={closeModalHandler} />
-          {/*  */}
-          <NavBar openModalHandler={openModalHandler} />
+          <NavBar  />
           {/* <!-- Main --> */}
           <main className="px-5 mt-10 md:mt-20 lg:mt-44">
             <div className="p-5 lg:p-0 max-w-[1080px] mx-auto text-center">

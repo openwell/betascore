@@ -5,7 +5,7 @@ import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar/White';
 import Faq from '@/src/components/Faq';
 import ContactForm from '@/src/components/ContactForm';
-import ZohoForm from '@/src/components/Modals/ZohoForm';
+import ZohoForm from '@/src/components/Modals/ZohoFormAuto';
 import HorizontalLogos from '@/src/components/HorizontalLogos';
 import LargeDashboard from '@/src/components/LargeDashboard';
 

@@ -4,12 +4,12 @@ import Image from 'next/image';
 import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar';
 import HowItWorks from '@/src/components/HowItWorks';
-import WaitList from '@/src/components/WaitList';
 import StoreIcons from '@/src/components/StoreIcons';
 import Testimonial from '@/src/components/Testimonial';
 import StoreButtonsGroup from '@/src/components/StoreButtonsGroup';
 import LargeDashboard from '@/src/components/LargeDashboard';
 import LargeHandWithPhone from '@/src/components/LargeHandWithPhone';
+import ZohoFormAuto from '@/src/components/Modals/ZohoFormAuto';
 import ZohoForm from '@/src/components/Modals/ZohoForm';
 
 const HorizontalSpacing = (props: { children: React.ReactNode }) => (
@@ -17,20 +17,25 @@ const HorizontalSpacing = (props: { children: React.ReactNode }) => (
 );
 
 export default function Home() {
-  const [showModal, setShowModal] = useState(false);
+  const [showZohoModal, setShowZohoModal] = useState(false);
 
-  const closeModalHandler = () => {
-    setShowModal(false);
+  const closeZohoModalHandler = () => {
+    setShowZohoModal(false);
   };
 
-  const openModalHandler = () => {
-    // setShowModal(true);
+  const openZohoModalHandler = () => {
+    setShowZohoModal(true);
   };
   return (
     <main>
       <header className="bg-b-pale-green">
-      <ZohoForm />
-        <NavBar openModalHandler={openModalHandler} />
+        <ZohoFormAuto />
+        <ZohoForm
+          showZohoModal={showZohoModal}
+          closeModalHandler={closeZohoModalHandler}
+        />
+
+        <NavBar />
         {/* <!-- Main --> */}
         <main className="text-center my-10 md:my-20 xl:my-44">
           <div className="p-5 py-0 xl:p-0 max-w-[900px] mx-auto">
@@ -53,9 +58,6 @@ export default function Home() {
           </div>
         </main>
       </header>
-      {/*  */}
-      <WaitList showModal={showModal} closeHandler={closeModalHandler} />
-      {/*  */}
       {/* section 1 */}
       <section className="py-[78px] max-w-[1240px] mx-auto relative overflow-y-hidden">
         <div className="absolute left-0 flex items-center">
@@ -245,6 +247,7 @@ export default function Home() {
               worthiness, make rental decision, verify employee’s details and so
               much more"
         buttonCta="Learn more"
+        ctaHandler={openZohoModalHandler}
       />
 
       {/* section 7 */}

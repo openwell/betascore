@@ -7,12 +7,14 @@ export default function Index({
   buttonCta,
   externalLink,
   link,
+  ctaHandler
 }: {
   readonly description: string;
   readonly title: string;
   readonly buttonCta: string;
   readonly externalLink?: boolean;
   readonly link?: string;
+  readonly ctaHandler?: () => void;
 }) {
   return (
     <section className="my-8 xl:my-[200px] px-5 py-[50px] xl:py-20 bg-black">
@@ -32,7 +34,7 @@ export default function Index({
               {buttonCta}
             </a>
           ) : (
-            <button className="bg-b-light-green rounded-[40px] py-3 px-[40px] xl:py-4 xl:px-[60px] mt-24 xl:mt-0">
+            <button onClick={ctaHandler} className="bg-b-light-green rounded-[40px] py-3 px-[40px] xl:py-4 xl:px-[60px] mt-24 xl:mt-0">
               {buttonCta}
             </button>
           )}
