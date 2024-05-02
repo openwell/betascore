@@ -28,20 +28,20 @@ export default function Index({ showModal = false, closeHandler }) {
     const carLoanInterest = document.querySelector('#car_loan_interest');
     const otherInterest = document.querySelector('#other_interest');
 
-    const raw = {
-      fullName: fullName.value,
-      email: email.value,
-      countryOfResidence: countryOfResidence.value,
-      countryOfOrigin: countryOfOrigin.value,
-      interests: {
-        creditCardInterest: creditCardInterest.checked,
-        mortgageInterest: mortgageInterest.checked,
-        rentGuarantorInterest: rentGuarantorInterest.checked,
-        studentLoanInterest: studentLoanInterest.checked,
-        carLoanInterest: carLoanInterest.checked,
-        otherInterest: otherInterest.value,
-      },
-    };
+    // const raw = {
+    //   fullName: fullName.value,
+    //   email: email.value,
+    //   countryOfResidence: countryOfResidence.value,
+    //   countryOfOrigin: countryOfOrigin.value,
+    //   interests: {
+    //     creditCardInterest: creditCardInterest.checked,
+    //     mortgageInterest: mortgageInterest.checked,
+    //     rentGuarantorInterest: rentGuarantorInterest.checked,
+    //     studentLoanInterest: studentLoanInterest.checked,
+    //     carLoanInterest: carLoanInterest.checked,
+    //     otherInterest: otherInterest.value,
+    //   },
+    // };
     const payLoad = {
       country_of_origin: countryOfOrigin.value,
       country_of_residence: countryOfResidence.value,

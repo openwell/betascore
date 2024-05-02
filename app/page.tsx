@@ -10,6 +10,7 @@ import Testimonial from '@/src/components/Testimonial';
 import StoreButtonsGroup from '@/src/components/StoreButtonsGroup';
 import LargeDashboard from '@/src/components/LargeDashboard';
 import LargeHandWithPhone from '@/src/components/LargeHandWithPhone';
+import ZohoForm from '@/src/components/Modals/ZohoForm';
 
 const HorizontalSpacing = (props: { children: React.ReactNode }) => (
   <div className="px-5 xl:px-0">{props.children}</div>
@@ -28,6 +29,7 @@ export default function Home() {
   return (
     <main>
       <header className="bg-b-pale-green">
+      <ZohoForm />
         <NavBar openModalHandler={openModalHandler} />
         {/* <!-- Main --> */}
         <main className="text-center my-10 md:my-20 xl:my-44">

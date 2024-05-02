@@ -35,7 +35,7 @@ export default function Index() {
     }
   };
   return (
-    <section className="my-8 xl:my-[120px]">
+    <section id='contact-form' className="my-8 xl:my-[120px]">
       <div className="max-w-[1170px] mx-auto bg-b-light-200-green border border-b-light-green rounded-[20px] xl:rounded-[40px] flex flex-wrap lg:flex-nowrap lg:justify-around items-center px-6 py-10 xl:px-[72px] xl:py-16">
         <div className="w-[80%] lg:w-[45%]">
           <p className="text-2xl text-black font-medium pt-4 pb-10 xl:pb-12 xl:pt-10 leading-none">

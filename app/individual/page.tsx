@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar';
@@ -7,21 +7,13 @@ import WaitList from '@/src/components/WaitList';
 import StoreIcons from '@/src/components/StoreIcons';
 import StoreButtonsGroup from '@/src/components/StoreButtonsGroup';
 import LargeHandWithPhone from '@/src/components/LargeHandWithPhone';
+import ZohoForm from '@/src/components/Modals/ZohoForm';
 
 const HorizontalSpacing = (props: { children: React.ReactNode }) => (
   <div className="px-5 xl:px-0">{props.children}</div>
 );
 
 export default function Individual() {
-  const [showModal, setShowModal] = useState(false);
-
-  const closeModalHandler = () => {
-    setShowModal(false);
-  };
-
-  const openModalHandler = () => {
-    // setShowModal(true);
-  };
 
   const items = [
     'Rent',
@@ -34,10 +26,8 @@ export default function Individual() {
   return (
     <main className="">
       <header>
-        <NavBar openModalHandler={openModalHandler} />
-        {/*  */}
-        <WaitList showModal={showModal} closeHandler={closeModalHandler} />
-        {/*  */}
+      <ZohoForm />
+        <NavBar/>
         {/* <!-- Main --> */}
         <main className="text-center my-10 md:my-20 lg:mb-16 lg:mt-44">
           <div className="p-5 py-0 xl:p-0 max-w-[1040px] mx-auto">

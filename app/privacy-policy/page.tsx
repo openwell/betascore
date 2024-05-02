@@ -1,27 +1,17 @@
 'use client';
-import { useState } from 'react';
+import React from 'react';
 import NavBar from '@/src/components/NavBar';
 import Footer from '@/src/components/Footer';
-import WaitList from '@/src/components/WaitList';
+import ZohoForm from '@/src/components/Modals/ZohoForm';
 
 export default function Privacy() {
-  const [showModal, setShowModal] = useState(false);
-
-  const closeModalHandler = () => {
-    setShowModal(false);
-  };
-
-  const openModalHandler = () => {
-    // setShowModal(true);
-  };
   return (
     <div>
       <main className="">
         <header>
-          <NavBar openModalHandler={openModalHandler}/>
-          {/*  */}
-          <WaitList showModal={showModal} closeHandler={closeModalHandler} />
-          {/*  */}
+        <ZohoForm />
+          <NavBar />
+         
           {/* <!-- Main --> */}
           <main className="max-w-[1040px] mx-auto my-24 px-5 lg:px-0">
             <div className="flex flex-col justify-center items-center">

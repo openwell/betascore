@@ -1,26 +1,14 @@
 'use client';
-import { useState } from 'react';
+import React from 'react';
 import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar';
-import WaitList from '@/src/components/WaitList';
+import ZohoForm from '@/src/components/Modals/ZohoForm';
 
 export default function FAQ() {
-  const [showModal, setShowModal] = useState(false);
-
-  const closeModalHandler = () => {
-    setShowModal(false);
-  };
-
-  const openModalHandler = () => {
-    // setShowModal(true);
-  };
   return (
     <div>
-      {/*  */}
-      <WaitList showModal={showModal} closeHandler={closeModalHandler} />
-      {/*  */}
-      <NavBar openModalHandler={openModalHandler} />
-
+           <ZohoForm />
+      <NavBar  />
       <iframe
         style={{
           width: '100%',

@@ -6,8 +6,13 @@ import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
 import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { ChevronDownIcon, ArrowRightIcon } from '@heroicons/react/20/solid';
 import classNames from 'classnames';
+import QrCode from '@/src/components/Modals/QrCode';
 
-export default function NavBar({ openModalHandler = () => {} }) {
+export default function NavBar({
+  openModalHandler,
+}: {
+  openModalHandler?: Function;
+}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const companyList = [
     { name: 'About us', href: '/about' },
@@ -15,9 +20,19 @@ export default function NavBar({ openModalHandler = () => {} }) {
     { name: 'Terms & conditions', href: '/terms-conditions' },
     // { name: 'F.A.Q', href: '/faq' },
   ];
+  const [showQrModal, setShowQrModal] = useState(false);
+  const closeModalHandler = () => {
+    setShowQrModal(false);
+  };
+  const openQrModalHandler = () => {
+    setShowQrModal(true);
+  };
 
   return (
     <>
+      {/* QR CODE */}
+      <QrCode showQrModal={showQrModal} closeModalHandler={closeModalHandler} />
+      {/* QR CODE */}
       <nav
         className="flex items-center justify-between p-6 lg:px-8 max-w-[1440px] m-auto"
         aria-label="Global"
@@ -29,7 +44,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
             <Image
               src="/images/ndewo_small.png"
               alt="beta-score logo"
-              className='h-[24px] w-[119px] xl:w-[150px] xl:h-[30px]'
+              className="h-[24px] w-[119px] xl:w-[150px] xl:h-[30px]"
               width={150}
               height={30}
             />
@@ -46,10 +61,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <Link
-            href="/individual"
-            className=" leading-6 text-b-black-grey"
-          >
+          <Link href="/individual" className=" leading-6 text-b-black-grey">
             Individual
           </Link>
           <Link href="/business" className=" leading-6 text-b-black-grey">
@@ -94,7 +106,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
         </div>
         <div className="hidden lg:flex lg:items-center lg:flex-1 lg:justify-end">
           <button
-            onClick={openModalHandler}
+            onClick={openQrModalHandler}
             className="text-sm py-2 pl-2 pr-2 bg-b-light-green rounded-full flex items-center justify-center"
           >
             <Image
@@ -103,7 +115,9 @@ export default function NavBar({ openModalHandler = () => {} }) {
               width={32}
               height={32}
             />
-            <span className="text-black ml-[12px] mr-[8px]">Let&apos;s begin</span>
+            <span className="text-black ml-[12px] mr-[8px]">
+              Let&apos;s begin
+            </span>
             <ArrowRightIcon className="h-4 w-6 text-black" aria-hidden="true" />
           </button>
         </div>
@@ -186,7 +200,7 @@ export default function NavBar({ openModalHandler = () => {} }) {
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);
-                  openModalHandler();
+                  openQrModalHandler();
                 }}
                 className="text-base py-4 text-white bg-black rounded-full px-2 w-full"
               >

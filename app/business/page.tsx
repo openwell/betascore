@@ -1,11 +1,11 @@
 'use client';
-import { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar/White';
-import WaitList from '@/src/components/WaitList';
 import Faq from '@/src/components/Faq';
 import ContactForm from '@/src/components/ContactForm';
+import ZohoForm from '@/src/components/Modals/ZohoForm';
 import HorizontalLogos from '@/src/components/HorizontalLogos';
 import LargeDashboard from '@/src/components/LargeDashboard';
 
@@ -14,16 +14,6 @@ const HorizontalSpacing = (props: { children: React.ReactNode }) => (
 );
 
 export default function Business() {
-  const [showModal, setShowModal] = useState(false);
-
-  const closeModalHandler = () => {
-    setShowModal(false);
-  };
-
-  const openModalHandler = () => {
-    // setShowModal(true);
-  };
-
   const items = [
     {
       text: 'Access to credit invisibles',
@@ -47,10 +37,8 @@ export default function Business() {
   return (
     <main className="">
       <header className="bg-b-black-200">
-        <NavBar openModalHandler={openModalHandler} />
-        {/*  */}
-        <WaitList showModal={showModal} closeHandler={closeModalHandler} />
-        {/*  */}
+        <ZohoForm />
+        <NavBar />
         {/* <!-- Main --> */}
         <main className="text-center mt-10 md:mt-20 lg:mt-44">
           <div className="p-5 py-0 lg:p-0 max-w-[950px] mx-auto">
@@ -67,8 +55,7 @@ export default function Business() {
             </p>
 
             <a
-              href="#zoho-form"
-              onClick={openModalHandler}
+              href="#contact-form"
               className="text-base py-4 text-black bg-white rounded-full px-[60px] my-10 inline-block"
             >
               Learn More
@@ -165,9 +152,9 @@ export default function Business() {
         title=" Rental product"
         description="Verify tenant's information and complete reference in a very
               few minutes instead of 2 days"
-        buttonCta="Learn more"
+        buttonCta="Sign up"
         externalLink
-        link='https://rent.ndewo.com/'
+        link="https://rent.ndewo.com/"
       />
       <Faq />
       <HorizontalSpacing>
