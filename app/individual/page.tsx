@@ -40,8 +40,8 @@ export default function Individual() {
                 unlock opportunities and take control of your financial future.
               </p>
             </div>
-            <StoreButtonsGroup />
           </div>
+          <StoreButtonsGroup />
 
           <div className="flex xl:h-[800px] bg-contain xl:bg-auto justify-center bg-[url('/images/map_with_dots_orange.png')] bg-no-repeat bg-[center_bottom_1rem] xl:bg-[center_bottom_-1rem] relative overflow-hidden">
             <div className="xl:absolute -bottom-[146px] xl:-bottom-[146px]">

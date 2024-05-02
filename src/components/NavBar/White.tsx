@@ -39,7 +39,7 @@ export default function NavBar({
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="">
-            <span className="sr-only">Beta Score Logo</span>
+            <span className="sr-only">Ndewo Logo</span>
             <Image
               src="/images/ndewo_small_white.png"
               alt="beta-score logo"
