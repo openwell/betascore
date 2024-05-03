@@ -70,7 +70,7 @@ export default function NavBar({
             <Popover.Button className="inline-flex items-center gap-x-1  leading-6 text-white">
               <span>Company</span>
               <ChevronDownIcon
-                className="h-5 w-5 text-white"
+                className="h-5 w-5 text-white self-end"
                 aria-hidden="true"
               />
             </Popover.Button>

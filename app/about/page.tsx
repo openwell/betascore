@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Footer from '@/src/components/Footer';
 import NavBar from '@/src/components/NavBar';
@@ -7,6 +7,8 @@ import StoreButtonsGroup from '@/src/components/StoreButtonsGroup';
 import ContactForm from '@/src/components/ContactForm';
 import HorizontalLogos from '@/src/components/HorizontalLogos';
 import classNames from 'classnames';
+import ZohoForm from '@/src/components/Modals/ZohoForm';
+import useAndroidIos from '@/src/helpers/useAndroidIos'
 
 const HorizontalSpacing = (props: { children: React.ReactNode }) => (
   <div className="px-5 xl:px-0">{props.children}</div>
@@ -34,11 +36,25 @@ const Card = ({
 };
 
 export default function About() {
+  const [agent, appLink] = useAndroidIos();
+  const [showZohoModal, setShowZohoModal] = useState(false);
+
+  const closeZohoModalHandler = () => {
+    setShowZohoModal(false);
+  };
+
+  const openZohoModalHandler = () => {
+    setShowZohoModal(true);
+  };
   return (
     <div>
       <main className="">
         <header>
-          <NavBar  />
+          <ZohoForm
+            showZohoModal={showZohoModal}
+            closeModalHandler={closeZohoModalHandler}
+          />
+          <NavBar />
           {/* <!-- Main --> */}
           <main className="px-5 mt-10 md:mt-20 lg:mt-44">
             <div className="p-5 lg:p-0 max-w-[1080px] mx-auto text-center">
@@ -51,8 +67,8 @@ export default function About() {
                 Break through financial barriers. With Ndewo, now you can 
                 unlock opportunities and take control of your financial future.
               </p>
-              <StoreButtonsGroup />
             </div>
+            <StoreButtonsGroup />
 
             <div className="lg:p-0 max-w-[1170px] gap-5 mx-auto my-6 lg:my-36 flex flex-wrap justify-center items-center md:flex-nowrap">
               <div className="flex flex-col justify-end bg-cover xl:bg-auto bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/images/teamwork.png')] bg-no-repeat bg-top w-full h-[230px] md:h-[330px] lg:w-[60%] lg:h-[316px] xl:w-[594px] xl:h-[382px] rounded-xl lg:rounded-[30px]">
@@ -116,7 +132,10 @@ export default function About() {
                   circumstance, by transforming their financial data into
                   pathways to financial inclusion, mobility, and security.
                 </p>
-                <button className="bg-b-light-green lg:hidden rounded-[40px] py-3 px-[40px] mt-10">
+                <button
+                  onClick={openZohoModalHandler}
+                  className="bg-b-light-green lg:hidden rounded-[40px] py-3 px-[40px] mt-10"
+                >
                   Learn more
                 </button>
               </div>
@@ -252,9 +271,9 @@ export default function About() {
                 inclusion and opportunities of the future today!
               </p>
               <a
-                className="bbg-b-light-green rounded-[40px] py-3 px-[19px] flex items-center justify-center"
+                className="bg-b-light-green rounded-[40px] py-3 px-[19px] flex items-center justify-center"
                 target="_blank"
-                href="https://play.google.com/store/apps/details?id=com.betascore.betascore&pcampaignid=web_sha"
+                href={appLink}
               >
                 <Image
                   src="/images/ndewo_icon.png"
