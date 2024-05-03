@@ -29,5 +29,5 @@ export default function useAndroidIos() {
       'https://play.google.com/store/apps/details?id=com.betascore.betascore&pcampaignid=web_sha';
   }
 
-  return [agent, appLink];
+  return { agent, appLink };
 }

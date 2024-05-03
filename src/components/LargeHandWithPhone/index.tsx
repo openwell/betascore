@@ -3,7 +3,7 @@ import Image from 'next/image';
 import useAndroidIos from '@/src/helpers/useAndroidIos';
 
 export default function Index() {
-  const [appLink] = useAndroidIos();
+  const {appLink} = useAndroidIos();
 
 
   return (

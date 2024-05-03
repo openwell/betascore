@@ -36,7 +36,7 @@ const Card = ({
 };
 
 export default function About() {
-  const [agent, appLink] = useAndroidIos();
+  const {appLink} = useAndroidIos();
   const [showZohoModal, setShowZohoModal] = useState(false);
 
   const closeZohoModalHandler = () => {
